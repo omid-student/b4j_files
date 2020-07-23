@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <doclet-version-NOT-library-version>1.04</doclet-version-NOT-library-version>
+    <class>
+        <name>anywheresoftware.agraham.b4j.jspeechlib.SpeechLib</name>
+        <shortname>SpeechLib</shortname>
+        <comment>The SpeechLib object allows access to the methods of a C# MSSpeech.dll library that has been processed by
+the UnmanagedExports NuGGet written by Robert Giesecke to make it callable from a B4J Java library via JNA.
+https://www.nuget.org/packages/UnmanagedExports
+
+The C# library exposes the Microsoft COM Speech Object Library.</comment>
+        <owner>process</owner>
+        <method>
+            <name>DotNetLibraryVersion</name>
+            <comment>Returns the version number of the .NET MSSpeech library.</comment>
+            <returntype>double</returntype>
+        </method>
+        <method>
+            <name>Initialize</name>
+            <comment>Initialise an instance of our .NET library Interface so we can call its' methods.</comment>
+            <returntype>void</returntype>
+        </method>
+        <method>
+            <name>SaySync</name>
+            <comment>Speaks the text given and blocks until finished. The B4J application will be frozen until speech ends. 
+The sentence and word counts are updated a short time after SaySync returns so are not valid immediately.</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>text</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>Skip</name>
+            <comment>Skips forward or backward the given number of sentences. Forward if Number is positive, backward if negative.</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>numitems</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>ClearFlags</name>
+            <comment>This will clear all the flags and counters of the Speech library.
+StartedSpeaking, EndedSpeaking, EndedSentence, EndedWord are all set False.
+SentenceCount and WordCount are set to 0.</comment>
+            <returntype>void</returntype>
+        </method>
+        <method>
+            <name>GetVoiceName</name>
+            <comment>Returns the name of the voice given the index number into the number of voices.</comment>
+            <returntype>java.lang.String</returntype>
+            <parameter>
+                <name>voice</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>SayASync</name>
+            <comment>Speaks the text given and returns immediately. The B4J application will run in parallel with the voice thread. 
+The sentence and word counts are updated as they happen.</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>text</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>Resume</name>
+            <comment>Resumes speech from a Pause.</comment>
+            <returntype>void</returntype>
+        </method>
+        <method>
+            <name>Pause</name>
+            <comment>Pauses speaking. Note that this might take a second or so to take effect. 
+Pauses are additive so several pauses need the same number of Resumes before speaking starts again.
+Also be aware that if a Pause is in effect before SaySync is invoked then the application will lock up as the speech is paused
+and cannot finish and return to the application.</comment>
+            <returntype>void</returntype>
+        </method>
+        <method>
+            <name>DotNetLibraryName</name>
+            <comment>Returns the name of the .NET MSSpeech library.</comment>
+            <returntype>java.lang.String</returntype>
+        </method>
+        <property>
+            <name>NumberOfVoices</name>
+            <returntype>int</returntype>
+            <comment>Gets the number of voices installed on the system.</comment>
+        </property>
+        <property>
+            <name>WordCount</name>
+            <returntype>int</returntype>
+            <comment>Returns the number of words spoken so far. This count is set to 0 on ClearFlags, SaySync or SayAsync.
+Note that after SaySync returns this may not be immediately valid as it seems to take a short while to update. 
+Check EndedSpeaking before checking SentenceCount or WordCount.</comment>
+        </property>
+        <property>
+            <name>EndedWord</name>
+            <returntype>boolean</returntype>
+            <comment>Returns True if the voice has ended a word.
+Reading this property will reset the flag to False so that the end of a subsequent word may be detected.
+In practice this will be of little use as in the absence of events this flag will be too rapidly set again
+to be of any real use.</comment>
+        </property>
+        <property>
+            <name>ExceptionFlag</name>
+            <returntype>boolean</returntype>
+            <comment>Returns True if an Exception occurred while speaking.</comment>
+        </property>
+        <property>
+            <name>ExceptionMsg</name>
+            <returntype>java.lang.String</returntype>
+            <comment>Returns the message of whatever Exception occurred while speaking.</comment>
+        </property>
+        <property>
+            <name>SentenceCount</name>
+            <returntype>int</returntype>
+            <comment>Returns the number of sentences spoken so far. This count is set to 0 on ClearFlags, SaySync or SayAsync.
+Note that after SaySync returns this may not be immediately valid as it seems to take a short while to update. 
+Check EndedSpeaking before checking SentenceCount or WordCount.</comment>
+        </property>
+        <property>
+            <name>Voice</name>
+            <returntype>int</returntype>
+            <parameter>
+                <name>value</name>
+                <type>int</type>
+            </parameter>
+            <comment>Gets or sets a value between 0 and the number of voices installed on the system less one.
+Selects which voice to use. Default is 0 - the first voice.</comment>
+        </property>
+        <property>
+            <name>Volume</name>
+            <returntype>int</returntype>
+            <parameter>
+                <name>value</name>
+                <type>int</type>
+            </parameter>
+            <comment>Gets or sets a value between 0 and 100 determining The volume at which the speech is spoken.
+Default is 100 - maximum volume</comment>
+        </property>
+        <property>
+            <name>StartedSpeaking</name>
+            <returntype>boolean</returntype>
+            <comment>Returns True if the voice has started speaking.</comment>
+        </property>
+        <property>
+            <name>EndedSentence</name>
+            <returntype>boolean</returntype>
+            <comment>Returns True if the voice has ended a sentence.
+Reading this property will reset the flag to False so that the end of a subsequent sentence may be detected.</comment>
+        </property>
+        <property>
+            <name>EndedSpeaking</name>
+            <returntype>boolean</returntype>
+            <comment>Returns True if the voice has ended speaking.
+Check EndedSpeaking before checking SentenceCount or WordCount.</comment>
+        </property>
+        <property>
+            <name>Version</name>
+            <returntype>double</returntype>
+            <comment>Returns the version number of the library.</comment>
+        </property>
+        <property>
+            <name>SpeechRate</name>
+            <returntype>int</returntype>
+            <parameter>
+                <name>value</name>
+                <type>int</type>
+            </parameter>
+            <comment>Gets or sets a value between -10 and +10 determining the rate of speech. Default is 0</comment>
+        </property>
+    </class>
+    <version>1.1</version>
+    <comment>This particular library shows that it is possible for a B4J Java library to access a Windows COM or ActiveX object
+using COM Interop via a .NET Framework library. In this case the COM object is the MS Speech Object Library.
+
+This library uses the JNA libraries to call native code methods in a .NET library that have been exported by UnmanagedExports
+written by Robert Giesecke.
+
+The JNA libraries are  licensed under the LGPL, version 2.1 or later, and (from version 4.0 onward)
+also the Apache Software License, version 2.0
+
+This library is therefore also licensed under those licences.
+
+UnmanagedExports is licensed by Robert Giesecke under the MIT License but  as the managed dll modified by its' use
+contains none of the UnmanagedExports code I believe this license applies only to the actual use of UnmanagedExports.
+http://opensource.org/licenses/mit-license.php</comment>
+    <author>Andrew Graham</author>
+    <dependsOn>jna-4.0.0</dependsOn>
+</root>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <doclet-version-NOT-library-version>1.04</doclet-version-NOT-library-version>
+    <class>
+        <name>com.stevel05.myByteArrayBuffer</name>
+        <shortname>SLByteArrayBuffer</shortname>
+        <owner>process</owner>
+        <method>
+<name>Initialize</name>
+<comment>
+ByteArrayBuffer(int capacity) Initialize the ByteArrayBuffer to the given capacity.
+</comment>
+<returntype>void</returntype>
+<parameter>
+<name>capacity</name>
+<type>int</type>
+</parameter>
+</method>
+<method>
+<name>ByteAt</name>
+<comment>
+Returns the byte value in this buffer at the specified index.
+</comment>
+<returntype>int</returntype>
+<parameter>
+<name>i</name>
+<type>int</type>
+</parameter>
+</method>
+<method>
+<name>AppendChar</name>
+<comment>
+Appends len chars to this buffer from the given source array starting at index off.
+</comment>
+<returntype>void</returntype>
+<parameter>
+<name>b</name>
+<type>char[]</type>
+</parameter>
+<parameter>
+<name>off</name>
+<type>int</type>
+</parameter>
+<parameter>
+<name>len</name>
+<type>int</type>
+</parameter>
+</method>
+<method>
+<name>SetLength</name>
+<comment>Sets the length of the buffer.</comment>
+<returntype>void</returntype>
+<parameter>
+<name>len</name>
+<type>int</type>
+</parameter>
+</method>
+<method>
+<name>Buffer</name>
+<comment>Returns reference to the underlying byte array.</comment>
+<returntype>byte[]</returntype>
+</method>
+<method>
+<name>Clear</name>
+<comment>Clears content of the buffer.</comment>
+<returntype>void</returntype>
+</method>
+<method>
+<name>IsEmpty</name>
+<comment>
+Returns true if this buffer is empty, that is, its length() is equal to 0.
+</comment>
+<returntype>boolean</returntype>
+</method>
+<method>
+<name>AppendByte</name>
+<comment>
+Appends len bytes to this buffer from the given source array starting at index off.
+</comment>
+<returntype>void</returntype>
+<parameter>
+<name>b</name>
+<type>byte[]</type>
+</parameter>
+<parameter>
+<name>off</name>
+<type>int</type>
+</parameter>
+<parameter>
+<name>len</name>
+<type>int</type>
+</parameter>
+</method>
+<method>
+<name>ToByteArray</name>
+<comment>
+Converts the content of this buffer to an array of bytes.
+</comment>
+<returntype>byte[]</returntype>
+</method>
+<method>
+<name>length</name>
+<comment>Returns the length of the buffer (byte count).</comment>
+<returntype>int</returntype>
+</method>
+<method>
+<name>IsFull</name>
+<comment>
+Returns true if this buffer is full, that is, its length() is equal to its capacity().
+</comment>
+<returntype>boolean</returntype>
+</method>
+<method>
+<name>Capacity</name>
+<comment>Returns the current capacity.</comment>
+<returntype>int</returntype>
+</method>
+<method>
+<name>AppendInt</name>
+<comment>Appends b byte to this buffer.</comment>
+<returntype>void</returntype>
+<parameter>
+<name>b</name>
+<type>int</type>
+</parameter>
+</method>
+    </class>
+    <version>1.0</version>
+    <author>Steve Laming</author>
+    <dependsOn>httpcore-4.0</dependsOn>
+</root>

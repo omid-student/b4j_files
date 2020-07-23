@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <doclet-version-NOT-library-version>1.00</doclet-version-NOT-library-version>
+  <dependsOn>javaobject</dependsOn>
+  <dependsOn>jcore</dependsOn>
+  <dependsOn>jfx</dependsOn>
+  <class>
+    <name>b4j.example.jcustomwindow</name>
+    <shortname>jCustomWindow</shortname>
+    <method>
+      <name>IsInitialized</name>
+      <comment>Tests whether the object has been initialized.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="ButtonAdd">_buttonadd</name>
+      <comment>Adds a button to the top bar.
+Parameters:
+Text: The button's text. Set to "" for no text.
+Index: The index of the button. Index are 0 based, and start from the left of the window.
+ImageDir and ImageFileName: the image's directory and file name. Set both to "" if you don't want to set an image.</comment>
+      <returntype>anywheresoftware.b4j.objects.ButtonWrapper</returntype>
+      <parameter>
+        <name>Text</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>index</name>
+        <type>int</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="ButtonBindToAction">_buttonbindtoaction</name>
+      <comment>Binds the given button to an Action.
+Parameters:
+Btn: A button
+ACTION: one of the ACTION_* constants.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Btn</name>
+        <type>anywheresoftware.b4j.objects.ButtonWrapper</type>
+      </parameter>
+      <parameter>
+        <name>ACTION</name>
+        <type>int</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="ButtonSetImage">_buttonsetimage</name>
+      <comment>Adds a button to the top bar.
+Parameters:
+Text: The button's text. Set to "" for no text.
+Index: The index of the button. Index are 0 based, and start from the left of the window.
+ImageDir and ImageFileName: the image's directory and file name. Set both to "" if you don't want to set an image.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Btn</name>
+        <type>anywheresoftware.b4j.objects.ButtonWrapper</type>
+      </parameter>
+      <parameter>
+        <name>ImageDir</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>ImageFileName</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Focused">_focused</name>
+      <comment>Returns true if the window has the keyboard or mouse focus.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="getAnimationsActivated" HideFromIDE="true">_getanimationsactivated</name>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="getAnimationSpeedMultiplier" HideFromIDE="true">_getanimationspeedmultiplier</name>
+      <returntype>float</returntype>
+    </method>
+    <method>
+      <name DesignerName="getBorderStyle" HideFromIDE="true">_getborderstyle</name>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="getBorderWidth" HideFromIDE="true">_getborderwidth</name>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="getButtons" HideFromIDE="true">_getbuttons</name>
+      <comment>Returns all the buttons in a list. Useful to skin them one by one for example.</comment>
+      <returntype>anywheresoftware.b4a.objects.collections.List</returntype>
+    </method>
+    <method>
+      <name DesignerName="getResizable" HideFromIDE="true">_getresizable</name>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="getRootPane" HideFromIDE="true">_getrootpane</name>
+      <comment>Returns the rootPane of the custom content area. You can load your layout there.</comment>
+      <returntype>anywheresoftware.b4j.objects.PaneWrapper.AnchorPaneWrapper</returntype>
+    </method>
+    <method>
+      <name DesignerName="getTopBarStyle" HideFromIDE="true">_gettopbarstyle</name>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="Initialize">_initialize</name>
+      <comment>Initializes the Custom Window Class.
+Parameters:
+moduleParent: The module that created this Custom Window instance.
+parentForm: The form that will hold the Custom Window.
+eventName: The event name.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>ba</name>
+        <type>anywheresoftware.b4a.BA</type>
+      </parameter>
+      <parameter>
+        <name>moduleParent</name>
+        <type>Object</type>
+      </parameter>
+      <parameter>
+        <name>parentForm</name>
+        <type>anywheresoftware.b4j.objects.Form</type>
+      </parameter>
+      <parameter>
+        <name>eventName</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setAnimationsActivated" HideFromIDE="true">_setanimationsactivated</name>
+      <comment>Enable or disable the animations.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>boolean</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setAnimationSpeedMultiplier" HideFromIDE="true">_setanimationspeedmultiplier</name>
+      <comment>Multiplier for the animation speed. e.g: To multiply the maximize animation by 2, set Multiplier to 2.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Multiplier</name>
+        <type>float</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setBorderStyle" HideFromIDE="true">_setborderstyle</name>
+      <comment>The css style for the left, right and bottom borders.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Style</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setBorderWidth" HideFromIDE="true">_setborderwidth</name>
+      <comment>The left, right and bottom border size.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Width</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetIcon">_seticon</name>
+      <comment>The icon that is displayed at the top left of the window.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Dir</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>FileName</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setResizable" HideFromIDE="true">_setresizable</name>
+      <comment>Set the window resizable or not.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>boolean</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setTopBarStyle" HideFromIDE="true">_settopbarstyle</name>
+      <comment>Set the css style for the top bar.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Style</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetWindowSizeLimits">_setwindowsizelimits</name>
+      <comment>Sets the window size limits.
+Note: This method should be called after the showing the mainform.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>minWidth</name>
+        <type>int</type>
+      </parameter>
+      <parameter>
+        <name>minHeight</name>
+        <type>int</type>
+      </parameter>
+      <parameter>
+        <name>maxWidth</name>
+        <type>int</type>
+      </parameter>
+      <parameter>
+        <name>MaxHeight</name>
+        <type>int</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Title">_title</name>
+      <comment>Returns the title as a label.</comment>
+      <returntype>anywheresoftware.b4j.objects.LabelWrapper</returntype>
+    </method>
+    <property>
+      <name DesignerName="AnimationsActivated">_animationsactivated</name>
+      <comment>Enable or disable the animations.</comment>
+      <returntype>boolean</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>boolean</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="AnimationSpeedMultiplier">_animationspeedmultiplier</name>
+      <comment>Multiplier for the animation speed. e.g: To multiply the maximize animation by 2, set Multiplier to 2.</comment>
+      <returntype>float</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>float</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="BorderStyle">_borderstyle</name>
+      <comment>The css style for the left, right and bottom borders.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="BorderWidth">_borderwidth</name>
+      <comment>The left, right and bottom border size.</comment>
+      <returntype>double</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="Buttons">_buttons</name>
+      <comment>Returns all the buttons in a list. Useful to skin them one by one for example.</comment>
+      <returntype>anywheresoftware.b4a.objects.collections.List</returntype>
+    </property>
+    <property>
+      <name DesignerName="Resizable">_resizable</name>
+      <comment>Set the window resizable or not.</comment>
+      <returntype>boolean</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>boolean</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="RootPane">_rootpane</name>
+      <comment>Returns the rootPane of the custom content area. You can load your layout there.</comment>
+      <returntype>anywheresoftware.b4j.objects.PaneWrapper.AnchorPaneWrapper</returntype>
+    </property>
+    <property>
+      <name DesignerName="TopBarStyle">_topbarstyle</name>
+      <comment>Set the css style for the top bar.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </property>
+    <field>
+      <name DesignerName="ACTION_EXIT">_action_exit</name>
+      <returntype>int</returntype>
+    </field>
+    <field>
+      <name DesignerName="ACTION_MAXIMIZE">_action_maximize</name>
+      <returntype>int</returntype>
+    </field>
+    <field>
+      <name DesignerName="ACTION_MINIMIZE">_action_minimize</name>
+      <returntype>int</returntype>
+    </field>
+    <field>
+      <name DesignerName="ACTION_FULLSCREEN">_action_fullscreen</name>
+      <returntype>int</returntype>
+    </field>
+  </class>
+  <version>1</version>
+</root>

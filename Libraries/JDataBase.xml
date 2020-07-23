@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <doclet-version-NOT-library-version>1.00</doclet-version-NOT-library-version>
+  <dependsOn>jcore</dependsOn>
+  <dependsOn>jfx</dependsOn>
+  <dependsOn>jreflection</dependsOn>
+  <class>
+    <name>b4j.example.jdatabase._dbfilters</name>
+    <shortname>dbFilters</shortname>
+    <method>
+      <name>Initialize</name>
+      <comment>Initializes the fields to their default value.</comment>
+      <returntype>void</returntype>
+    </method>
+    <field>
+      <name>IsInitialized</name>
+      <comment>Tests whether the object has been initialized.</comment>
+      <returntype>boolean</returntype>
+    </field>
+    <field>
+      <name>FieldName</name>
+      <returntype>String</returntype>
+    </field>
+    <field>
+      <name>Comparator</name>
+      <returntype>String</returntype>
+    </field>
+    <field>
+      <name>FilterValue</name>
+      <returntype>String</returntype>
+    </field>
+    <field>
+      <name>Xor</name>
+      <returntype>String</returntype>
+    </field>
+  </class>
+  <class>
+    <name>b4j.example.jdatabase._datadetails</name>
+    <shortname>DataDetails</shortname>
+    <method>
+      <name>Initialize</name>
+      <comment>Initializes the fields to their default value.</comment>
+      <returntype>void</returntype>
+    </method>
+    <field>
+      <name>IsInitialized</name>
+      <comment>Tests whether the object has been initialized.</comment>
+      <returntype>boolean</returntype>
+    </field>
+    <field>
+      <name>WAFileName</name>
+      <returntype>String</returntype>
+    </field>
+    <field>
+      <name>WAFilePath</name>
+      <returntype>String</returntype>
+    </field>
+    <field>
+      <name>WAField</name>
+      <returntype>String[]</returntype>
+    </field>
+    <field>
+      <name>WAPointer</name>
+      <returntype>int</returntype>
+    </field>
+    <field>
+      <name>WARecordCount</name>
+      <returntype>int</returntype>
+    </field>
+  </class>
+  <class>
+    <name>b4j.example.jdatabase</name>
+    <shortname>JDataBase</shortname>
+    <method>
+      <name>IsInitialized</name>
+      <comment>Tests whether the object has been initialized.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="ActiveFields">_activefields</name>
+      <comment>Returns the current number of data fields in the current work area
+Returns number as Int. This object is Readonly</comment>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="AddRecord">_addrecord</name>
+      <comment>Adds a record to the current DataBase in the current work area, sorts the entry based on the 
+data entered and sets the DataBase Pointer to the newly added record.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="BOF">_bof</name>
+      <comment>Returns True if at Beginning Of File, otherwise returns False</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="Class_Globals">_class_globals</name>
+      <comment>Version .98 Beta - October 8th, 2012
+Author: Margret
+B4A Version 2.52+</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="CopyDirectory">_copydirectory</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>FromDirPath</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>FromFolderName</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>ToDirPath</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>ToFolderName</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>IncludeSubFolders</name>
+        <type>boolean</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="CreateDataBase">_createdatabase</name>
+      <comment>Creates the DataBase structure and the Fields to be used and assigns a WorkArea # for the file.
+This command is used to define all aspects of you DataBase file, See Below:
+
+Work_Area: Pass as an Int, valid values are 0 thru 9
+File_name: The name to be given to the DataBase, Example: "myfriends.dat"
+File_Path: Path to create/store your DataBase in, Example: File.DirInternal
+Fields: This is your fields needed for each record in the file.  You only need to pass the names of the 
+fields, and must pass them as an array.  Memo fields must start with "&gt;". Note the memo field below at the 
+End of the Field definitions.
+
+Array As String("name", "address", "city", "state", "zip", "work_phone", "work_email", "&gt;memo")
+
+Example:
+
+db.CreateDataBase(0, "deposits.dat", File.DirInternal, Array As String("reference", "amount", "date", "&gt;deposit_memo"))</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Work_Area</name>
+        <type>int</type>
+      </parameter>
+      <parameter>
+        <name>File_Name</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>File_Path</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>dbFields</name>
+        <type>String[]</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Date">_date</name>
+      <comment>Returns the systems date as a String</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="DateNew">_datenew</name>
+      <comment>Returns a new date from the date passed plus or minus HowManyDays. Pass mDate as String, 
+HowManyDays As Int. HowManyDays can be positive or negitive numbers.
+
+DateDue = DateNew("02/04/2012", 90)</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>mDate</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>HowManyDays</name>
+        <type>int</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="DateNOD">_datenod</name>
+      <comment>Returns the number of days that have passed between two dates.
+Pass the dates as a String</comment>
+      <returntype>int</returntype>
+      <parameter>
+        <name>CurrentDate</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>OtherDate</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="DeleteRecord">_deleterecord</name>
+      <comment>Delete the current record at Pointer position in the current work area.
+A confirmation box will be displayed, if user selects Yes, record will 
+be deleted. The next record following will become the current record.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="Empty">_empty</name>
+      <comment>Checks to see if the Text passed is empty, or has a length of 0</comment>
+      <returntype>boolean</returntype>
+      <parameter>
+        <name>Text</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="EOF">_eof</name>
+      <comment>Returns True if End Of File is Reached, otherwise returns False</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="Exist">_exist</name>
+      <comment>Checks to see if the selected path and file exist
+Example:
+
+db.Exist("/mnt/sdcard/Documents.txt")</comment>
+      <returntype>boolean</returntype>
+      <parameter>
+        <name>PathAndFile</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="FileName_">_filename_</name>
+      <comment>Returns the filename in the current work area</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="FilePath_">_filepath_</name>
+      <comment>Returns the path of the current work area</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="FindExact">_findexact</name>
+      <comment>Find an Exact match to the SearchStr passed. Not case sensitive.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>SearchStr</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="FindRecord">_findrecord</name>
+      <comment>Used to find a match to SearchStr. Searches every field in each record 
+of the database and returns the first record that any Fields data matches the 
+SearchStr. The more data entered the more likely the desired record will be returned
+This search IS NOT case sensitive and returns True if a match was found
+Example:
+
+If FindRecord("Billy J. Jones") Then</comment>
+      <returntype>boolean</returntype>
+      <parameter>
+        <name>SearchStr</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="FirstRecord">_firstrecord</name>
+      <comment>Moves Pointer to the first record in the DataBase and reads the record into memory</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GenerateRecords">_generaterecords</name>
+      <comment>Use this for testing to populate the database with random data
+Accepts a number 1 to 10000 as Int. Populates the database in 
+the current workarea.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Howmany</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="GetField">_getfield</name>
+      <comment>Returns the value of the database field named mfieldname
+
+EditTextAddress.Text = GetField("address")</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>mfieldname</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="GetFieldName">_getfieldname</name>
+      <comment>Returns the selected FieldName. Pass the FieldNumber as Int.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>FieldNumber</name>
+        <type>int</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="GetFieldNames">_getfieldnames</name>
+      <comment>Returns the field names of the active database in a String Array</comment>
+      <returntype>String[]</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetRecord">_getrecord</name>
+      <comment>Loads the record at the Pointer position into memory then
+calls back to the calling activity to the Sub GetFields_X,
+where X is the workarea number 0-9. You should have a 
+GetFields_X sub in each of your Activities that makes a
+call to this db class.  No Exception is thrown if the
+GetFields_X sub is missing. The GetFields_X sub is used
+to populate your EditText.Text fields.  This helps automate
+you code.  Example:
+
+Sub GetFields_0	'Put contents of database fields into EditText fields
+	name.Text 	 = db.GetField("name") 
+	address.Text = db.GetField("address")
+	city.Text    = db.GetField("city") 
+	state.Text   = db.GetField("state") 
+	zip.Text     = db.GetField("zip") 
+	Phone.Text   = db.GetField("phone") 
+End Sub</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStructure">_getstructure</name>
+      <comment>Displays the structure of the database in the active work area</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStructure2">_getstructure2</name>
+      <comment>Same as GetStructure but accepts the work area as an Int. This will display the
+structure of any database in any workarea even if it is not the active database.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Work_Area</name>
+        <type>int</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Initialize">_initialize</name>
+      <comment>Initializes the db object for use pass Me for the calling Activity
+
+Dim db As db
+db.Initialize(Me)</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>ba</name>
+        <type>anywheresoftware.b4a.BA</type>
+      </parameter>
+      <parameter>
+        <name>Module</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="LastRecord">_lastrecord</name>
+      <comment>Moves Pointer to the last record in the DataBase and reads the record into memory</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="ListRecords">_listrecords</name>
+      <comment>Returns a list with your selected fields in an InputList.
+If user selects an entry, it reads the record in to memory
+and returns the number of the record selected and sets the
+record pointer to this record.
+
+db.ListRecords("Contact Listing", Array As String("name", "address", "phone", "zip")</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>ListTitle</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>dbFields</name>
+        <type>String[]</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="NextRecord">_nextrecord</name>
+      <comment>Moves Pointer to the next record in the DataBase and reads the record into memory
+EOF is handled and will show a Toast Message if EOF is reached</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="PreviousRecord">_previousrecord</name>
+      <comment>Moves Pointer to the previous record in the DataBase and reads the record into memory
+BOF is handled and will show a Toast Message if BOF is reached</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="PullList">_pulllist</name>
+      <comment>Returns a list with the select fields from the database. Pass the field names as
+a string.  Returns the listing as a List variable. If no Filter is needed pass 
+"". If a filter is needed pass Text to match:
+
+db.PullList(Array As String("name", "zip", "phone", "37421"))</comment>
+      <returntype>anywheresoftware.b4a.objects.collections.List</returntype>
+      <parameter>
+        <name>dbFields</name>
+        <type>String[]</type>
+      </parameter>
+      <parameter>
+        <name>Filter</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="PutField">_putfield</name>
+      <comment>Writes any passed value to the database field memory variable named mfieldname.
+Does not write to disk.  See AddRecord or Update record for writing the record
+to the disk.
+
+PutField("address", "8929 West Way Circle")
+
+or
+
+PutField("address", EditTextAddress.Text)</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>mfieldname</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>varvalue</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Record_Count">_record_count</name>
+      <comment>Returns the number of records for the database in the current work area</comment>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="Record_Pointer">_record_pointer</name>
+      <comment>Returns the record pointer (current record) for the database in the current work area</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="RenameFile">_renamefile</name>
+      <comment>Use to Rename a file. This function does not throw an exception if it fails. You must
+test the returned value yourself.  Returns True if the file was renamed otherwise it 
+returns False.  The complete path must be passed for both parameters. See Example below:
+
+RenameFile("/mnt/sdcard/Movies/Monsters Inc.mp4", "/mnt/sdcard/Movies/Monsters Inc HQ 720p.mp4")</comment>
+      <returntype>boolean</returntype>
+      <parameter>
+        <name>OriginalFileName</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>NewFileName</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="ResetPointers">_resetpointers</name>
+      <comment>Set all pointers for all databases in all work areas back the the last known
+value.  Use in Activity_Resume to return back to known location after Activity_Pause
+or after orientation change. NOTE: These pointers are saved automatically, you do not
+need to try and save the pointers in Activity_Pause 
+
+db.ResetPointers</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="SearchDate">_searchdate</name>
+      <comment>Returns True if the CurrentDate and the CompareToDate are within X number of days(DateRange)
+of each other. Otherwise False will be returned.</comment>
+      <returntype>boolean</returntype>
+      <parameter>
+        <name>CurrentDate</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>CompareToDate</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>DateRange</name>
+        <type>int</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SelectWorkArea">_selectworkarea</name>
+      <comment>Used to select which DataBase structure is active.  If you created two DataBases named "one.dat" and "two.dat",
+you can select the files as follows:
+
+Selecting 0 with activate "one.dat" and selecting 1 with activate "two.dat"
+Passed as an Int, valid values are 0 thru 9. The above example is only true if
+you select 0 as the work area for "one.dat" and 1 for "two.dat".  Any of the 10
+work areas can be selected in any order.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Work_Area</name>
+        <type>int</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Set_Pointer">_set_pointer</name>
+      <comment>Used to set the record pointer of the database in the current work area. The range must be between
+0 and the RecordCount -1</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>m_Pointer</name>
+        <type>int</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetMessages">_setmessages</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>ShowMessage</name>
+        <type>boolean</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="UpdateRecord">_updaterecord</name>
+      <comment>Updates the record at pointer position in the current workarea with data
+stored in the memory fields.  See db.PutFields() to place data into their
+memory location.</comment>
+      <returntype>String</returntype>
+    </method>
+  </class>
+  <version>1</version>
+</root>

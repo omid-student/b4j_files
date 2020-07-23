@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <doclet-version-NOT-library-version>1.04</doclet-version-NOT-library-version>
+    <class>
+        <name>anywheresoftware.agraham.b4j.jdragdrop.DragDrop</name>
+        <shortname>DragAndDrop</shortname>
+        <comment>The DragAndDrop object lets you designate individual Nodes in your layout to be a drag source or a drop target
+or indeed both if required.</comment>
+        <owner>process</owner>
+        <method>
+            <name>SetDragModeAndData</name>
+            <comment>Set the drag and drop operation parameters. More than one object can be dragged and dropped at conce.
+
+TransferMode can be one of
+  "COPY" Indicates copying of data is supported or intended.
+  "LINK" Indicates linking of data is supported or intended.
+  "MOVE" Indicates moving of data is supported or intended.
+  
+DataId is a String array of case sensitive arbitrary strings identifying the type of content being dragged and dropped.
+There are some standardized DataIds used to describe certain data that may be received from other applications.
+
+"application/x-java-file-list" or "java.file-list" Represents a List of Files.
+"text/html" Represents an HTML formatted string.
+"application/x-java-rawimage" Represents a platform specific image type, such as is commonly used on the clipboard. 
+"text/plain" Represents a plain text string.
+"text/rtf" Represents an RTF formatted string
+"text/uri-list" Represents one or more URLs, encoded as a String
+
+DataObject is an Object array of the objects that will be dragged and dropped.
+
+The DataId and DataObject arrays must be the same size. The DataId at one position in the DataId arrays describes the DataObject
+at the corresponding position in the DataObject array.</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>transfermode</name>
+                <type EnumType="true">javafx.scene.input.TransferMode</type>
+            </parameter>
+            <parameter>
+                <name>dataid</name>
+                <type>java.lang.String[]</type>
+            </parameter>
+            <parameter>
+                <name>dataobject</name>
+                <type>java.lang.Object[]</type>
+            </parameter>
+        </method>
+        <method>
+            <name>MakeDragSource</name>
+            <comment>Makes the specified node a drag source by adding the DragDetected and DragDone events to it.
+The DragDetected event Sub receives a MouseEvent object. A DragEvent object is passed to the DragDone event.
+The DragDetected event Sub should call SetDragModeAndData if it wants to start a drag and drop operation.
+ 
+Once the drag and drop operation is complete the DragDone event is is sent to the gesture source
+to inform the source about how the gesture finished. In the DragDone event handler, obtain the
+transfer mode by calling the GetTransferMode method on the event. If the transfer mode is "null" that
+means the data transfer did not happen. If the mode is "MOVE", then clear the data on the gesture source.</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>ba</name>
+                <type>anywheresoftware.b4a.BA</type>
+            </parameter>
+            <parameter>
+                <name>source</name>
+                <type>javafx.scene.Node</type>
+            </parameter>
+            <parameter>
+                <name>eventname</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>MakeDragTarget</name>
+            <comment>Makes the specified node a drag target by adding the DragEntered, DragExited, DragOver and DragDrop events to it.
+ 
+After the drag-and-drop gesture is started, any node or scene that the mouse is dragged over is a potential target
+to drop the data. You specify which object accepts the data by implementing the DragOver event handler.
+ 
+For a successful drag-and-drop operation, you must implement the DragOver event handler, which calls the
+AcceptTransferMode(TransferMode) method of the event, passing the transfer mode that the target intends to
+accept. If none of the passed transfer modes are supported by the gesture source, the potential target does not fit
+the given drag-and-drop gesture.
+ 
+When the mouse button is released on the gesture target, which accepted previous DragOver events with a transfer mode
+supported by the gesture source, then the DragDropped event is sent to the gesture target.
+
+In the DragDropped event handler, you must complete the drag-and-drop gesture by calling the SetDropCompleted(Boolean)
+method on the event otherwise the gesture is considered unsuccessful.
+ 
+When the drag gesture enters the boundaries of a potential gesture target, the target receives a DragEntered event.
+When the drag gesture leaves the potential target's boundaries, the target receives a DragExited event. 
+You can use the DragEntered and DragExited event handlers to change the target's appearance in order to provide visual
+feedback to the user. You should verify the DataId of the object and only change appearance if it is an appropriate DataId.</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>ba</name>
+                <type>anywheresoftware.b4a.BA</type>
+            </parameter>
+            <parameter>
+                <name>target</name>
+                <type>javafx.scene.Node</type>
+            </parameter>
+            <parameter>
+                <name>eventname</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <property>
+            <name>Version</name>
+            <returntype>double</returntype>
+            <comment>Returns the version number of the library.</comment>
+        </property>
+    </class>
+    <class>
+        <name>anywheresoftware.agraham.b4j.jdragdrop.DragDrop.DragEventWrapper</name>
+        <shortname>DragEvent</shortname>
+        <comment>A DragEvent object is passed to all the drag and drop events except DragDetected which receives a MouseEvent.
+
+In the source DragDone event handler, get the transfer mode by calling the GetTransferMode method on the event.
+If the transfer mode is Null then that means the data transfer did not happen
+
+You might need to call Consume if you don't want the event to be passed on to the parent Node.</comment>
+        <objectwrapper>javafx.scene.input.DragEvent</objectwrapper>
+        <owner>process</owner>
+        <method>
+            <name>GetTransferMode</name>
+            <comment>Gets the data transfer mode.
+In the DragDone event handler if the transfer mode is "null" then that means the data transfer did not happen.</comment>
+            <returntype EnumType="true">javafx.scene.input.TransferMode</returntype>
+        </method>
+        <method>
+            <name>GetGestureSource</name>
+            <comment>Returns the source object of the drag and drop gesture.</comment>
+            <returntype>java.lang.Object</returntype>
+        </method>
+        <method>
+            <name>SetDropCompleted</name>
+            <comment>Indicates whether transfer handling of this DragEvent was completed successfully or not during a DragDropped event.</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>istransferdone</name>
+                <type>boolean</type>
+            </parameter>
+        </method>
+        <method>
+            <name>GetDataObjectForId</name>
+            <comment>Returns the DataOobject for the specified DataID from the objects being dragged and dropped.
+For non-B4J applications these are often very-low level data structures, usually HeapByteBuffers.
+If you know what you are doing you may be able to manipulate these using a JavaObject or Reflector.</comment>
+            <returntype>java.lang.Object</returntype>
+            <parameter>
+                <name>dataid</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>GetGestureTarget</name>
+            <comment>Returns the target object of the drag and drop gesture.</comment>
+            <returntype>java.lang.Object</returntype>
+        </method>
+        <method>
+            <name>AcceptTransferMode</name>
+            <comment>In the target DragOver event call the AcceptTransferMode method passing the transfer modes that the target intends to accept.
+Note that the type of data available should be taken into account when deciding whether to accept the event.</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>mode</name>
+                <type EnumType="true">javafx.scene.input.TransferMode</type>
+            </parameter>
+        </method>
+        <method>
+            <name>Consume</name>
+            <comment></comment>
+            <returntype>void</returntype>
+        </method>
+        <method>
+            <name>GetDataIds</name>
+            <comment>Gets a String array containing the DataIDs of the DataObjects object being dragged and dropped.</comment>
+            <returntype>java.lang.String[]</returntype>
+        </method>
+        <method>
+            <name>IsInitialized</name>
+            <comment></comment>
+            <returntype>boolean</returntype>
+        </method>
+        <property>
+            <name>Y</name>
+            <returntype>double</returntype>
+            <comment>Gets the vertical position of the event relative to the origin of the DragEvent's source.</comment>
+        </property>
+        <property>
+            <name>X</name>
+            <returntype>double</returntype>
+            <comment>Gets the horizontal position of the event relative to the origin of the DragEvent's source.</comment>
+        </property>
+    </class>
+    <version>1.1</version>
+    <comment>A drag-and-drop operation is a data transfer between two objects: a gesture source and a gesture target.
+The gesture source and gesture target can belong to a single JavaFX application or to two different JavaFX
+applications. If you run two copies of the library demo you will see that you can drag and drop between them.
+
+Data may also be dragged and dropped between non-JavaFx applications in which case you will need to know what
+DataIds the application supports and what the types of the associated DataObjects are. For example among the DataObjects
+in a drag and drop from Windows Explorer is a DataId of "text/uri-list" with a DataObject that is a string of file URIs.
+
+A drag-and-drop gesture happens as follows:
+The user clicks a mouse button on a gesture source, drags the mouse, and releases the mouse button on a gesture target.
+While dragging the data, the user gets visual feedback, which denotes locations that do not accept the data and,
+when over a target that accepts the data, the user is given a hint where to drop the data.
+
+During the drag-and-drop gesture various types of data can be transferred such as text, images, URLs, files, bytes, and strings.
+
+Transfer modes define the type of transfer that happens between the gesture source and gesture target.
+The available transfer modes are COPY, MOVE, and LINK. 
+
+A gesture source reports a transfer mode. A gesture target accepts a transfer mode.</comment>
+    <author>Andrew Graham</author>
+</root>

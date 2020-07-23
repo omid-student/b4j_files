@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <doclet-version-NOT-library-version>1.00</doclet-version-NOT-library-version>
+  <dependsOn>jcore</dependsOn>
+  <dependsOn>jfx</dependsOn>
+  <class>
+    <name>b4j.example.jmsgbox</name>
+    <shortname>JMsgBox</shortname>
+    <method>
+      <name>IsInitialized</name>
+      <comment>Tests whether the object has been initialized.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="DialogResponse">_dialogresponse</name>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="Initialize">_initialize</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>ba</name>
+        <type>anywheresoftware.b4a.BA</type>
+      </parameter>
+      <parameter>
+        <name>Parent</name>
+        <type>anywheresoftware.b4j.objects.Form</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="MsgBox">_msgbox</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>mMessage</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>mTitle</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="MsgBox2">_msgbox2</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>mMessage</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>mTitle</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>mPositive</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>mCancel</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>mNegative</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>mIcon</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="ToastMessageShow">_toastmessageshow</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>mMessage</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>LongDuration</name>
+        <type>boolean</type>
+      </parameter>
+    </method>
+  </class>
+  <version>1</version>
+</root>

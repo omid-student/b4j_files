@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <doclet-version-NOT-library-version>1.04</doclet-version-NOT-library-version>
+    <class>
+        <name>anywheresoftware.b4j.serial.Serial</name>
+        <shortname>Serial</shortname>
+        <owner>process</owner>
+        <method>
+            <name>Initialize</name>
+            <comment>Initializes the object and sets the subs that will handle events (as of version 1.00 there are no events).</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>EventName</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>Open</name>
+            <comment>Opens a port.</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>PortName</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>ListPorts</name>
+            <comment>Returns a list with the ports names.</comment>
+            <returntype>anywheresoftware.b4a.objects.collections.List</returntype>
+        </method>
+        <method>
+            <name>Close</name>
+            <comment>Closes the port. Nothing happens if the port is not open.</comment>
+            <returntype>boolean</returntype>
+        </method>
+        <method>
+            <name>SendBreak</name>
+            <comment>Sends a break signal.</comment>
+            <returntype>boolean</returntype>
+            <parameter>
+                <name>Duration</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>GetOutputStream</name>
+            <comment>Returns an OutputStream for working with AsyncStreams.</comment>
+            <returntype>java.io.OutputStream</returntype>
+        </method>
+        <method>
+            <name>SetParams</name>
+            <comment>Sets the connection parameters.
+You should only call this method after the port was opened.</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>BaudRate</name>
+                <type>int</type>
+            </parameter>
+            <parameter>
+                <name>DataBits</name>
+                <type>int</type>
+            </parameter>
+            <parameter>
+                <name>StopBits</name>
+                <type>int</type>
+            </parameter>
+            <parameter>
+                <name>Parity</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>GetInputStream</name>
+            <comment>Returns an InputStream that can be used with AsyncStreams.</comment>
+            <returntype>java.io.InputStream</returntype>
+        </method>
+        <method>
+            <name>PurgePort</name>
+            <comment>Purges the input and output buffers. PurgeFlags should be one of the PURGE constants
+or any combination (with Bit.Or).</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>PurgeFlags</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <property>
+            <name>RTS</name>
+            <parameter>
+                <name>b</name>
+                <type>boolean</type>
+            </parameter>
+            <comment>Sets the state of the RTS line.</comment>
+        </property>
+        <property>
+            <name>DSR</name>
+            <returntype>boolean</returntype>
+            <comment>Gets the state of the DSR line.</comment>
+        </property>
+        <property>
+            <name>DTR</name>
+            <parameter>
+                <name>b</name>
+                <type>boolean</type>
+            </parameter>
+            <comment>Sets the state of the DTR line.</comment>
+        </property>
+        <property>
+            <name>CTS</name>
+            <returntype>boolean</returntype>
+            <comment>Gets the state of the CTS line.</comment>
+        </property>
+        <field>
+            <name>PURGE_TXCLEAR</name>
+            <comment></comment>
+            <returntype>int</returntype>
+        </field>
+        <field>
+            <name>PURGE_TXABORT</name>
+            <comment></comment>
+            <returntype>int</returntype>
+        </field>
+        <field>
+            <name>PURGE_RXCLEAR</name>
+            <comment></comment>
+            <returntype>int</returntype>
+        </field>
+        <field>
+            <name>PURGE_RXABORT</name>
+            <comment></comment>
+            <returntype>int</returntype>
+        </field>
+    </class>
+    <version>1.05</version>
+    <dependsOn>jssc</dependsOn>
+</root>

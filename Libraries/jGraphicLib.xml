@@ -1,0 +1,4754 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <doclet-version-NOT-library-version>1.00</doclet-version-NOT-library-version>
+  <dependsOn>jcore</dependsOn>
+  <dependsOn>jfx</dependsOn>
+  <dependsOn>javaobject</dependsOn>
+  <class b4a_type="StaticCode">
+    <name>com.stevel05.rtest.glshape_static</name>
+    <shortname>GLShape_Static</shortname>
+    <objectwrapper>java.lang.Class</objectwrapper>
+    <field>
+      <name DesignerName="STROKELINECAP_BUTT">_strokelinecap_butt</name>
+      <returntype>String</returntype>
+    </field>
+    <field>
+      <name DesignerName="STROKELINECAP_ROUND">_strokelinecap_round</name>
+      <returntype>String</returntype>
+    </field>
+    <field>
+      <name DesignerName="STROKELINECAP_SQUARE">_strokelinecap_square</name>
+      <returntype>String</returntype>
+    </field>
+    <field>
+      <name DesignerName="STROKELINEJOIN_BEVEL">_strokelinejoin_bevel</name>
+      <returntype>String</returntype>
+    </field>
+    <field>
+      <name DesignerName="STROKELINEJOIN_MITER">_strokelinejoin_miter</name>
+      <returntype>String</returntype>
+    </field>
+    <field>
+      <name DesignerName="STROKELINEJOIN_ROUND">_strokelinejoin_round</name>
+      <returntype>String</returntype>
+    </field>
+    <field>
+      <name DesignerName="STROKETYPE_CENTERED">_stroketype_centered</name>
+      <returntype>String</returntype>
+    </field>
+    <field>
+      <name DesignerName="STROKETYPE_INSIDE">_stroketype_inside</name>
+      <returntype>String</returntype>
+    </field>
+    <field>
+      <name DesignerName="STROKETYPE_OUTSIDE">_stroketype_outside</name>
+      <returntype>String</returntype>
+    </field>
+    <field>
+      <name DesignerName="FILLRULE_EVEN_ODD">_fillrule_even_odd</name>
+      <returntype>String</returntype>
+    </field>
+    <field>
+      <name DesignerName="FILLRULE_NON_ZERO">_fillrule_non_zero</name>
+      <returntype>String</returntype>
+    </field>
+    <field>
+      <name DesignerName="ARCTYPE_CHORD">_arctype_chord</name>
+      <returntype>String</returntype>
+    </field>
+    <field>
+      <name DesignerName="ARCTYPE_OPEN">_arctype_open</name>
+      <returntype>String</returntype>
+    </field>
+    <field>
+      <name DesignerName="ARCTYPE_ROUND">_arctype_round</name>
+      <returntype>String</returntype>
+    </field>
+    <field>
+      <name DesignerName="TEXTBOUNDS_LOGICAL">_textbounds_logical</name>
+      <returntype>String</returntype>
+    </field>
+    <field>
+      <name DesignerName="TEXTBOUNDS_VISUAL">_textbounds_visual</name>
+      <returntype>String</returntype>
+    </field>
+    <field>
+      <name DesignerName="FONTSMOOTHING_GRAY">_fontsmoothing_gray</name>
+      <returntype>String</returntype>
+    </field>
+    <field>
+      <name DesignerName="FONTSMOOTHING_LCD">_fontsmoothing_lcd</name>
+      <returntype>String</returntype>
+    </field>
+    <field>
+      <name DesignerName="TEXTALIGNMENT_CENTER">_textalignment_center</name>
+      <returntype>String</returntype>
+    </field>
+    <field>
+      <name DesignerName="TEXTALIGNMENT_JUSTIFY">_textalignment_justify</name>
+      <returntype>String</returntype>
+    </field>
+    <field>
+      <name DesignerName="TEXTALIGNMENT_LEFT">_textalignment_left</name>
+      <returntype>String</returntype>
+    </field>
+    <field>
+      <name DesignerName="TEXTALIGNMENT_RIGHT">_textalignment_right</name>
+      <returntype>String</returntype>
+    </field>
+    <field>
+      <name DesignerName="TEXTORIGIN_BASELINE">_textorigin_baseline</name>
+      <returntype>String</returntype>
+    </field>
+    <field>
+      <name DesignerName="TEXTORIGIN_BOTTOM">_textorigin_bottom</name>
+      <returntype>String</returntype>
+    </field>
+    <field>
+      <name DesignerName="TEXTORIGIN_CENTER">_textorigin_center</name>
+      <returntype>String</returntype>
+    </field>
+    <field>
+      <name DesignerName="TEXTORIGIN_TOP">_textorigin_top</name>
+      <returntype>String</returntype>
+    </field>
+    <field>
+      <name DesignerName="CYCLEMETHOD_NO_CYCLE">_cyclemethod_no_cycle</name>
+      <returntype>String</returntype>
+    </field>
+    <field>
+      <name DesignerName="CYCLEMETHOD_REFLECT">_cyclemethod_reflect</name>
+      <returntype>String</returntype>
+    </field>
+    <field>
+      <name DesignerName="CYCLEMETHOD_REPEAT">_cyclemethod_repeat</name>
+      <returntype>String</returntype>
+    </field>
+    <method>
+      <name DesignerName="Process_Globals">_process_globals</name>
+      <returntype>String</returntype>
+    </method>
+  </class>
+  <class>
+    <name>com.stevel05.rtest.glshape</name>
+    <shortname>GLShape</shortname>
+    <method>
+      <name>IsInitialized</name>
+      <comment>Tests whether the object has been initialized.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="AsNode">_asnode</name>
+      <returntype>anywheresoftware.b4j.objects.NodeWrapper.ConcreteNodeWrapper</returntype>
+    </method>
+    <method>
+      <name DesignerName="CastShape">_castshape</name>
+      <returntype>com.stevel05.rtest.glshape</returntype>
+      <parameter>
+        <name>Shape</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Class_Globals">_class_globals</name>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="Create">_create</name>
+      <comment>Construct an empty shape</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetFill">_getfill</name>
+      <comment>Gets the value of the property fill.</comment>
+      <returntype>anywheresoftware.b4j.objects.JFX.PaintWrapper</returntype>
+    </method>
+    <method>
+      <name DesignerName="getID" HideFromIDE="true">_getid</name>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetMinHeight">_getminheight</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetMinWidth">_getminwidth</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetObject">_getobject</name>
+      <returntype>Object</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetPrefHeight">_getprefheight</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetPrefWidth">_getprefwidth</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStroke">_getstroke</name>
+      <comment>Gets the value of the property stroke.</comment>
+      <returntype>anywheresoftware.b4j.object.JavaObject</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeDashArray">_getstrokedasharray</name>
+      <comment>Defines the array representing the lengths of the dash segments.</comment>
+      <returntype>anywheresoftware.b4j.object.JavaObject</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeDashOffset">_getstrokedashoffset</name>
+      <comment>Gets the value of the property strokeDashOffset.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeLineCap">_getstrokelinecap</name>
+      <comment>Gets the value of the property strokeLineCap.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeLineJoin">_getstrokelinejoin</name>
+      <comment>Gets the value of the property strokeLineJoin.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeMiterLimit">_getstrokemiterlimit</name>
+      <comment>Gets the value of the property strokeMiterLimit.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeType">_getstroketype</name>
+      <comment>Gets the value of the property strokeType.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeWidth">_getstrokewidth</name>
+      <comment>Gets the value of the property strokeWidth.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="getTag" HideFromIDE="true">_gettag</name>
+      <returntype>Object</returntype>
+    </method>
+    <method>
+      <name DesignerName="Initialize">_initialize</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>ba</name>
+        <type>anywheresoftware.b4a.BA</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Intersect">_intersect</name>
+      <comment>Returns a new Shape which is created as an intersection of the specified input shapes.</comment>
+      <returntype>com.stevel05.rtest.glshape</returntype>
+      <parameter>
+        <name>Shape1</name>
+        <type>Object</type>
+      </parameter>
+      <parameter>
+        <name>Shape2</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="IsSmooth">_issmooth</name>
+      <comment>Gets the value of the property smooth.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="SetFill">_setfill</name>
+      <comment>Sets the value of the property fill.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>anywheresoftware.b4j.objects.JFX.PaintWrapper</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setID" HideFromIDE="true">_setid</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>ID</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetObject">_setobject</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Obj</name>
+        <type>anywheresoftware.b4j.object.JavaObject</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetSmooth">_setsmooth</name>
+      <comment>Sets the value of the property smooth.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>boolean</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStroke">_setstroke</name>
+      <comment>Sets the value of the property stroke.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>anywheresoftware.b4j.object.JavaObject</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeDashOffset">_setstrokedashoffset</name>
+      <comment>Sets the value of the property strokeDashOffset.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeLineCap">_setstrokelinecap</name>
+      <comment>Sets the value of the property strokeLineCap.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeLineJoin">_setstrokelinejoin</name>
+      <comment>Sets the value of the property strokeLineJoin.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeMiterLimit">_setstrokemiterlimit</name>
+      <comment>Sets the value of the property strokeMiterLimit.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeType">_setstroketype</name>
+      <comment>Sets the value of the property strokeType.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeWidth">_setstrokewidth</name>
+      <comment>Sets the value of the property strokeWidth.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setTag" HideFromIDE="true">_settag</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Tag</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Subtract">_subtract</name>
+      <comment>Returns a new Shape which is created by subtracting the specified second shape from the first shape.</comment>
+      <returntype>com.stevel05.rtest.glshape</returntype>
+      <parameter>
+        <name>Shape1</name>
+        <type>Object</type>
+      </parameter>
+      <parameter>
+        <name>Shape2</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Union">_union</name>
+      <comment>Returns a new Shape which is created as a union of the specified input shapes.</comment>
+      <returntype>com.stevel05.rtest.glshape</returntype>
+      <parameter>
+        <name>Shape1</name>
+        <type>Object</type>
+      </parameter>
+      <parameter>
+        <name>Shape2</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <property>
+      <name DesignerName="ID">_id</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="Tag">_tag</name>
+      <returntype>Object</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>Object</type>
+      </parameter>
+    </property>
+  </class>
+  <class>
+    <name>com.stevel05.rtest.glarc</name>
+    <shortname>GLArc</shortname>
+    <method>
+      <name>IsInitialized</name>
+      <comment>Tests whether the object has been initialized.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="AsNode">_asnode</name>
+      <returntype>anywheresoftware.b4j.objects.NodeWrapper.ConcreteNodeWrapper</returntype>
+    </method>
+    <method>
+      <name DesignerName="Class_Globals">_class_globals</name>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="Create">_create</name>
+      <comment>Creates an empty instance of Arc.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="Create2">_create2</name>
+      <comment>Creates a new instance of Arc.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>CenterX</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>CenterY</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>RadiusX</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>RadiusY</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>StartAngle</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>Length</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Get_Type">_get_type</name>
+      <comment>Gets the value of the property type.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetCenterX">_getcenterx</name>
+      <comment>Gets the value of the property centerX.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetCenterY">_getcentery</name>
+      <comment>Gets the value of the property centerY.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetFill">_getfill</name>
+      <comment>Gets the value of the property fill.</comment>
+      <returntype>anywheresoftware.b4j.objects.JFX.PaintWrapper</returntype>
+    </method>
+    <method>
+      <name DesignerName="getID" HideFromIDE="true">_getid</name>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetLength">_getlength</name>
+      <comment>Gets the value of the property length.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetMinHeight">_getminheight</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetMinWidth">_getminwidth</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetObject">_getobject</name>
+      <returntype>Object</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetPrefHeight">_getprefheight</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetPrefWidth">_getprefwidth</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetRadiusX">_getradiusx</name>
+      <comment>Gets the value of the property radiusX.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetRadiusY">_getradiusy</name>
+      <comment>Gets the value of the property radiusY.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStartAngle">_getstartangle</name>
+      <comment>Gets the value of the property startAngle.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStroke">_getstroke</name>
+      <comment>Gets the value of the property stroke.</comment>
+      <returntype>anywheresoftware.b4j.objects.JFX.PaintWrapper</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeDashArray">_getstrokedasharray</name>
+      <comment>Defines the array representing the lengths of the dash segments.</comment>
+      <returntype>anywheresoftware.b4a.objects.collections.List</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeDashOffset">_getstrokedashoffset</name>
+      <comment>Gets the value of the property strokeDashOffset.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeLineCap">_getstrokelinecap</name>
+      <comment>Gets the value of the property strokeLineCap.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeLineJoin">_getstrokelinejoin</name>
+      <comment>Gets the value of the property strokeLineJoin.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeMiterLimit">_getstrokemiterlimit</name>
+      <comment>Gets the value of the property strokeMiterLimit.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeType">_getstroketype</name>
+      <comment>Gets the value of the property strokeType.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeWidth">_getstrokewidth</name>
+      <comment>Gets the value of the property strokeWidth.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="getTag" HideFromIDE="true">_gettag</name>
+      <returntype>Object</returntype>
+    </method>
+    <method>
+      <name DesignerName="Initialize">_initialize</name>
+      <comment>Initializes the object. You can add parameters to this method if needed.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>ba</name>
+        <type>anywheresoftware.b4a.BA</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Intersect">_intersect</name>
+      <comment>Returns a new Shape which is created as an intersection of the specified input shapes.</comment>
+      <returntype>com.stevel05.rtest.glshape</returntype>
+      <parameter>
+        <name>Shape1</name>
+        <type>com.stevel05.rtest.glarc</type>
+      </parameter>
+      <parameter>
+        <name>Shape2</name>
+        <type>com.stevel05.rtest.glarc</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="IsSmooth">_issmooth</name>
+      <comment>Gets the value of the property smooth.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="Set_Type">_set_type</name>
+      <comment>Sets the value of the property type.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetCenterX">_setcenterx</name>
+      <comment>Sets the value of the property centerX.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetCenterY">_setcentery</name>
+      <comment>Sets the value of the property centerY.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetFill">_setfill</name>
+      <comment>Sets the value of the property fill.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>anywheresoftware.b4j.objects.JFX.PaintWrapper</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setID" HideFromIDE="true">_setid</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>ID</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetLength">_setlength</name>
+      <comment>Sets the value of the property length.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetObject">_setobject</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Obj</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetRadiusX">_setradiusx</name>
+      <comment>Sets the value of the property radiusX.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetRadiusY">_setradiusy</name>
+      <comment>Sets the value of the property radiusY.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetSmooth">_setsmooth</name>
+      <comment>Sets the value of the property smooth.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>boolean</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStartAngle">_setstartangle</name>
+      <comment>Sets the value of the property startAngle.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStroke">_setstroke</name>
+      <comment>Sets the value of the property stroke.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>anywheresoftware.b4j.objects.JFX.PaintWrapper</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeDashOffset">_setstrokedashoffset</name>
+      <comment>Sets the value of the property strokeDashOffset.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeLineCap">_setstrokelinecap</name>
+      <comment>Sets the value of the property strokeLineCap.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeLineJoin">_setstrokelinejoin</name>
+      <comment>Sets the value of the property strokeLineJoin.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeMiterLimit">_setstrokemiterlimit</name>
+      <comment>Sets the value of the property strokeMiterLimit.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeType">_setstroketype</name>
+      <comment>Sets the value of the property strokeType.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeWidth">_setstrokewidth</name>
+      <comment>Sets the value of the property strokeWidth.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setTag" HideFromIDE="true">_settag</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Tag</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Subtract">_subtract</name>
+      <comment>Returns a new Shape which is created by subtracting the specified second shape from the first shape.</comment>
+      <returntype>com.stevel05.rtest.glshape</returntype>
+      <parameter>
+        <name>Shape1</name>
+        <type>com.stevel05.rtest.glarc</type>
+      </parameter>
+      <parameter>
+        <name>Shape2</name>
+        <type>com.stevel05.rtest.glarc</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Union">_union</name>
+      <comment>Returns a new Shape which is created as a union of the specified input shapes.</comment>
+      <returntype>com.stevel05.rtest.glshape</returntype>
+      <parameter>
+        <name>Shape1</name>
+        <type>com.stevel05.rtest.glarc</type>
+      </parameter>
+      <parameter>
+        <name>Shape2</name>
+        <type>com.stevel05.rtest.glarc</type>
+      </parameter>
+    </method>
+    <property>
+      <name DesignerName="ID">_id</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="Tag">_tag</name>
+      <returntype>Object</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>Object</type>
+      </parameter>
+    </property>
+  </class>
+  <class>
+    <name>com.stevel05.rtest.glcircle</name>
+    <shortname>GLCircle</shortname>
+    <method>
+      <name>IsInitialized</name>
+      <comment>Tests whether the object has been initialized.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="AsNode">_asnode</name>
+      <returntype>anywheresoftware.b4j.objects.NodeWrapper.ConcreteNodeWrapper</returntype>
+    </method>
+    <method>
+      <name DesignerName="Class_Globals">_class_globals</name>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="Create">_create</name>
+      <comment>Creates an empty instance of Circle.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="Create2">_create2</name>
+      <comment>Creates a new instance of Circle with a specified radius.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Radius</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Create3">_create3</name>
+      <comment>Creates a new instance of Circle with a specified position and radius.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>CenterX</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>CenterY</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>Radius</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Create4">_create4</name>
+      <comment>Creates a new instance of Circle with a specified position, radius and fill.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>CenterX</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>CenterY</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>Radius</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>Fill</name>
+        <type>anywheresoftware.b4j.object.JavaObject</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Create5">_create5</name>
+      <comment>Creates a new instance of Circle with a specified radius and fill.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Radius</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>Fill</name>
+        <type>anywheresoftware.b4j.object.JavaObject</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="GetCenterX">_getcenterx</name>
+      <comment>Gets the value of the property centerX.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetCenterY">_getcentery</name>
+      <comment>Gets the value of the property centerY.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetFill">_getfill</name>
+      <comment>Gets the value of the property fill.</comment>
+      <returntype>anywheresoftware.b4j.objects.JFX.PaintWrapper</returntype>
+    </method>
+    <method>
+      <name DesignerName="getID" HideFromIDE="true">_getid</name>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetMinHeight">_getminheight</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetMinWidth">_getminwidth</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetObject">_getobject</name>
+      <returntype>Object</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetPrefHeight">_getprefheight</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetPrefWidth">_getprefwidth</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetRadius">_getradius</name>
+      <comment>Gets the value of the property radius.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStroke">_getstroke</name>
+      <comment>Gets the value of the property stroke.</comment>
+      <returntype>anywheresoftware.b4j.objects.JFX.PaintWrapper</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeDashArray">_getstrokedasharray</name>
+      <comment>Defines the array representing the lengths of the dash segments.</comment>
+      <returntype>anywheresoftware.b4a.objects.collections.List</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeDashOffset">_getstrokedashoffset</name>
+      <comment>Gets the value of the property strokeDashOffset.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeLineCap">_getstrokelinecap</name>
+      <comment>Gets the value of the property strokeLineCap.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeLineJoin">_getstrokelinejoin</name>
+      <comment>Gets the value of the property strokeLineJoin.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeMiterLimit">_getstrokemiterlimit</name>
+      <comment>Gets the value of the property strokeMiterLimit.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeType">_getstroketype</name>
+      <comment>Gets the value of the property strokeType.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeWidth">_getstrokewidth</name>
+      <comment>Gets the value of the property strokeWidth.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="getTag" HideFromIDE="true">_gettag</name>
+      <returntype>Object</returntype>
+    </method>
+    <method>
+      <name DesignerName="Initialize">_initialize</name>
+      <comment>Initializes the object. You can add parameters to this method if needed.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>ba</name>
+        <type>anywheresoftware.b4a.BA</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Intersect">_intersect</name>
+      <comment>Returns a new Shape which is created as an intersection of the specified input shapes.</comment>
+      <returntype>com.stevel05.rtest.glshape</returntype>
+      <parameter>
+        <name>Shape1</name>
+        <type>com.stevel05.rtest.glcircle</type>
+      </parameter>
+      <parameter>
+        <name>Shape2</name>
+        <type>com.stevel05.rtest.glcircle</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="IsSmooth">_issmooth</name>
+      <comment>Gets the value of the property smooth.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="SetCenterX">_setcenterx</name>
+      <comment>Sets the value of the property centerX.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetCenterY">_setcentery</name>
+      <comment>Sets the value of the property centerY.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetFill">_setfill</name>
+      <comment>Sets the value of the property fill.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>anywheresoftware.b4j.objects.JFX.PaintWrapper</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setID" HideFromIDE="true">_setid</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>ID</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetObject">_setobject</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Obj</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetRadius">_setradius</name>
+      <comment>Sets the value of the property radius.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetSmooth">_setsmooth</name>
+      <comment>Sets the value of the property smooth.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>boolean</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStroke">_setstroke</name>
+      <comment>Sets the value of the property stroke.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>anywheresoftware.b4j.objects.JFX.PaintWrapper</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeDashOffset">_setstrokedashoffset</name>
+      <comment>Sets the value of the property strokeDashOffset.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeLineCap">_setstrokelinecap</name>
+      <comment>Sets the value of the property strokeLineCap.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeLineJoin">_setstrokelinejoin</name>
+      <comment>Sets the value of the property strokeLineJoin.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeMiterLimit">_setstrokemiterlimit</name>
+      <comment>Sets the value of the property strokeMiterLimit.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeType">_setstroketype</name>
+      <comment>Sets the value of the property strokeType.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeWidth">_setstrokewidth</name>
+      <comment>Sets the value of the property strokeWidth.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setTag" HideFromIDE="true">_settag</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Tag</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Subtract">_subtract</name>
+      <comment>Returns a new Shape which is created by subtracting the specified second shape from the first shape.</comment>
+      <returntype>com.stevel05.rtest.glshape</returntype>
+      <parameter>
+        <name>Shape1</name>
+        <type>com.stevel05.rtest.glcircle</type>
+      </parameter>
+      <parameter>
+        <name>Shape2</name>
+        <type>com.stevel05.rtest.glcircle</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Union">_union</name>
+      <comment>Returns a new Shape which is created as a union of the specified input shapes.</comment>
+      <returntype>com.stevel05.rtest.glshape</returntype>
+      <parameter>
+        <name>Shape1</name>
+        <type>com.stevel05.rtest.glcircle</type>
+      </parameter>
+      <parameter>
+        <name>Shape2</name>
+        <type>com.stevel05.rtest.glcircle</type>
+      </parameter>
+    </method>
+    <property>
+      <name DesignerName="ID">_id</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="Tag">_tag</name>
+      <returntype>Object</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>Object</type>
+      </parameter>
+    </property>
+  </class>
+  <class>
+    <name>com.stevel05.rtest.glcubiccurve</name>
+    <shortname>GLCubicCurve</shortname>
+    <method>
+      <name>IsInitialized</name>
+      <comment>Tests whether the object has been initialized.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="AsNode">_asnode</name>
+      <returntype>anywheresoftware.b4j.objects.NodeWrapper.ConcreteNodeWrapper</returntype>
+    </method>
+    <method>
+      <name DesignerName="Class_Globals">_class_globals</name>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="Create">_create</name>
+      <comment>Creates an empty instance of CubicCurve.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="Create2">_create2</name>
+      <comment>Creates a new instance of CubicCurve.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>StartX</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>StartY</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>ControlX1</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>ControlY1</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>ControlX2</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>ControlY2</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>EndX</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>EndY</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="GetControlX1">_getcontrolx1</name>
+      <comment>Gets the value of the property controlX1.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetControlX2">_getcontrolx2</name>
+      <comment>Gets the value of the property controlX2.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetControlY1">_getcontroly1</name>
+      <comment>Gets the value of the property controlY1.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetControlY2">_getcontroly2</name>
+      <comment>Gets the value of the property controlY2.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetEndX">_getendx</name>
+      <comment>Gets the value of the property endX.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetEndY">_getendy</name>
+      <comment>Gets the value of the property endY.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetFill">_getfill</name>
+      <comment>Gets the value of the property fill.</comment>
+      <returntype>anywheresoftware.b4j.objects.JFX.PaintWrapper</returntype>
+    </method>
+    <method>
+      <name DesignerName="getID" HideFromIDE="true">_getid</name>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetMinHeight">_getminheight</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetMinWidth">_getminwidth</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetObject">_getobject</name>
+      <returntype>Object</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetPrefHeight">_getprefheight</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetPrefWidth">_getprefwidth</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStartX">_getstartx</name>
+      <comment>Gets the value of the property startX.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStartY">_getstarty</name>
+      <comment>Gets the value of the property startY.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStroke">_getstroke</name>
+      <comment>Gets the value of the property stroke.</comment>
+      <returntype>anywheresoftware.b4j.objects.JFX.PaintWrapper</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeDashArray">_getstrokedasharray</name>
+      <comment>Defines the array representing the lengths of the dash segments.</comment>
+      <returntype>anywheresoftware.b4a.objects.collections.List</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeDashOffset">_getstrokedashoffset</name>
+      <comment>Gets the value of the property strokeDashOffset.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeLineCap">_getstrokelinecap</name>
+      <comment>Gets the value of the property strokeLineCap.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeLineJoin">_getstrokelinejoin</name>
+      <comment>Gets the value of the property strokeLineJoin.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeMiterLimit">_getstrokemiterlimit</name>
+      <comment>Gets the value of the property strokeMiterLimit.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeType">_getstroketype</name>
+      <comment>Gets the value of the property strokeType.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeWidth">_getstrokewidth</name>
+      <comment>Gets the value of the property strokeWidth.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="getTag" HideFromIDE="true">_gettag</name>
+      <returntype>Object</returntype>
+    </method>
+    <method>
+      <name DesignerName="Initialize">_initialize</name>
+      <comment>Initializes the object. You can add parameters to this method if needed.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>ba</name>
+        <type>anywheresoftware.b4a.BA</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Intersect">_intersect</name>
+      <comment>Returns a new Shape which is created as an intersection of the specified input shapes.</comment>
+      <returntype>com.stevel05.rtest.glshape</returntype>
+      <parameter>
+        <name>Shape1</name>
+        <type>com.stevel05.rtest.glcubiccurve</type>
+      </parameter>
+      <parameter>
+        <name>Shape2</name>
+        <type>com.stevel05.rtest.glcubiccurve</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="IsSmooth">_issmooth</name>
+      <comment>Gets the value of the property smooth.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="SetControlX1">_setcontrolx1</name>
+      <comment>Sets the value of the property controlX1.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetControlX2">_setcontrolx2</name>
+      <comment>Sets the value of the property controlX2.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetControlY1">_setcontroly1</name>
+      <comment>Sets the value of the property controlY1.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetControlY2">_setcontroly2</name>
+      <comment>Sets the value of the property controlY2.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetEndX">_setendx</name>
+      <comment>Sets the value of the property endX.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetEndY">_setendy</name>
+      <comment>Sets the value of the property endY.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetFill">_setfill</name>
+      <comment>Sets the value of the property fill.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>anywheresoftware.b4j.objects.JFX.PaintWrapper</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setID" HideFromIDE="true">_setid</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>ID</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetObject">_setobject</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Obj</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetSmooth">_setsmooth</name>
+      <comment>Sets the value of the property smooth.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>boolean</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStartX">_setstartx</name>
+      <comment>Sets the value of the property startX.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStartY">_setstarty</name>
+      <comment>Sets the value of the property startY.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStroke">_setstroke</name>
+      <comment>Sets the value of the property stroke.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>anywheresoftware.b4j.objects.JFX.PaintWrapper</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeDashOffset">_setstrokedashoffset</name>
+      <comment>Sets the value of the property strokeDashOffset.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeLineCap">_setstrokelinecap</name>
+      <comment>Sets the value of the property strokeLineCap.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeLineJoin">_setstrokelinejoin</name>
+      <comment>Sets the value of the property strokeLineJoin.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeMiterLimit">_setstrokemiterlimit</name>
+      <comment>Sets the value of the property strokeMiterLimit.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeType">_setstroketype</name>
+      <comment>Sets the value of the property strokeType.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeWidth">_setstrokewidth</name>
+      <comment>Sets the value of the property strokeWidth.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setTag" HideFromIDE="true">_settag</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Tag</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Subtract">_subtract</name>
+      <comment>Returns a new Shape which is created by subtracting the specified second shape from the first shape.</comment>
+      <returntype>com.stevel05.rtest.glshape</returntype>
+      <parameter>
+        <name>Shape1</name>
+        <type>com.stevel05.rtest.glcubiccurve</type>
+      </parameter>
+      <parameter>
+        <name>Shape2</name>
+        <type>com.stevel05.rtest.glcubiccurve</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Union">_union</name>
+      <comment>Returns a new Shape which is created as a union of the specified input shapes.</comment>
+      <returntype>com.stevel05.rtest.glshape</returntype>
+      <parameter>
+        <name>Shape1</name>
+        <type>com.stevel05.rtest.glcubiccurve</type>
+      </parameter>
+      <parameter>
+        <name>Shape2</name>
+        <type>com.stevel05.rtest.glcubiccurve</type>
+      </parameter>
+    </method>
+    <property>
+      <name DesignerName="ID">_id</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="Tag">_tag</name>
+      <returntype>Object</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>Object</type>
+      </parameter>
+    </property>
+  </class>
+  <class>
+    <name>com.stevel05.rtest.glellipse</name>
+    <shortname>GLEllipse</shortname>
+    <method>
+      <name>IsInitialized</name>
+      <comment>Tests whether the object has been initialized.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="AsNode">_asnode</name>
+      <returntype>anywheresoftware.b4j.objects.NodeWrapper.ConcreteNodeWrapper</returntype>
+    </method>
+    <method>
+      <name DesignerName="Class_Globals">_class_globals</name>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="Create">_create</name>
+      <comment>Creates an empty instance of Ellipse.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="Create2">_create2</name>
+      <comment>Creates an instance of Ellipse of the given size.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>RadiusX</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>RadiusY</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Create3">_create3</name>
+      <comment>Creates an instance of Ellipse of the given position and size.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>CenterX</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>CenterY</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>RadiusX</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>RadiusY</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="GetCenterX">_getcenterx</name>
+      <comment>Gets the value of the property centerX.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetCenterY">_getcentery</name>
+      <comment>Gets the value of the property centerY.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetFill">_getfill</name>
+      <comment>Gets the value of the property fill.</comment>
+      <returntype>anywheresoftware.b4j.objects.JFX.PaintWrapper</returntype>
+    </method>
+    <method>
+      <name DesignerName="getID" HideFromIDE="true">_getid</name>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetMinHeight">_getminheight</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetMinWidth">_getminwidth</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetObject">_getobject</name>
+      <returntype>Object</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetPrefHeight">_getprefheight</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetPrefWidth">_getprefwidth</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetRadiusX">_getradiusx</name>
+      <comment>Gets the value of the property radiusX.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetRadiusY">_getradiusy</name>
+      <comment>Gets the value of the property radiusY.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStroke">_getstroke</name>
+      <comment>Gets the value of the property stroke.</comment>
+      <returntype>anywheresoftware.b4j.objects.JFX.PaintWrapper</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeDashArray">_getstrokedasharray</name>
+      <comment>Defines the array representing the lengths of the dash segments.</comment>
+      <returntype>anywheresoftware.b4a.objects.collections.List</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeDashOffset">_getstrokedashoffset</name>
+      <comment>Gets the value of the property strokeDashOffset.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeLineCap">_getstrokelinecap</name>
+      <comment>Gets the value of the property strokeLineCap.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeLineJoin">_getstrokelinejoin</name>
+      <comment>Gets the value of the property strokeLineJoin.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeMiterLimit">_getstrokemiterlimit</name>
+      <comment>Gets the value of the property strokeMiterLimit.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeType">_getstroketype</name>
+      <comment>Gets the value of the property strokeType.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeWidth">_getstrokewidth</name>
+      <comment>Gets the value of the property strokeWidth.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="getTag" HideFromIDE="true">_gettag</name>
+      <returntype>Object</returntype>
+    </method>
+    <method>
+      <name DesignerName="Initialize">_initialize</name>
+      <comment>Initializes the object. You can add parameters to this method if needed.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>ba</name>
+        <type>anywheresoftware.b4a.BA</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Intersect">_intersect</name>
+      <comment>Returns a new Shape which is created as an intersection of the specified input shapes.</comment>
+      <returntype>com.stevel05.rtest.glshape</returntype>
+      <parameter>
+        <name>Shape1</name>
+        <type>com.stevel05.rtest.glellipse</type>
+      </parameter>
+      <parameter>
+        <name>Shape2</name>
+        <type>com.stevel05.rtest.glellipse</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="IsSmooth">_issmooth</name>
+      <comment>Gets the value of the property smooth.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="SetCenterX">_setcenterx</name>
+      <comment>Sets the value of the property centerX.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetCenterY">_setcentery</name>
+      <comment>Sets the value of the property centerY.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetFill">_setfill</name>
+      <comment>Sets the value of the property fill.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>anywheresoftware.b4j.objects.JFX.PaintWrapper</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setID" HideFromIDE="true">_setid</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>ID</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetObject">_setobject</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Obj</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetRadiusX">_setradiusx</name>
+      <comment>Sets the value of the property radiusX.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetRadiusY">_setradiusy</name>
+      <comment>Sets the value of the property radiusY.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetSmooth">_setsmooth</name>
+      <comment>Sets the value of the property smooth.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>boolean</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStroke">_setstroke</name>
+      <comment>Sets the value of the property stroke.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>anywheresoftware.b4j.objects.JFX.PaintWrapper</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeDashOffset">_setstrokedashoffset</name>
+      <comment>Sets the value of the property strokeDashOffset.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeLineCap">_setstrokelinecap</name>
+      <comment>Sets the value of the property strokeLineCap.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeLineJoin">_setstrokelinejoin</name>
+      <comment>Sets the value of the property strokeLineJoin.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeMiterLimit">_setstrokemiterlimit</name>
+      <comment>Sets the value of the property strokeMiterLimit.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeType">_setstroketype</name>
+      <comment>Sets the value of the property strokeType.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeWidth">_setstrokewidth</name>
+      <comment>Sets the value of the property strokeWidth.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setTag" HideFromIDE="true">_settag</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Tag</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Subtract">_subtract</name>
+      <comment>Returns a new Shape which is created by subtracting the specified second shape from the first shape.</comment>
+      <returntype>com.stevel05.rtest.glshape</returntype>
+      <parameter>
+        <name>Shape1</name>
+        <type>com.stevel05.rtest.glellipse</type>
+      </parameter>
+      <parameter>
+        <name>Shape2</name>
+        <type>com.stevel05.rtest.glellipse</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Union">_union</name>
+      <comment>Returns a new Shape which is created as a union of the specified input shapes.</comment>
+      <returntype>com.stevel05.rtest.glshape</returntype>
+      <parameter>
+        <name>Shape1</name>
+        <type>com.stevel05.rtest.glellipse</type>
+      </parameter>
+      <parameter>
+        <name>Shape2</name>
+        <type>com.stevel05.rtest.glellipse</type>
+      </parameter>
+    </method>
+    <property>
+      <name DesignerName="ID">_id</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="Tag">_tag</name>
+      <returntype>Object</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>Object</type>
+      </parameter>
+    </property>
+  </class>
+  <class>
+    <name>com.stevel05.rtest.glline</name>
+    <shortname>GLLine</shortname>
+    <method>
+      <name>IsInitialized</name>
+      <comment>Tests whether the object has been initialized.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="AsNode">_asnode</name>
+      <returntype>anywheresoftware.b4j.objects.NodeWrapper.ConcreteNodeWrapper</returntype>
+    </method>
+    <method>
+      <name DesignerName="Class_Globals">_class_globals</name>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="Create">_create</name>
+      <comment>Creates an empty instance of Line.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="Create2">_create2</name>
+      <comment>Creates a new instance of Line.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>StartX</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>StartY</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>EndX</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>EndY</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="GetEndX">_getendx</name>
+      <comment>Gets the value of the property endX.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetEndY">_getendy</name>
+      <comment>Gets the value of the property endY.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetFill">_getfill</name>
+      <comment>Gets the value of the property fill.</comment>
+      <returntype>anywheresoftware.b4j.objects.JFX.PaintWrapper</returntype>
+    </method>
+    <method>
+      <name DesignerName="getID" HideFromIDE="true">_getid</name>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetMinHeight">_getminheight</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetMinWidth">_getminwidth</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetObject">_getobject</name>
+      <returntype>Object</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetPrefHeight">_getprefheight</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetPrefWidth">_getprefwidth</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStartX">_getstartx</name>
+      <comment>Gets the value of the property startX.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStartY">_getstarty</name>
+      <comment>Gets the value of the property startY.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStroke">_getstroke</name>
+      <comment>Gets the value of the property stroke.</comment>
+      <returntype>anywheresoftware.b4j.objects.JFX.PaintWrapper</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeDashArray">_getstrokedasharray</name>
+      <comment>Defines the array representing the lengths of the dash segments.</comment>
+      <returntype>anywheresoftware.b4a.objects.collections.List</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeDashOffset">_getstrokedashoffset</name>
+      <comment>Gets the value of the property strokeDashOffset.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeLineCap">_getstrokelinecap</name>
+      <comment>Gets the value of the property strokeLineCap.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeLineJoin">_getstrokelinejoin</name>
+      <comment>Gets the value of the property strokeLineJoin.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeMiterLimit">_getstrokemiterlimit</name>
+      <comment>Gets the value of the property strokeMiterLimit.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeType">_getstroketype</name>
+      <comment>Gets the value of the property strokeType.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeWidth">_getstrokewidth</name>
+      <comment>Gets the value of the property strokeWidth.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="getTag" HideFromIDE="true">_gettag</name>
+      <returntype>Object</returntype>
+    </method>
+    <method>
+      <name DesignerName="Initialize">_initialize</name>
+      <comment>Initializes the object. You can add parameters to this method if needed.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>ba</name>
+        <type>anywheresoftware.b4a.BA</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Intersect">_intersect</name>
+      <comment>Returns a new Shape which is created as an intersection of the specified input shapes.</comment>
+      <returntype>com.stevel05.rtest.glshape</returntype>
+      <parameter>
+        <name>Shape1</name>
+        <type>com.stevel05.rtest.glline</type>
+      </parameter>
+      <parameter>
+        <name>Shape2</name>
+        <type>com.stevel05.rtest.glline</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="IsSmooth">_issmooth</name>
+      <comment>Gets the value of the property smooth.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="SetEndX">_setendx</name>
+      <comment>Sets the value of the property endX.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetEndY">_setendy</name>
+      <comment>Sets the value of the property endY.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetFill">_setfill</name>
+      <comment>Sets the value of the property fill.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>anywheresoftware.b4j.objects.JFX.PaintWrapper</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setID" HideFromIDE="true">_setid</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>ID</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetObject">_setobject</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Obj</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetSmooth">_setsmooth</name>
+      <comment>Sets the value of the property smooth.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>boolean</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStartX">_setstartx</name>
+      <comment>Sets the value of the property startX.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStartY">_setstarty</name>
+      <comment>Sets the value of the property startY.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStroke">_setstroke</name>
+      <comment>Sets the value of the property stroke.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>anywheresoftware.b4j.objects.JFX.PaintWrapper</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeDashOffset">_setstrokedashoffset</name>
+      <comment>Sets the value of the property strokeDashOffset.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeLineCap">_setstrokelinecap</name>
+      <comment>Sets the value of the property strokeLineCap.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeLineJoin">_setstrokelinejoin</name>
+      <comment>Sets the value of the property strokeLineJoin.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeMiterLimit">_setstrokemiterlimit</name>
+      <comment>Sets the value of the property strokeMiterLimit.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeType">_setstroketype</name>
+      <comment>Sets the value of the property strokeType.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeWidth">_setstrokewidth</name>
+      <comment>Sets the value of the property strokeWidth.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setTag" HideFromIDE="true">_settag</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Tag</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Subtract">_subtract</name>
+      <comment>Returns a new Shape which is created by subtracting the specified second shape from the first shape.</comment>
+      <returntype>com.stevel05.rtest.glshape</returntype>
+      <parameter>
+        <name>Shape1</name>
+        <type>com.stevel05.rtest.glline</type>
+      </parameter>
+      <parameter>
+        <name>Shape2</name>
+        <type>com.stevel05.rtest.glline</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Union">_union</name>
+      <comment>Returns a new Shape which is created as a union of the specified input shapes.</comment>
+      <returntype>com.stevel05.rtest.glshape</returntype>
+      <parameter>
+        <name>Shape1</name>
+        <type>com.stevel05.rtest.glline</type>
+      </parameter>
+      <parameter>
+        <name>Shape2</name>
+        <type>com.stevel05.rtest.glline</type>
+      </parameter>
+    </method>
+    <property>
+      <name DesignerName="ID">_id</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="Tag">_tag</name>
+      <returntype>Object</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>Object</type>
+      </parameter>
+    </property>
+  </class>
+  <class>
+    <name>com.stevel05.rtest.glpath</name>
+    <shortname>GLPath</shortname>
+    <method>
+      <name>IsInitialized</name>
+      <comment>Tests whether the object has been initialized.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="AsNode">_asnode</name>
+      <returntype>anywheresoftware.b4j.objects.NodeWrapper.ConcreteNodeWrapper</returntype>
+    </method>
+    <method>
+      <name DesignerName="Class_Globals">_class_globals</name>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="Create">_create</name>
+      <comment>Creates an empty instance of Path.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="Create2">_create2</name>
+      <comment>Creates new instance of Path</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Extends</name>
+        <type>anywheresoftware.b4j.object.JavaObject</type>
+      </parameter>
+      <parameter>
+        <name>Elements</name>
+        <type>anywheresoftware.b4j.object.JavaObject</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Create3">_create3</name>
+      <comment>Creates a new instance of Path</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Elements</name>
+        <type>anywheresoftware.b4j.object.JavaObject</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="GetElements">_getelements</name>
+      <comment>Gets observable list of path elements of this path.</comment>
+      <returntype>anywheresoftware.b4j.object.JavaObject</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetFill">_getfill</name>
+      <comment>Gets the value of the property fill.</comment>
+      <returntype>anywheresoftware.b4j.objects.JFX.PaintWrapper</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetFillRule">_getfillrule</name>
+      <comment>Gets the value of the property fillRule.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="getID" HideFromIDE="true">_getid</name>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetMinHeight">_getminheight</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetMinWidth">_getminwidth</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetObject">_getobject</name>
+      <returntype>Object</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetPrefHeight">_getprefheight</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetPrefWidth">_getprefwidth</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStroke">_getstroke</name>
+      <comment>Gets the value of the property stroke.</comment>
+      <returntype>anywheresoftware.b4j.objects.JFX.PaintWrapper</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeDashArray">_getstrokedasharray</name>
+      <comment>Defines the array representing the lengths of the dash segments.</comment>
+      <returntype>anywheresoftware.b4a.objects.collections.List</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeDashOffset">_getstrokedashoffset</name>
+      <comment>Gets the value of the property strokeDashOffset.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeLineCap">_getstrokelinecap</name>
+      <comment>Gets the value of the property strokeLineCap.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeLineJoin">_getstrokelinejoin</name>
+      <comment>Gets the value of the property strokeLineJoin.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeMiterLimit">_getstrokemiterlimit</name>
+      <comment>Gets the value of the property strokeMiterLimit.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeType">_getstroketype</name>
+      <comment>Gets the value of the property strokeType.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeWidth">_getstrokewidth</name>
+      <comment>Gets the value of the property strokeWidth.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="getTag" HideFromIDE="true">_gettag</name>
+      <returntype>Object</returntype>
+    </method>
+    <method>
+      <name DesignerName="Initialize">_initialize</name>
+      <comment>Initializes the object. You can add parameters to this method if needed.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>ba</name>
+        <type>anywheresoftware.b4a.BA</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Intersect">_intersect</name>
+      <comment>Returns a new Shape which is created as an intersection of the specified input shapes.</comment>
+      <returntype>com.stevel05.rtest.glshape</returntype>
+      <parameter>
+        <name>Shape1</name>
+        <type>com.stevel05.rtest.glpath</type>
+      </parameter>
+      <parameter>
+        <name>Shape2</name>
+        <type>com.stevel05.rtest.glpath</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="IsSmooth">_issmooth</name>
+      <comment>Gets the value of the property smooth.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="SetFill">_setfill</name>
+      <comment>Sets the value of the property fill.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>anywheresoftware.b4j.objects.JFX.PaintWrapper</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetFillRule">_setfillrule</name>
+      <comment>Sets the value of the property fillRule.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setID" HideFromIDE="true">_setid</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>ID</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetObject">_setobject</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Obj</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetSmooth">_setsmooth</name>
+      <comment>Sets the value of the property smooth.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>boolean</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStroke">_setstroke</name>
+      <comment>Sets the value of the property stroke.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>anywheresoftware.b4j.objects.JFX.PaintWrapper</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeDashOffset">_setstrokedashoffset</name>
+      <comment>Sets the value of the property strokeDashOffset.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeLineCap">_setstrokelinecap</name>
+      <comment>Sets the value of the property strokeLineCap.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeLineJoin">_setstrokelinejoin</name>
+      <comment>Sets the value of the property strokeLineJoin.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeMiterLimit">_setstrokemiterlimit</name>
+      <comment>Sets the value of the property strokeMiterLimit.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeType">_setstroketype</name>
+      <comment>Sets the value of the property strokeType.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeWidth">_setstrokewidth</name>
+      <comment>Sets the value of the property strokeWidth.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setTag" HideFromIDE="true">_settag</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Tag</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Subtract">_subtract</name>
+      <comment>Returns a new Shape which is created by subtracting the specified second shape from the first shape.</comment>
+      <returntype>com.stevel05.rtest.glshape</returntype>
+      <parameter>
+        <name>Shape1</name>
+        <type>com.stevel05.rtest.glpath</type>
+      </parameter>
+      <parameter>
+        <name>Shape2</name>
+        <type>com.stevel05.rtest.glpath</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Union">_union</name>
+      <comment>Returns a new Shape which is created as a union of the specified input shapes.</comment>
+      <returntype>com.stevel05.rtest.glshape</returntype>
+      <parameter>
+        <name>Shape1</name>
+        <type>com.stevel05.rtest.glpath</type>
+      </parameter>
+      <parameter>
+        <name>Shape2</name>
+        <type>com.stevel05.rtest.glpath</type>
+      </parameter>
+    </method>
+    <property>
+      <name DesignerName="ID">_id</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="Tag">_tag</name>
+      <returntype>Object</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>Object</type>
+      </parameter>
+    </property>
+  </class>
+  <class>
+    <name>com.stevel05.rtest.glrectangle</name>
+    <shortname>GLRectangle</shortname>
+    <method>
+      <name>IsInitialized</name>
+      <comment>Tests whether the object has been initialized.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="AsNode">_asnode</name>
+      <returntype>anywheresoftware.b4j.objects.NodeWrapper.ConcreteNodeWrapper</returntype>
+    </method>
+    <method>
+      <name DesignerName="Class_Globals">_class_globals</name>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="Create">_create</name>
+      <comment>Creates an empty instance of Rectangle.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="Create2">_create2</name>
+      <comment>Creates a new instance of Rectangle with the given size.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Width</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>Height</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Create3">_create3</name>
+      <comment>Creates a new instance of Rectangle with the given position and size.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>X</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>Y</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>Width</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>Height</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Create4">_create4</name>
+      <comment>Creates a new instance of Rectangle with the given size and fill.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Width</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>Height</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>Fill</name>
+        <type>anywheresoftware.b4j.objects.JFX.PaintWrapper</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="GetArcHeight">_getarcheight</name>
+      <comment>Gets the value of the property arcHeight.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetArcWidth">_getarcwidth</name>
+      <comment>Gets the value of the property arcWidth.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetFill">_getfill</name>
+      <comment>Gets the value of the property fill.</comment>
+      <returntype>anywheresoftware.b4j.objects.JFX.PaintWrapper</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetHeight">_getheight</name>
+      <comment>Gets the value of the property height.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="getID" HideFromIDE="true">_getid</name>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetMinHeight">_getminheight</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetMinWidth">_getminwidth</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetObject">_getobject</name>
+      <returntype>Object</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetPrefHeight">_getprefheight</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetPrefWidth">_getprefwidth</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStroke">_getstroke</name>
+      <comment>Gets the value of the property stroke.</comment>
+      <returntype>anywheresoftware.b4j.objects.JFX.PaintWrapper</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeDashArray">_getstrokedasharray</name>
+      <comment>Defines the array representing the lengths of the dash segments.</comment>
+      <returntype>anywheresoftware.b4a.objects.collections.List</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeDashOffset">_getstrokedashoffset</name>
+      <comment>Gets the value of the property strokeDashOffset.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeLineCap">_getstrokelinecap</name>
+      <comment>Gets the value of the property strokeLineCap.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeLineJoin">_getstrokelinejoin</name>
+      <comment>Gets the value of the property strokeLineJoin.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeMiterLimit">_getstrokemiterlimit</name>
+      <comment>Gets the value of the property strokeMiterLimit.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeType">_getstroketype</name>
+      <comment>Gets the value of the property strokeType.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeWidth">_getstrokewidth</name>
+      <comment>Gets the value of the property strokeWidth.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="getTag" HideFromIDE="true">_gettag</name>
+      <returntype>Object</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetWidth">_getwidth</name>
+      <comment>Gets the value of the property width.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetX">_getx</name>
+      <comment>Gets the value of the property x.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetY">_gety</name>
+      <comment>Gets the value of the property y.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="Initialize">_initialize</name>
+      <comment>Initializes the object. You can add parameters to this method if needed.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>ba</name>
+        <type>anywheresoftware.b4a.BA</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Intersect">_intersect</name>
+      <comment>Returns a new Shape which is created as an intersection of the specified input shapes.</comment>
+      <returntype>com.stevel05.rtest.glshape</returntype>
+      <parameter>
+        <name>Shape1</name>
+        <type>com.stevel05.rtest.glrectangle</type>
+      </parameter>
+      <parameter>
+        <name>Shape2</name>
+        <type>com.stevel05.rtest.glrectangle</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="IsSmooth">_issmooth</name>
+      <comment>Gets the value of the property smooth.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="SetArcHeight">_setarcheight</name>
+      <comment>Sets the value of the property arcHeight.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetArcWidth">_setarcwidth</name>
+      <comment>Sets the value of the property arcWidth.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetFill">_setfill</name>
+      <comment>Sets the value of the property fill.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>anywheresoftware.b4j.objects.JFX.PaintWrapper</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetHeight">_setheight</name>
+      <comment>Sets the value of the property height.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setID" HideFromIDE="true">_setid</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>ID</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetObject">_setobject</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Obj</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetSmooth">_setsmooth</name>
+      <comment>Sets the value of the property smooth.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>boolean</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStroke">_setstroke</name>
+      <comment>Sets the value of the property stroke.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>anywheresoftware.b4j.objects.JFX.PaintWrapper</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeDashOffset">_setstrokedashoffset</name>
+      <comment>Sets the value of the property strokeDashOffset.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeLineCap">_setstrokelinecap</name>
+      <comment>Sets the value of the property strokeLineCap.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeLineJoin">_setstrokelinejoin</name>
+      <comment>Sets the value of the property strokeLineJoin.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeMiterLimit">_setstrokemiterlimit</name>
+      <comment>Sets the value of the property strokeMiterLimit.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeType">_setstroketype</name>
+      <comment>Sets the value of the property strokeType.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeWidth">_setstrokewidth</name>
+      <comment>Sets the value of the property strokeWidth.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setTag" HideFromIDE="true">_settag</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Tag</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetWidth">_setwidth</name>
+      <comment>Sets the value of the property width.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetX">_setx</name>
+      <comment>Sets the value of the property x.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetY">_sety</name>
+      <comment>Sets the value of the property y.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Subtract">_subtract</name>
+      <comment>Returns a new Shape which is created by subtracting the specified second shape from the first shape.</comment>
+      <returntype>com.stevel05.rtest.glshape</returntype>
+      <parameter>
+        <name>Shape1</name>
+        <type>com.stevel05.rtest.glrectangle</type>
+      </parameter>
+      <parameter>
+        <name>Shape2</name>
+        <type>com.stevel05.rtest.glrectangle</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Union">_union</name>
+      <comment>Returns a new Shape which is created as a union of the specified input shapes.</comment>
+      <returntype>com.stevel05.rtest.glshape</returntype>
+      <parameter>
+        <name>Shape1</name>
+        <type>com.stevel05.rtest.glrectangle</type>
+      </parameter>
+      <parameter>
+        <name>Shape2</name>
+        <type>com.stevel05.rtest.glrectangle</type>
+      </parameter>
+    </method>
+    <property>
+      <name DesignerName="ID">_id</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="Tag">_tag</name>
+      <returntype>Object</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>Object</type>
+      </parameter>
+    </property>
+  </class>
+  <class>
+    <name>com.stevel05.rtest.glpolygon</name>
+    <shortname>GLPolygon</shortname>
+    <method>
+      <name>IsInitialized</name>
+      <comment>Tests whether the object has been initialized.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="AsNode">_asnode</name>
+      <returntype>anywheresoftware.b4j.objects.NodeWrapper.ConcreteNodeWrapper</returntype>
+    </method>
+    <method>
+      <name DesignerName="Class_Globals">_class_globals</name>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="Create">_create</name>
+      <comment>Creates an empty instance of Polygon.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="Create2">_create2</name>
+      <comment>Creates a new instance of Polygon. Poinst should be an Array of Doubles</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Points</name>
+        <type>double[]</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="GetFill">_getfill</name>
+      <comment>Gets the value of the property fill.</comment>
+      <returntype>anywheresoftware.b4j.objects.JFX.PaintWrapper</returntype>
+    </method>
+    <method>
+      <name DesignerName="getID" HideFromIDE="true">_getid</name>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetMinHeight">_getminheight</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetMinWidth">_getminwidth</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetObject">_getobject</name>
+      <returntype>Object</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetPoints">_getpoints</name>
+      <comment>Gets the coordinates of the Polygon vertices.</comment>
+      <returntype>double[]</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetPrefHeight">_getprefheight</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetPrefWidth">_getprefwidth</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStroke">_getstroke</name>
+      <comment>Gets the value of the property stroke.</comment>
+      <returntype>anywheresoftware.b4j.objects.JFX.PaintWrapper</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeDashArray">_getstrokedasharray</name>
+      <comment>Defines the array representing the lengths of the dash segments.</comment>
+      <returntype>anywheresoftware.b4a.objects.collections.List</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeDashOffset">_getstrokedashoffset</name>
+      <comment>Gets the value of the property strokeDashOffset.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeLineCap">_getstrokelinecap</name>
+      <comment>Gets the value of the property strokeLineCap.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeLineJoin">_getstrokelinejoin</name>
+      <comment>Gets the value of the property strokeLineJoin.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeMiterLimit">_getstrokemiterlimit</name>
+      <comment>Gets the value of the property strokeMiterLimit.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeType">_getstroketype</name>
+      <comment>Gets the value of the property strokeType.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeWidth">_getstrokewidth</name>
+      <comment>Gets the value of the property strokeWidth.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="getTag" HideFromIDE="true">_gettag</name>
+      <returntype>Object</returntype>
+    </method>
+    <method>
+      <name DesignerName="Initialize">_initialize</name>
+      <comment>Initializes the object. You can add parameters to this method if needed.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>ba</name>
+        <type>anywheresoftware.b4a.BA</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Intersect">_intersect</name>
+      <comment>Returns a new Shape which is created as an intersection of the specified input shapes.</comment>
+      <returntype>com.stevel05.rtest.glshape</returntype>
+      <parameter>
+        <name>Shape1</name>
+        <type>com.stevel05.rtest.glpolygon</type>
+      </parameter>
+      <parameter>
+        <name>Shape2</name>
+        <type>com.stevel05.rtest.glpolygon</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="IsSmooth">_issmooth</name>
+      <comment>Gets the value of the property smooth.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="SetFill">_setfill</name>
+      <comment>Sets the value of the property fill.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>anywheresoftware.b4j.objects.JFX.PaintWrapper</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setID" HideFromIDE="true">_setid</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>ID</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetObject">_setobject</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Obj</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetSmooth">_setsmooth</name>
+      <comment>Sets the value of the property smooth.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>boolean</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStroke">_setstroke</name>
+      <comment>Sets the value of the property stroke.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>anywheresoftware.b4j.objects.JFX.PaintWrapper</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeDashOffset">_setstrokedashoffset</name>
+      <comment>Sets the value of the property strokeDashOffset.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeLineCap">_setstrokelinecap</name>
+      <comment>Sets the value of the property strokeLineCap.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeLineJoin">_setstrokelinejoin</name>
+      <comment>Sets the value of the property strokeLineJoin.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeMiterLimit">_setstrokemiterlimit</name>
+      <comment>Sets the value of the property strokeMiterLimit.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeType">_setstroketype</name>
+      <comment>Sets the value of the property strokeType.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeWidth">_setstrokewidth</name>
+      <comment>Sets the value of the property strokeWidth.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setTag" HideFromIDE="true">_settag</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Tag</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Subtract">_subtract</name>
+      <comment>Returns a new Shape which is created by subtracting the specified second shape from the first shape.</comment>
+      <returntype>com.stevel05.rtest.glshape</returntype>
+      <parameter>
+        <name>Shape1</name>
+        <type>com.stevel05.rtest.glpolygon</type>
+      </parameter>
+      <parameter>
+        <name>Shape2</name>
+        <type>com.stevel05.rtest.glpolygon</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Union">_union</name>
+      <comment>Returns a new Shape which is created as a union of the specified input shapes.</comment>
+      <returntype>com.stevel05.rtest.glshape</returntype>
+      <parameter>
+        <name>Shape1</name>
+        <type>com.stevel05.rtest.glpolygon</type>
+      </parameter>
+      <parameter>
+        <name>Shape2</name>
+        <type>com.stevel05.rtest.glpolygon</type>
+      </parameter>
+    </method>
+    <property>
+      <name DesignerName="ID">_id</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="Tag">_tag</name>
+      <returntype>Object</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>Object</type>
+      </parameter>
+    </property>
+  </class>
+  <class>
+    <name>com.stevel05.rtest.glquadcurve</name>
+    <shortname>GLQuadCurve</shortname>
+    <method>
+      <name>IsInitialized</name>
+      <comment>Tests whether the object has been initialized.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="AsNode">_asnode</name>
+      <returntype>anywheresoftware.b4j.objects.NodeWrapper.ConcreteNodeWrapper</returntype>
+    </method>
+    <method>
+      <name DesignerName="Class_Globals">_class_globals</name>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="Create">_create</name>
+      <comment>Creates an empty instance of QuadCurve.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="Create2">_create2</name>
+      <comment>Creates a new instance of QuadCurve.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>StartX</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>StartY</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>ControlX</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>ControlY</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>EndX</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>EndY</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="GetControlX">_getcontrolx</name>
+      <comment>Gets the value of the property controlX.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetControlY">_getcontroly</name>
+      <comment>Gets the value of the property controlY.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetEndX">_getendx</name>
+      <comment>Gets the value of the property endX.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetEndY">_getendy</name>
+      <comment>Gets the value of the property endY.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetFill">_getfill</name>
+      <comment>Gets the value of the property fill.</comment>
+      <returntype>anywheresoftware.b4j.objects.JFX.PaintWrapper</returntype>
+    </method>
+    <method>
+      <name DesignerName="getID" HideFromIDE="true">_getid</name>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetMinHeight">_getminheight</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetMinWidth">_getminwidth</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetObject">_getobject</name>
+      <returntype>Object</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetPrefHeight">_getprefheight</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetPrefWidth">_getprefwidth</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStartX">_getstartx</name>
+      <comment>Gets the value of the property startX.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStartY">_getstarty</name>
+      <comment>Gets the value of the property startY.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStroke">_getstroke</name>
+      <comment>Gets the value of the property stroke.</comment>
+      <returntype>anywheresoftware.b4j.objects.JFX.PaintWrapper</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeDashArray">_getstrokedasharray</name>
+      <comment>Defines the array representing the lengths of the dash segments.</comment>
+      <returntype>anywheresoftware.b4a.objects.collections.List</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeDashOffset">_getstrokedashoffset</name>
+      <comment>Gets the value of the property strokeDashOffset.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeLineCap">_getstrokelinecap</name>
+      <comment>Gets the value of the property strokeLineCap.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeLineJoin">_getstrokelinejoin</name>
+      <comment>Gets the value of the property strokeLineJoin.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeMiterLimit">_getstrokemiterlimit</name>
+      <comment>Gets the value of the property strokeMiterLimit.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeType">_getstroketype</name>
+      <comment>Gets the value of the property strokeType.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeWidth">_getstrokewidth</name>
+      <comment>Gets the value of the property strokeWidth.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="getTag" HideFromIDE="true">_gettag</name>
+      <returntype>Object</returntype>
+    </method>
+    <method>
+      <name DesignerName="Initialize">_initialize</name>
+      <comment>Initializes the object. You can add parameters to this method if needed.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>ba</name>
+        <type>anywheresoftware.b4a.BA</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Intersect">_intersect</name>
+      <comment>Returns a new Shape which is created as an intersection of the specified input shapes.</comment>
+      <returntype>com.stevel05.rtest.glshape</returntype>
+      <parameter>
+        <name>Shape1</name>
+        <type>com.stevel05.rtest.glquadcurve</type>
+      </parameter>
+      <parameter>
+        <name>Shape2</name>
+        <type>com.stevel05.rtest.glquadcurve</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="IsSmooth">_issmooth</name>
+      <comment>Gets the value of the property smooth.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="SetControlX">_setcontrolx</name>
+      <comment>Sets the value of the property controlX.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetControlY">_setcontroly</name>
+      <comment>Sets the value of the property controlY.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetEndX">_setendx</name>
+      <comment>Sets the value of the property endX.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetEndY">_setendy</name>
+      <comment>Sets the value of the property endY.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetFill">_setfill</name>
+      <comment>Sets the value of the property fill.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>anywheresoftware.b4j.objects.JFX.PaintWrapper</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setID" HideFromIDE="true">_setid</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>ID</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetObject">_setobject</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Obj</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetSmooth">_setsmooth</name>
+      <comment>Sets the value of the property smooth.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>boolean</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStartX">_setstartx</name>
+      <comment>Sets the value of the property startX.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStartY">_setstarty</name>
+      <comment>Sets the value of the property startY.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStroke">_setstroke</name>
+      <comment>Sets the value of the property stroke.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>anywheresoftware.b4j.objects.JFX.PaintWrapper</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeDashOffset">_setstrokedashoffset</name>
+      <comment>Sets the value of the property strokeDashOffset.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeLineCap">_setstrokelinecap</name>
+      <comment>Sets the value of the property strokeLineCap.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeLineJoin">_setstrokelinejoin</name>
+      <comment>Sets the value of the property strokeLineJoin.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeMiterLimit">_setstrokemiterlimit</name>
+      <comment>Sets the value of the property strokeMiterLimit.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeType">_setstroketype</name>
+      <comment>Sets the value of the property strokeType.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeWidth">_setstrokewidth</name>
+      <comment>Sets the value of the property strokeWidth.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setTag" HideFromIDE="true">_settag</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Tag</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Subtract">_subtract</name>
+      <comment>Returns a new Shape which is created by subtracting the specified second shape from the first shape.</comment>
+      <returntype>com.stevel05.rtest.glshape</returntype>
+      <parameter>
+        <name>Shape1</name>
+        <type>com.stevel05.rtest.glquadcurve</type>
+      </parameter>
+      <parameter>
+        <name>Shape2</name>
+        <type>com.stevel05.rtest.glquadcurve</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Union">_union</name>
+      <comment>Returns a new Shape which is created as a union of the specified input shapes.</comment>
+      <returntype>com.stevel05.rtest.glshape</returntype>
+      <parameter>
+        <name>Shape1</name>
+        <type>com.stevel05.rtest.glquadcurve</type>
+      </parameter>
+      <parameter>
+        <name>Shape2</name>
+        <type>com.stevel05.rtest.glquadcurve</type>
+      </parameter>
+    </method>
+    <property>
+      <name DesignerName="ID">_id</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="Tag">_tag</name>
+      <returntype>Object</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>Object</type>
+      </parameter>
+    </property>
+  </class>
+  <class>
+    <name>com.stevel05.rtest.glsvgpath</name>
+    <shortname>GLSVGPath</shortname>
+    <method>
+      <name>IsInitialized</name>
+      <comment>Tests whether the object has been initialized.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="AsNode">_asnode</name>
+      <returntype>anywheresoftware.b4j.objects.NodeWrapper.ConcreteNodeWrapper</returntype>
+    </method>
+    <method>
+      <name DesignerName="Class_Globals">_class_globals</name>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetContent">_getcontent</name>
+      <comment>Gets the value of the property content.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetFill">_getfill</name>
+      <comment>Gets the value of the property fill.</comment>
+      <returntype>anywheresoftware.b4j.objects.JFX.PaintWrapper</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetFillRule">_getfillrule</name>
+      <comment>Gets the value of the property fillRule.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="getID" HideFromIDE="true">_getid</name>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetMinHeight">_getminheight</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetMinWidth">_getminwidth</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetObject">_getobject</name>
+      <returntype>Object</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetPrefHeight">_getprefheight</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetPrefWidth">_getprefwidth</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStroke">_getstroke</name>
+      <comment>Gets the value of the property stroke.</comment>
+      <returntype>anywheresoftware.b4j.objects.JFX.PaintWrapper</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeDashArray">_getstrokedasharray</name>
+      <comment>Defines the array representing the lengths of the dash segments.</comment>
+      <returntype>anywheresoftware.b4a.objects.collections.List</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeDashOffset">_getstrokedashoffset</name>
+      <comment>Gets the value of the property strokeDashOffset.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeLineCap">_getstrokelinecap</name>
+      <comment>Gets the value of the property strokeLineCap.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeLineJoin">_getstrokelinejoin</name>
+      <comment>Gets the value of the property strokeLineJoin.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeMiterLimit">_getstrokemiterlimit</name>
+      <comment>Gets the value of the property strokeMiterLimit.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeType">_getstroketype</name>
+      <comment>Gets the value of the property strokeType.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeWidth">_getstrokewidth</name>
+      <comment>Gets the value of the property strokeWidth.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="getTag" HideFromIDE="true">_gettag</name>
+      <returntype>Object</returntype>
+    </method>
+    <method>
+      <name DesignerName="Initialize">_initialize</name>
+      <comment>Create an empty Object</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>ba</name>
+        <type>anywheresoftware.b4a.BA</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Intersect">_intersect</name>
+      <comment>Returns a new Shape which is created as an intersection of the specified input shapes.</comment>
+      <returntype>com.stevel05.rtest.glshape</returntype>
+      <parameter>
+        <name>Shape1</name>
+        <type>com.stevel05.rtest.glsvgpath</type>
+      </parameter>
+      <parameter>
+        <name>Shape2</name>
+        <type>com.stevel05.rtest.glsvgpath</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="IsSmooth">_issmooth</name>
+      <comment>Gets the value of the property smooth.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="SetContent">_setcontent</name>
+      <comment>Sets the value of the property content.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetFill">_setfill</name>
+      <comment>Sets the value of the property fill.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>anywheresoftware.b4j.objects.JFX.PaintWrapper</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetFillRule">_setfillrule</name>
+      <comment>Sets the value of the property fillRule.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setID" HideFromIDE="true">_setid</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>ID</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetObject">_setobject</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Obj</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetSmooth">_setsmooth</name>
+      <comment>Sets the value of the property smooth.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>boolean</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStroke">_setstroke</name>
+      <comment>Sets the value of the property stroke.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>anywheresoftware.b4j.objects.JFX.PaintWrapper</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeDashOffset">_setstrokedashoffset</name>
+      <comment>Sets the value of the property strokeDashOffset.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeLineCap">_setstrokelinecap</name>
+      <comment>Sets the value of the property strokeLineCap.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeLineJoin">_setstrokelinejoin</name>
+      <comment>Sets the value of the property strokeLineJoin.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeMiterLimit">_setstrokemiterlimit</name>
+      <comment>Sets the value of the property strokeMiterLimit.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeType">_setstroketype</name>
+      <comment>Sets the value of the property strokeType.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeWidth">_setstrokewidth</name>
+      <comment>Sets the value of the property strokeWidth.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setTag" HideFromIDE="true">_settag</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Tag</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Subtract">_subtract</name>
+      <comment>Returns a new Shape which is created by subtracting the specified second shape from the first shape.</comment>
+      <returntype>com.stevel05.rtest.glshape</returntype>
+      <parameter>
+        <name>Shape1</name>
+        <type>com.stevel05.rtest.glsvgpath</type>
+      </parameter>
+      <parameter>
+        <name>Shape2</name>
+        <type>com.stevel05.rtest.glsvgpath</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Union">_union</name>
+      <comment>Returns a new Shape which is created as a union of the specified input shapes.</comment>
+      <returntype>com.stevel05.rtest.glshape</returntype>
+      <parameter>
+        <name>Shape1</name>
+        <type>com.stevel05.rtest.glsvgpath</type>
+      </parameter>
+      <parameter>
+        <name>Shape2</name>
+        <type>com.stevel05.rtest.glsvgpath</type>
+      </parameter>
+    </method>
+    <property>
+      <name DesignerName="ID">_id</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="Tag">_tag</name>
+      <returntype>Object</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>Object</type>
+      </parameter>
+    </property>
+  </class>
+  <class>
+    <name>com.stevel05.rtest.gltext</name>
+    <shortname>GLText</shortname>
+    <method>
+      <name>IsInitialized</name>
+      <comment>Tests whether the object has been initialized.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="AsNode">_asnode</name>
+      <returntype>anywheresoftware.b4j.objects.NodeWrapper.ConcreteNodeWrapper</returntype>
+    </method>
+    <method>
+      <name DesignerName="Class_Globals">_class_globals</name>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="Create">_create</name>
+      <comment>Creates an empty instance of Text.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="Create2">_create2</name>
+      <comment>Creates an instance of Text on the given coordinates containing the given string.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>X</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>Y</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>Text</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Create3">_create3</name>
+      <comment>Creates an instance of Text containing the given string.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Text</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="GetBaselineOffset">_getbaselineoffset</name>
+      <comment>Gets the value of the property baselineOffset.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetBoundsType">_getboundstype</name>
+      <comment>Gets the value of the property boundsType.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetFill">_getfill</name>
+      <comment>Gets the value of the property fill.</comment>
+      <returntype>anywheresoftware.b4j.objects.JFX.PaintWrapper</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetFont">_getfont</name>
+      <comment>Gets the value of the property font.</comment>
+      <returntype>anywheresoftware.b4j.objects.JFX.FontWrapper</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetFontSmoothingType">_getfontsmoothingtype</name>
+      <comment>Gets the value of the property fontSmoothingType.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="getID" HideFromIDE="true">_getid</name>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetMinHeight">_getminheight</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetMinWidth">_getminwidth</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetObject">_getobject</name>
+      <returntype>Object</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetPrefHeight">_getprefheight</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetPrefWidth">_getprefwidth</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStroke">_getstroke</name>
+      <comment>Gets the value of the property stroke.</comment>
+      <returntype>anywheresoftware.b4j.objects.JFX.PaintWrapper</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeDashArray">_getstrokedasharray</name>
+      <comment>Defines the array representing the lengths of the dash segments.</comment>
+      <returntype>anywheresoftware.b4a.objects.collections.List</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeDashOffset">_getstrokedashoffset</name>
+      <comment>Gets the value of the property strokeDashOffset.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeLineCap">_getstrokelinecap</name>
+      <comment>Gets the value of the property strokeLineCap.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeLineJoin">_getstrokelinejoin</name>
+      <comment>Gets the value of the property strokeLineJoin.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeMiterLimit">_getstrokemiterlimit</name>
+      <comment>Gets the value of the property strokeMiterLimit.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeType">_getstroketype</name>
+      <comment>Gets the value of the property strokeType.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStrokeWidth">_getstrokewidth</name>
+      <comment>Gets the value of the property strokeWidth.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="getTag" HideFromIDE="true">_gettag</name>
+      <returntype>Object</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetText">_gettext</name>
+      <comment>Gets the value of the property text.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetTextAlignment">_gettextalignment</name>
+      <comment>Gets the value of the property textAlignment.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetTextOrigin">_gettextorigin</name>
+      <comment>Gets the value of the property textOrigin.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetWrappingWidth">_getwrappingwidth</name>
+      <comment>Gets the value of the property wrappingWidth.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetX">_getx</name>
+      <comment>Gets the value of the property x.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetY">_gety</name>
+      <comment>Gets the value of the property y.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="Initialize">_initialize</name>
+      <comment>Initializes the object. You can add parameters to this method if needed.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>ba</name>
+        <type>anywheresoftware.b4a.BA</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Intersect">_intersect</name>
+      <comment>Returns a new Shape which is created as an intersection of the specified input shapes.</comment>
+      <returntype>com.stevel05.rtest.glshape</returntype>
+      <parameter>
+        <name>Shape1</name>
+        <type>com.stevel05.rtest.gltext</type>
+      </parameter>
+      <parameter>
+        <name>Shape2</name>
+        <type>com.stevel05.rtest.gltext</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="IsSmooth">_issmooth</name>
+      <comment>Gets the value of the property smooth.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="IsStrikethrough">_isstrikethrough</name>
+      <comment>Gets the value of the property strikethrough.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="IsUnderline">_isunderline</name>
+      <comment>Gets the value of the property underline.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="SetBoundsType">_setboundstype</name>
+      <comment>Sets the value of the property boundsType.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetFill">_setfill</name>
+      <comment>Sets the value of the property fill.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>anywheresoftware.b4j.objects.JFX.PaintWrapper</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetFont">_setfont</name>
+      <comment>Sets the value of the property font.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>anywheresoftware.b4j.objects.JFX.FontWrapper</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetFontSmoothingType">_setfontsmoothingtype</name>
+      <comment>Sets the value of the property fontSmoothingType.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setID" HideFromIDE="true">_setid</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>ID</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetObject">_setobject</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Obj</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetSmooth">_setsmooth</name>
+      <comment>Sets the value of the property smooth.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>boolean</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrikethrough">_setstrikethrough</name>
+      <comment>Sets the value of the property strikethrough.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>boolean</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStroke">_setstroke</name>
+      <comment>Sets the value of the property stroke.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>anywheresoftware.b4j.objects.JFX.PaintWrapper</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeDashOffset">_setstrokedashoffset</name>
+      <comment>Sets the value of the property strokeDashOffset.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeLineCap">_setstrokelinecap</name>
+      <comment>Sets the value of the property strokeLineCap.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeLineJoin">_setstrokelinejoin</name>
+      <comment>Sets the value of the property strokeLineJoin.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeMiterLimit">_setstrokemiterlimit</name>
+      <comment>Sets the value of the property strokeMiterLimit.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeType">_setstroketype</name>
+      <comment>Sets the value of the property strokeType.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetStrokeWidth">_setstrokewidth</name>
+      <comment>Sets the value of the property strokeWidth.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setTag" HideFromIDE="true">_settag</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Tag</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetText">_settext</name>
+      <comment>Sets the value of the property text.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetTextAlignment">_settextalignment</name>
+      <comment>Sets the value of the property textAlignment.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetTextOrigin">_settextorigin</name>
+      <comment>Sets the value of the property textOrigin.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetUnderline">_setunderline</name>
+      <comment>Sets the value of the property underline.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>boolean</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetWrappingWidth">_setwrappingwidth</name>
+      <comment>Sets the value of the property wrappingWidth.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetX">_setx</name>
+      <comment>Sets the value of the property x.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetY">_sety</name>
+      <comment>Sets the value of the property y.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Subtract">_subtract</name>
+      <comment>Returns a new Shape which is created by subtracting the specified second shape from the first shape.</comment>
+      <returntype>com.stevel05.rtest.glshape</returntype>
+      <parameter>
+        <name>Shape1</name>
+        <type>com.stevel05.rtest.gltext</type>
+      </parameter>
+      <parameter>
+        <name>Shape2</name>
+        <type>com.stevel05.rtest.gltext</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Union">_union</name>
+      <comment>Returns a new Shape which is created as a union of the specified input shapes.</comment>
+      <returntype>com.stevel05.rtest.glshape</returntype>
+      <parameter>
+        <name>Shape1</name>
+        <type>com.stevel05.rtest.gltext</type>
+      </parameter>
+      <parameter>
+        <name>Shape2</name>
+        <type>com.stevel05.rtest.gltext</type>
+      </parameter>
+    </method>
+    <property>
+      <name DesignerName="ID">_id</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="Tag">_tag</name>
+      <returntype>Object</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>Object</type>
+      </parameter>
+    </property>
+  </class>
+  <class>
+    <name>com.stevel05.rtest.gllineargradient</name>
+    <shortname>GLLinearGradient</shortname>
+    <method>
+      <name>IsInitialized</name>
+      <comment>Tests whether the object has been initialized.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="Class_Globals">_class_globals</name>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="Create">_create</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>StartX</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>StartY</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>EndX</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>EndY</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>Proportional</name>
+        <type>boolean</type>
+      </parameter>
+      <parameter>
+        <name>CycleMethod</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>Stops</name>
+        <type>anywheresoftware.b4a.objects.collections.List</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="GetCycleMethod">_getcyclemethod</name>
+      <comment>Defines which of the following cycle method is applied to the LinearGradient: CycleMethod.NO_CYCLE, CycleMethod.REFLECT, or CycleMethod.REPEAT.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetEndX">_getendx</name>
+      <comment>Defines the X coordinate of the gradient axis end point.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetEndY">_getendy</name>
+      <comment>Defines the Y coordinate of the gradient axis end point.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetObject">_getobject</name>
+      <returntype>Object</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStartX">_getstartx</name>
+      <comment>Defines the X coordinate of the gradient axis start point.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStartY">_getstarty</name>
+      <comment>Defines the Y coordinate of the gradient axis start point.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStops">_getstops</name>
+      <comment>A List of 2 or more GLStop values specifying how to distribute the colors along the gradient.</comment>
+      <returntype>anywheresoftware.b4a.objects.collections.List</returntype>
+    </method>
+    <method>
+      <name DesignerName="Initialize">_initialize</name>
+      <comment>Initialize the object and Creates a new instance of LinearGradient. Stops is a list of GLStops</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>ba</name>
+        <type>anywheresoftware.b4a.BA</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="IsProportional">_isproportional</name>
+      <comment>Indicates whether start and end locations are proportional or absolute.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="SetObject">_setobject</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Obj</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+  </class>
+  <class>
+    <name>com.stevel05.rtest.glstop</name>
+    <shortname>GLStop</shortname>
+    <method>
+      <name>IsInitialized</name>
+      <comment>Tests whether the object has been initialized.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="Class_Globals">_class_globals</name>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="Create">_create</name>
+      <comment>Creates a new instance of Stop.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Offset</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>Color</name>
+        <type>anywheresoftware.b4j.objects.JFX.PaintWrapper</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="GetColor">_getcolor</name>
+      <comment>Gets the color of the gradient at this offset.</comment>
+      <returntype>anywheresoftware.b4j.objects.JFX.PaintWrapper</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetObject">_getobject</name>
+      <returntype>Object</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetOffset">_getoffset</name>
+      <comment>Gets a number ranging from 0 to 1 that indicates where this gradient stop is placed.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="getTag" HideFromIDE="true">_gettag</name>
+      <returntype>Object</returntype>
+    </method>
+    <method>
+      <name DesignerName="Initialize">_initialize</name>
+      <comment>Initialize the object</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>ba</name>
+        <type>anywheresoftware.b4a.BA</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetObject">_setobject</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Obj</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setTag" HideFromIDE="true">_settag</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Tag</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <property>
+      <name DesignerName="Tag">_tag</name>
+      <returntype>Object</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>Object</type>
+      </parameter>
+    </property>
+  </class>
+  <class>
+    <name>com.stevel05.rtest.glradialgradient</name>
+    <shortname>GLRadialGradient</shortname>
+    <method>
+      <name>IsInitialized</name>
+      <comment>Tests whether the object has been initialized.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="Class_Globals">_class_globals</name>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="Create">_create</name>
+      <comment>Creates a new instance of RadialGradient.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>FocusAngle</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>FocusDistance</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>CenterX</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>CenterY</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>Radius</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>Proportional</name>
+        <type>boolean</type>
+      </parameter>
+      <parameter>
+        <name>CycleMethod</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>Stops</name>
+        <type>anywheresoftware.b4a.objects.collections.List</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="GetCenterX">_getcenterx</name>
+      <comment>Defines the X coordinate of the center point of the circle defining the gradient.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetCenterY">_getcentery</name>
+      <comment>Defines the X coordinate of the center point of the circle defining the gradient.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetCycleMethod">_getcyclemethod</name>
+      <comment>Defines which of the follwing cycle method is applied to the LinearGradient: CycleMethod.NO_CYCLE, CycleMethod.REFLECT, or CycleMethod.REPEAT.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetFocusAngle">_getfocusangle</name>
+      <comment>Defines the angle in degrees from the center of the gradient to the focus point to which the first color is mapped.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetFocusDistance">_getfocusdistance</name>
+      <comment>Defines the distance from the center of the gradient to the focus point to which the first color is mapped.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="getID" HideFromIDE="true">_getid</name>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetObject">_getobject</name>
+      <returntype>Object</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetRadius">_getradius</name>
+      <comment>Specifies the radius of the circle defining the extents of the color gradient.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetStops">_getstops</name>
+      <comment>A List of 2 or more GLStop values specifying how to distribute the colors along the gradient.</comment>
+      <returntype>anywheresoftware.b4a.objects.collections.List</returntype>
+    </method>
+    <method>
+      <name DesignerName="getTag" HideFromIDE="true">_gettag</name>
+      <returntype>Object</returntype>
+    </method>
+    <method>
+      <name DesignerName="Initialize">_initialize</name>
+      <comment>Initializes the object. You can add parameters to this method if needed.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>ba</name>
+        <type>anywheresoftware.b4a.BA</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="IsProportional">_isproportional</name>
+      <comment>Indicates whether the center and radius values are proportional or absolute.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="setID" HideFromIDE="true">_setid</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>ID</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetObject">_setobject</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Obj</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setTag" HideFromIDE="true">_settag</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Tag</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <property>
+      <name DesignerName="ID">_id</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="Tag">_tag</name>
+      <returntype>Object</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>Object</type>
+      </parameter>
+    </property>
+  </class>
+  <version>1.01</version>
+  <author>Steve Laming</author>
+</root>

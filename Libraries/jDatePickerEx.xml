@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <doclet-version-NOT-library-version>1.00</doclet-version-NOT-library-version>
+  <dependsOn>jcore</dependsOn>
+  <dependsOn>jfx</dependsOn>
+  <dependsOn>javaobject</dependsOn>
+  <dependsOn includesSingletonModules="true">jdateutils</dependsOn>
+  <class>
+    <name>b4j.example.datepickerex</name>
+    <shortname>DatePickerEx</shortname>
+    <event>DateChanged</event>
+    <method>
+      <name>IsInitialized</name>
+      <comment>Tests whether the object has been initialized.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="Class_Globals">_class_globals</name>
+      <comment>Class module</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="CompareTo">_compareto</name>
+      <comment>Comparison:
+Compares the selected date with a given (year, month, day) date.
+Return the number of years, months or days...</comment>
+      <returntype>int</returntype>
+      <parameter>
+        <name>Year</name>
+        <type>int</type>
+      </parameter>
+      <parameter>
+        <name>Month</name>
+        <type>int</type>
+      </parameter>
+      <parameter>
+        <name>DayOfMonth</name>
+        <type>int</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="CompareToISO">_comparetoiso</name>
+      <comment>Comparison:
+Compares the selected date with a given ISO (yyyy-MM-dd) date.
+Return the number of years, months or days...</comment>
+      <returntype>int</returntype>
+      <parameter>
+        <name>ISODate</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="getAutoCorrectDates" HideFromIDE="true">_getautocorrectdates</name>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetDate">_getdate</name>
+      <comment>Get date:
+Returns the date in ISO format yyyy-MM-dd.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetDateTicks">_getdateticks</name>
+      <comment>Returns the date in ticks.</comment>
+      <returntype>long</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetDayOfMonth">_getdayofmonth</name>
+      <comment>Get Day of month:
+Returns the selected day of month.</comment>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetDayOfYear">_getdayofyear</name>
+      <comment>Get Day of year:
+Returns the selected day of year.</comment>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="getEditable" HideFromIDE="true">_geteditable</name>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="getEnabled" HideFromIDE="true">_getenabled</name>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetHashCode">_gethashcode</name>
+      <comment>Get HashCode:
+Returns the hasCode of the selected date.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetMonth">_getmonth</name>
+      <comment>Get Month:
+Returns the selected Month.</comment>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="getOpened" HideFromIDE="true">_getopened</name>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="getShowWeekNumbers" HideFromIDE="true">_getshowweeknumbers</name>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="getTag" HideFromIDE="true">_gettag</name>
+      <returntype>Object</returntype>
+    </method>
+    <method>
+      <name DesignerName="getVisible" HideFromIDE="true">_getvisible</name>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetYear">_getyear</name>
+      <comment>Get Year:
+Returns the selected Year.</comment>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="Initialize">_initialize</name>
+      <comment>Initializes Date Picker Ex.
+IMPORTANT: This class requires JavaFx 8 minimum.
+Note: The datepicker's default date is today.
+
+Owner: The module that will receive the events. Usually 'Me'.
+DatePickerNode: The date picker node created from the scene builder.
+EventName: The name of the event that will be called.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>ba</name>
+        <type>anywheresoftware.b4a.BA</type>
+      </parameter>
+      <parameter>
+        <name>Owner</name>
+        <type>Object</type>
+      </parameter>
+      <parameter>
+        <name>DatePickerNode</name>
+        <type>anywheresoftware.b4j.objects.NodeWrapper.ConcreteNodeWrapper</type>
+      </parameter>
+      <parameter>
+        <name>EventName</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="IsAfter">_isafter</name>
+      <comment>Comparison:
+Return True if the selected date is after the specified (year, month, day) date.</comment>
+      <returntype>boolean</returntype>
+      <parameter>
+        <name>Year</name>
+        <type>int</type>
+      </parameter>
+      <parameter>
+        <name>Month</name>
+        <type>int</type>
+      </parameter>
+      <parameter>
+        <name>DayOfMonth</name>
+        <type>int</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="IsAfterISO">_isafteriso</name>
+      <comment>Comparison:
+Return True if the selected date is after the specified ISO (yyyy-MM-dd) date.</comment>
+      <returntype>boolean</returntype>
+      <parameter>
+        <name>ISODate</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="IsBefore">_isbefore</name>
+      <comment>Comparison:
+Return True if the selected date is before the specified (year, month, day) date.</comment>
+      <returntype>boolean</returntype>
+      <parameter>
+        <name>Year</name>
+        <type>int</type>
+      </parameter>
+      <parameter>
+        <name>Month</name>
+        <type>int</type>
+      </parameter>
+      <parameter>
+        <name>DayOfMonth</name>
+        <type>int</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="IsBeforeISO">_isbeforeiso</name>
+      <comment>Comparison:
+Return True if the selected date is before the specified ISO (yyyy-MM-dd) date.</comment>
+      <returntype>boolean</returntype>
+      <parameter>
+        <name>ISODate</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="IsEqual">_isequal</name>
+      <comment>Comparison:
+Return True if the selected date is equal (i.e same day) to the specified (year, month, day) date.</comment>
+      <returntype>boolean</returntype>
+      <parameter>
+        <name>Year</name>
+        <type>int</type>
+      </parameter>
+      <parameter>
+        <name>Month</name>
+        <type>int</type>
+      </parameter>
+      <parameter>
+        <name>DayOfMonth</name>
+        <type>int</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="IsEqualISO">_isequaliso</name>
+      <comment>Comparison:
+Return True if the selected date is equal (i.e same day) to the specified ISO (yyyy-MM-dd) date.</comment>
+      <returntype>boolean</returntype>
+      <parameter>
+        <name>ISODate</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="IsLeapYear">_isleapyear</name>
+      <comment>Is Leap year:
+Return true if selected year is a leap year.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="LengthOfMonth">_lengthofmonth</name>
+      <comment>Length of month:
+Return number of days in the selected month.</comment>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="LengthOfYear">_lengthofyear</name>
+      <comment>Length of year:
+Return number of days in the selected year.</comment>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="MinusDays">_minusdays</name>
+      <comment>Substract date:
+Substract days from the selected date.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Days</name>
+        <type>long</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="MinusMonths">_minusmonths</name>
+      <comment>Substract date:
+Substract months from the selected date.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Months</name>
+        <type>long</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="MinusWeeks">_minusweeks</name>
+      <comment>Substract date:
+Substract weeks from the selected date.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Weeks</name>
+        <type>long</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="MinusYears">_minusyears</name>
+      <comment>Substract date:
+Substract years from the selected date.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Years</name>
+        <type>long</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Now">_now</name>
+      <comment>Sets the selected date to today.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="PlusDays">_plusdays</name>
+      <comment>Add date:
+Adds days to the selected date.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Days</name>
+        <type>long</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="PlusMonths">_plusmonths</name>
+      <comment>Add date:
+Adds months to the selected date.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Months</name>
+        <type>long</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="PlusWeeks">_plusweeks</name>
+      <comment>Add date:
+Adds weeks to the selected date.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Weeks</name>
+        <type>long</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="PlusYears">_plusyears</name>
+      <comment>Add date:
+Adds years to the selected date.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Years</name>
+        <type>long</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setAutoCorrectDates" HideFromIDE="true">_setautocorrectdates</name>
+      <comment>Autocorrect:
+Set weither the invalid dates should be corrected before processing.
+If set to False, an error will be thrown by java in case of
+invalid date.
+
+Example: "2014-1-32" would be corrected to "2014-01-31" and
+(2014, 1, 32) would be corrected to (2014, 1, 31).</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>boolean</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetDate">_setdate</name>
+      <comment>Set date:
+Sets the selected date to specified year, month and day of month.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Year</name>
+        <type>int</type>
+      </parameter>
+      <parameter>
+        <name>Month</name>
+        <type>int</type>
+      </parameter>
+      <parameter>
+        <name>DayOfMonth</name>
+        <type>int</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetDateISO">_setdateiso</name>
+      <comment>Set date - ISO:
+Sets the selected date to specified date in ISO format yyyy-MM-dd.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>ISODate</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetDateTicks">_setdateticks</name>
+      <comment>Set date - Ticks:
+Sets the selected date to specified date in ticks.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Ticks</name>
+        <type>long</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setEditable" HideFromIDE="true">_seteditable</name>
+      <comment>Editable:
+Enable / disable the possibility to edit the text.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>boolean</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setEnabled" HideFromIDE="true">_setenabled</name>
+      <comment>Enabled:
+Enable / disable the control.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>boolean</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setOpened" HideFromIDE="true">_setopened</name>
+      <comment>Opened = True / False
+displays the pop-up datepicker.
+also returns if the datepicker is visible or not.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>boolean</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setShowWeekNumbers" HideFromIDE="true">_setshowweeknumbers</name>
+      <comment>Week numbers:
+Displays the week numbers on the left side of the datepicker.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>boolean</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setTag" HideFromIDE="true">_settag</name>
+      <comment>Tag:
+sets / gets the tag for this control.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setVisible" HideFromIDE="true">_setvisible</name>
+      <comment>Visible:
+sets / gets visibility for this control.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>boolean</type>
+      </parameter>
+    </method>
+    <property>
+      <name DesignerName="AutoCorrectDates">_autocorrectdates</name>
+      <comment>Autocorrect:
+Set weither the invalid dates should be corrected before processing.
+If set to False, an error will be thrown by java in case of
+invalid date.
+
+Example: "2014-1-32" would be corrected to "2014-01-31" and
+(2014, 1, 32) would be corrected to (2014, 1, 31).</comment>
+      <returntype>boolean</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>boolean</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="Editable">_editable</name>
+      <comment>Editable:
+Enable / disable the possibility to edit the text.</comment>
+      <returntype>boolean</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>boolean</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="Enabled">_enabled</name>
+      <comment>Enabled:
+Enable / disable the control.</comment>
+      <returntype>boolean</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>boolean</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="Opened">_opened</name>
+      <comment>Opened = True / False
+displays the pop-up datepicker.
+also returns if the datepicker is visible or not.</comment>
+      <returntype>boolean</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>boolean</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="ShowWeekNumbers">_showweeknumbers</name>
+      <comment>Week numbers:
+Displays the week numbers on the left side of the datepicker.</comment>
+      <returntype>boolean</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>boolean</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="Tag">_tag</name>
+      <comment>Tag:
+sets / gets the tag for this control.</comment>
+      <returntype>Object</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>Object</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="Visible">_visible</name>
+      <comment>Visible:
+sets / gets visibility for this control.</comment>
+      <returntype>boolean</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>boolean</type>
+      </parameter>
+    </property>
+  </class>
+  <version>1</version>
+</root>

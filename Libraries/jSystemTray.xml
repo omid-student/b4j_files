@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <doclet-version-NOT-library-version>1.04</doclet-version-NOT-library-version>
+    <class>
+        <name>anywheresoftware.b4j.objects.SystemTrayWrapper</name>
+        <shortname>SystemTray</shortname>
+        <owner>process</owner>
+        <method>
+            <name>Initialize</name>
+            <comment>Initializes the system tray.</comment>
+            <returntype>void</returntype>
+        </method>
+        <method>
+            <name>RemoveTrayIcon</name>
+            <comment>Removes a tray icon from the system tray.</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>TrayIcon</name>
+                <type>anywheresoftware.b4j.objects.SystemTrayWrapper.TrayIconWrapper</type>
+            </parameter>
+        </method>
+        <method>
+            <name>AddTrayIcon</name>
+            <comment>Adds a tray icon to the system tray.</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>TrayIcon</name>
+                <type>anywheresoftware.b4j.objects.SystemTrayWrapper.TrayIconWrapper</type>
+            </parameter>
+        </method>
+        <property>
+            <name>Supported</name>
+            <returntype>boolean</returntype>
+            <comment>Tests whether the system tray is supported.</comment>
+        </property>
+    </class>
+    <class>
+        <name>anywheresoftware.b4j.objects.SystemTrayWrapper.TrayIconWrapper</name>
+        <shortname>TrayIcon</shortname>
+        <objectwrapper>java.awt.TrayIcon</objectwrapper>
+        <owner>process</owner>
+        <event>DoubleClick</event>
+        <event>MenuClick (Text As String)</event>
+        <method>
+            <name>Initialize</name>
+            <comment>Initializes the tray icon.
+EventName - Sets the subs that will handle the events.
+Image - Icon image.
+MenuItems - A list of strings that will show as a popup menu when the user right clicks on the icon.</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>ba</name>
+                <type>anywheresoftware.b4a.BA</type>
+            </parameter>
+            <parameter>
+                <name>EventName</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>Image</name>
+                <type>javafx.scene.image.Image</type>
+            </parameter>
+            <parameter>
+                <name>MenuItems</name>
+                <type>anywheresoftware.b4a.objects.collections.List</type>
+            </parameter>
+        </method>
+        <method>
+            <name>SetImage</name>
+            <comment>Sets the icon image.</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>Image</name>
+                <type>javafx.scene.image.Image</type>
+            </parameter>
+        </method>
+        <method>
+            <name>IsInitialized</name>
+            <comment></comment>
+            <returntype>boolean</returntype>
+        </method>
+        <property>
+            <name>ToolTip</name>
+            <returntype>java.lang.String</returntype>
+            <parameter>
+                <name>s</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <comment>Gets or sets the icon tooltip.</comment>
+        </property>
+    </class>
+    <version>1.0</version>
+</root>

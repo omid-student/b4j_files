@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <doclet-version-NOT-library-version>1.01</doclet-version-NOT-library-version>
+    <class>
+        <name>com.stevel05.jAudioClip</name>
+        <shortname>AudioClip</shortname>
+        <owner>process</owner>
+        <method>
+            <name>Initialize</name>
+            <comment>Initialize the object.
+ Requires a URI obtainable as File.GetURI(Dir,FileName))</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>ba</name>
+                <type>anywheresoftware.b4a.BA</type>
+            </parameter>
+            <parameter>
+                <name>URI</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>Play</name>
+            <comment>Play the AudioClip using all the default parameters.</comment>
+            <returntype>void</returntype>
+        </method>
+        <method>
+            <name>Play2</name>
+            <comment>Play the AudioClip using all the default parameters except volume.</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>volume</name>
+                <type>double</type>
+            </parameter>
+        </method>
+        <method>
+            <name>Play3</name>
+            <comment>Play the AudioClip using the given parameters.</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>volume</name>
+                <type>double</type>
+            </parameter>
+            <parameter>
+                <name>balance</name>
+                <type>double</type>
+            </parameter>
+            <parameter>
+                <name>rate</name>
+                <type>double</type>
+            </parameter>
+            <parameter>
+                <name>pan</name>
+                <type>double</type>
+            </parameter>
+            <parameter>
+                <name>priority</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>Stop</name>
+            <comment>Immediately stop all playback of this AudioClip.</comment>
+            <returntype>void</returntype>
+        </method>
+        <method>
+            <name>isPlaying</name>
+            <comment>Indicate whether this AudioClip is playing.</comment>
+            <returntype>boolean</returntype>
+        </method>
+        <property>
+            <name>Source</name>
+            <returntype>java.lang.String</returntype>
+            <comment>Get the source URL used to create this AudioClip.</comment>
+        </property>
+        <property>
+            <name>Volume</name>
+            <returntype>double</returntype>
+            <parameter>
+                <name>value</name>
+                <type>double</type>
+            </parameter>
+            <comment>Get / Set the default volume level.</comment>
+        </property>
+        <property>
+            <name>CycleCount</name>
+            <returntype>int</returntype>
+            <parameter>
+                <name>count</name>
+                <type>int</type>
+            </parameter>
+            <comment>Get / Set the default cycle count.</comment>
+        </property>
+        <property>
+            <name>Pan</name>
+            <returntype>double</returntype>
+            <parameter>
+                <name>pan</name>
+                <type>double</type>
+            </parameter>
+            <comment>Get / Set the default pan value.</comment>
+        </property>
+        <property>
+            <name>Balance</name>
+            <returntype>double</returntype>
+            <parameter>
+                <name>balance</name>
+                <type>double</type>
+            </parameter>
+            <comment>Get / Set the default balance level for this clip.</comment>
+        </property>
+        <property>
+            <name>Rate</name>
+            <returntype>double</returntype>
+            <parameter>
+                <name>rate</name>
+                <type>double</type>
+            </parameter>
+            <comment>Get / Set the default playback rate.</comment>
+        </property>
+        <property>
+            <name>Priority</name>
+            <returntype>int</returntype>
+            <parameter>
+                <name>priority</name>
+                <type>int</type>
+            </parameter>
+            <comment>Get / Set the default playback priority.</comment>
+        </property>
+    </class>
+    <version>1.0</version>
+    <author>Steve Laming</author>
+</root>

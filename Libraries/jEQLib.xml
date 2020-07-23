@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <doclet-version-NOT-library-version>1.01</doclet-version-NOT-library-version>
+    <class>
+        <name>com.stevel05.jEqualizerBand</name>
+        <shortname>EQBand</shortname>
+        <owner>process</owner>
+        <method>
+            <name>Initialize</name>
+            <comment>Initialize the Equalizer Band using default values</comment>
+            <returntype>void</returntype>
+        </method>
+        <method>
+            <name>Initialize2</name>
+            <comment>Initialize the object with Custom EqualizerBand values.</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>centerFrequency</name>
+                <type>double</type>
+            </parameter>
+            <parameter>
+                <name>bandwidth</name>
+                <type>double</type>
+            </parameter>
+            <parameter>
+                <name>gain</name>
+                <type>double</type>
+            </parameter>
+        </method>
+        <method>
+            <name>Initialize3</name>
+            <comment>Initialize the object with an existing EqualizerBand</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>eb</name>
+                <type>javafx.scene.media.EqualizerBand</type>
+            </parameter>
+        </method>
+        <property>
+            <name>CenterFrequency</name>
+            <returntype>double</returntype>
+            <parameter>
+                <name>value</name>
+                <type>double</type>
+            </parameter>
+            <comment>Get / Set the center frequency of the band.</comment>
+        </property>
+        <property>
+            <name>Gain</name>
+            <returntype>double</returntype>
+            <parameter>
+                <name>value</name>
+                <type>double</type>
+            </parameter>
+            <comment>Get / Set the gain to be applied to the band.</comment>
+        </property>
+        <property>
+            <name>Band</name>
+            <returntype>javafx.scene.media.EqualizerBand</returntype>
+            <comment>Get the underlying EqualizerBand Object</comment>
+        </property>
+        <property>
+            <name>Bandwidth</name>
+            <returntype>double</returntype>
+            <parameter>
+                <name>value</name>
+                <type>double</type>
+            </parameter>
+            <comment>Get / Set the bandwidth of the band.</comment>
+        </property>
+        <field>
+            <name>MIN_GAIN</name>
+            <comment></comment>
+            <returntype>double</returntype>
+        </field>
+        <field>
+            <name>MAX_GAIN</name>
+            <comment></comment>
+            <returntype>double</returntype>
+        </field>
+    </class>
+    <class>
+        <name>com.stevel05.jAudioEqualizer</name>
+        <shortname>Equalizer</shortname>
+        <owner>process</owner>
+        <method>
+            <name>Initialize</name>
+            <comment>Initialize the object.
+ Requires a MediaPlayer Object)</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>ba</name>
+                <type>anywheresoftware.b4a.BA</type>
+            </parameter>
+            <parameter>
+                <name>MP</name>
+                <type>javafx.scene.media.MediaPlayer</type>
+            </parameter>
+        </method>
+        <method>
+            <name>NumberOfBands</name>
+            <comment>Returns the number of bands currently attached to the Equalizer</comment>
+            <returntype>int</returntype>
+        </method>
+        <property>
+            <name>Bands</name>
+            <returntype>anywheresoftware.b4a.objects.collections.List</returntype>
+            <comment>Returns an ObservableList containing EqualizerBand elements.</comment>
+        </property>
+        <property>
+            <name>Enabled</name>
+            <returntype>boolean</returntype>
+            <parameter>
+                <name>enabled</name>
+                <type>boolean</type>
+            </parameter>
+            <comment>Get / Set enabled state of the AudioEqualizer.</comment>
+        </property>
+        <field>
+            <name>MAX_NUM_BANDS</name>
+            <comment></comment>
+            <returntype>int</returntype>
+        </field>
+    </class>
+    <version>1.0</version>
+    <author>Steve Laming</author>
+</root>

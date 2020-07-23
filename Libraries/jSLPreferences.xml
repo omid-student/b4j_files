@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <doclet-version-NOT-library-version>1.01</doclet-version-NOT-library-version>
+    <class>
+        <name>com.stevel05.Prefs</name>
+        <shortname>SLPreferences</shortname>
+        <owner>process</owner>
+        <method>
+            <name>Initialize</name>
+            <comment>Initialize preferences</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>ba</name>
+                <type>anywheresoftware.b4a.BA</type>
+            </parameter>
+        </method>
+        <method>
+            <name>GetInt</name>
+            <comment>Returns the int value represented by the string associated with the specified key in this preference node.
+ Returns def if key is not found</comment>
+            <returntype>int</returntype>
+            <parameter>
+                <name>key</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>def</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>GetKeys</name>
+            <comment>Returns all of the keys that have an associated value in this preference node.</comment>
+            <returntype>java.lang.String[]</returntype>
+        </method>
+        <method>
+            <name>GetFloat</name>
+            <comment>Returns the float value represented by the string associated with the specified key in this preference node.
+ Returns def if key is not found</comment>
+            <returntype>float</returntype>
+            <parameter>
+                <name>key</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>def</name>
+                <type>float</type>
+            </parameter>
+        </method>
+        <method>
+            <name>Flush</name>
+            <comment>Forces any changes in the contents of this preference node and its descendants to the persistent store.</comment>
+            <returntype>void</returntype>
+        </method>
+        <method>
+            <name>PutBoolean</name>
+            <comment>Associates a string representing the specified boolean value with the specified key in this preference node.</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>key</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>value</name>
+                <type>boolean</type>
+            </parameter>
+        </method>
+        <method>
+            <name>PutString</name>
+            <comment>Associates the specified String value with the specified key in this preference node.</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>key</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>value</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>Clear</name>
+            <comment>Removes all of the preferences (key-value associations) in this preference node.</comment>
+            <returntype>void</returntype>
+        </method>
+        <method>
+            <name>GetLong</name>
+            <comment>Returns the long value represented by the string associated with the specified key in this preference node.
+ Returns def if key is not found</comment>
+            <returntype>long</returntype>
+            <parameter>
+                <name>key</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>def</name>
+                <type>long</type>
+            </parameter>
+        </method>
+        <method>
+            <name>PutByteArray</name>
+            <comment>Associates a string representing the specified byte array with the specified key in this preference node.</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>key</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>value</name>
+                <type>byte[]</type>
+            </parameter>
+        </method>
+        <method>
+            <name>GetBoolean</name>
+            <comment>Returns the boolean value represented by the string associated with the specified key in this preference node.
+ Returns def if key is not found</comment>
+            <returntype>boolean</returntype>
+            <parameter>
+                <name>key</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>def</name>
+                <type>boolean</type>
+            </parameter>
+        </method>
+        <method>
+            <name>GetDouble</name>
+            <comment>Returns the double value represented by the string associated with the specified key in this preference node.
+ Returns def if key is not found</comment>
+            <returntype>double</returntype>
+            <parameter>
+                <name>key</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>def</name>
+                <type>double</type>
+            </parameter>
+        </method>
+        <method>
+            <name>GetByteArray</name>
+            <comment>Returns the byte array value represented by the string associated with the specified key in this preference node.
+ Returns def if key is not found</comment>
+            <returntype>byte[]</returntype>
+            <parameter>
+                <name>key</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>def</name>
+                <type>byte[]</type>
+            </parameter>
+        </method>
+        <method>
+            <name>PutFloat</name>
+            <comment>Associates a string representing the specified float value with the specified key in this preference node.</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>key</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>value</name>
+                <type>float</type>
+            </parameter>
+        </method>
+        <method>
+            <name>GetString</name>
+            <comment>Returns the String value associated with the specified key in this preference node. 
+ Returns def if key is not found</comment>
+            <returntype>java.lang.String</returntype>
+            <parameter>
+                <name>key</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>def</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>PutDouble</name>
+            <comment>Associates a string representing the specified double value with the specified key in this preference node.</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>key</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>value</name>
+                <type>double</type>
+            </parameter>
+        </method>
+        <method>
+            <name>PutInt</name>
+            <comment>Associates a string representing the specified int value with the specified key in this preference node.</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>key</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>value</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>Remove</name>
+            <comment>Removes the value associated with the specified key in this preference node, if any.</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>key</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>PutLong</name>
+            <comment>Associates a string representing the specified long value with the specified key in this preference node.</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>key</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>value</name>
+                <type>long</type>
+            </parameter>
+        </method>
+        <field>
+            <name>prefs</name>
+            <comment></comment>
+            <returntype>java.util.prefs.Preferences</returntype>
+        </field>
+    </class>
+    <version>1.0</version>
+    <author>Steve Laming</author>
+</root>

@@ -1,0 +1,814 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <doclet-version-NOT-library-version>1.05</doclet-version-NOT-library-version>
+    <class>
+        <name>butt.droid.awtRobot.AWTRobot</name>
+        <shortname>AWTRobot</shortname>
+        <owner>process</owner>
+        <event>JVMShutdown</event>
+        <event>ThreadUncaughtException(ThreadName As String, ExceptionMessage As String, StackTrace() As String)</event>
+        <event>ApplicationUncaughtException(ThreadName As String, ExceptionMessage As String, StackTrace() As String)</event>
+        <event>MessageLoopException(ThreadName As String, ExceptionMessage As String, StackTrace() As String) As Boolean</event>
+        <method>
+            <name>RobotSingleStrikeNumpadKey</name>
+            <comment>This method will press the NumberPad number keys
+ 0-9. You can also pass numbers greater than 9 to use some of 
+ the other NumberPad keys like +,-, etc...
+ subtract: 13
+ add: 11
+ multiply: 10
+ separator: 12
+ divide: 15
+ Num_lock: 48</comment>
+            <returntype>butt.droid.awtRobot.AWTRobot</returntype>
+            <parameter>
+                <name>i</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>RobotType</name>
+            <comment>Types the whole inString using a series of SingleStrikes.
+ This is NOT the preferred method of inputting text. 
+ Use RobotPaste if you can.</comment>
+            <returntype>butt.droid.awtRobot.AWTRobot</returntype>
+            <parameter>
+                <name>inString</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>JVMMemoryMax</name>
+            <comment>Returns the max memory the JVM will attempt to use in units of bytes.</comment>
+            <returntype>long</returntype>
+        </method>
+        <method>
+            <name>RobotFunctionKeyRelease</name>
+            <comment>Releases the function key corresponding to the f parameter.
+ For example, to release F5, pass f=5.
+ This method only supports from F1 to F12.</comment>
+            <returntype>butt.droid.awtRobot.AWTRobot</returntype>
+            <parameter>
+                <name>f</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>relaunchSelfBatch</name>
+            <comment>Like relaunchSelf(), but instead of launching a jar, it launches
+ a batch file. This is useful in case you need to run a batch file on shutdown
+ or you want to relaunch your app but your app is launched via batch script.</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>BatchFileName</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>StandardErrorIsRedirected</name>
+            <comment>Returns whether or not Standard Error is being redirected to a file.
+ To redirect Standard Error to a file, call redirectStandardError().</comment>
+            <returntype>boolean</returntype>
+        </method>
+        <method>
+            <name>ScreenCurrentRectangleGetDimensions</name>
+            <comment>Returns the dimensions of the rectangle used for CreateScreenCapture...()
+ as an Int array = (xleft, ytop, width, height).</comment>
+            <returntype>int[]</returntype>
+        </method>
+        <method>
+            <name>ScreenCurrentRectangleSetAsAllScreens</name>
+            <comment>Sets the rectangle used for CreateScreenCapture...() as all the system screens
+ as reported by ScreenGetDimensions().</comment>
+            <returntype>butt.droid.awtRobot.AWTRobot</returntype>
+        </method>
+        <method>
+            <name>SystemRunCommand</name>
+            <comment>Runs an arbitrary String as a command-line command.
+ Returns true if it works, false if it throws an Exception.
+ The Exception message will be printed to Standard Error.</comment>
+            <returntype>boolean</returntype>
+            <parameter>
+                <name>cmd</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>StandardOutReturnToConsole</name>
+            <comment>Returns Standard Out to the console, undoing redirectStandardOut().</comment>
+            <returntype>boolean</returntype>
+        </method>
+        <method>
+            <name>JVMProcessCPULoad</name>
+            <comment>Returns the calling process' CPU usage as a double between 0 (0%) and 1 (100%).</comment>
+            <returntype>double</returntype>
+        </method>
+        <method>
+            <name>SystemHostNameAndIPAddress</name>
+            <comment>Returns the hostname and local IP Address as a String. Returns an empty String if
+ an Exception occurs. Return String is of the form HostName/192.168.10.20.</comment>
+            <returntype>java.lang.String</returntype>
+        </method>
+        <method>
+            <name>RobotMouseButtonPress</name>
+            <comment>Trigger a MousePressed event with butt=1 for left, butt=2 for right, butt=3 for center.
+ Make sure to call ReleaseMouseButton() soon thereafter.</comment>
+            <returntype>butt.droid.awtRobot.AWTRobot</returntype>
+            <parameter>
+                <name>butt</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>RobotMouseWheel</name>
+            <comment>Scrolls the Mouse Wheel by dir.
+ Negative numbers scroll up, positive numbers scroll down.</comment>
+            <returntype>butt.droid.awtRobot.AWTRobot</returntype>
+            <parameter>
+                <name>dir</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>ClipboardStringHas</name>
+            <comment></comment>
+            <returntype>boolean</returntype>
+        </method>
+        <method>
+            <name>RobotSpecialKeyRelease</name>
+            <comment>for releasing special keys: back, enter, control, meta, shift, alt, delete, tab, 
+ escape, windows, capslock, left_arrow, right_arrow, up_arrow, down_arrow, 
+ home, end, page_up, page_down</comment>
+            <returntype>butt.droid.awtRobot.AWTRobot</returntype>
+            <parameter>
+                <name>inString</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>RobotSpecialKeyCombo</name>
+            <comment>Special key combos: ctrl_shift_esc, alt_tab, ctrl_c, ctrl_v, 
+ ctrl_shift_v, ctrl_z, ctrl_x, ctrl_f, ctrl_a, ctrl_shift_m, alt_f,
+ meta_v, meta_c, meta_x.
+ This sub takes care of the key presses and releases. 
+ Make sure the OS supports the meta key before using keycombos
+ that use the meta key.
+ Use RobotSupportsMetaKey() for checking.</comment>
+            <returntype>butt.droid.awtRobot.AWTRobot</returntype>
+            <parameter>
+                <name>inString</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>JVMMemoryNonHeapUsed</name>
+            <comment>Returns the number of bytes used by non-heap memory pools.</comment>
+            <returntype>long</returntype>
+        </method>
+        <method>
+            <name>JVMMemoryHeapUsed</name>
+            <comment>Returns the number of bytes used by this JVM's heap.</comment>
+            <returntype>long</returntype>
+        </method>
+        <method>
+            <name>RobotSpecialKeyPress</name>
+            <comment>For pressing special keys: back, enter, control, meta, shift, alt, delete, tab, 
+ escape, windows, capslock, left_arrow, right_arrow, up_arrow, down_arrow, 
+ home, end, page_up, page_down
+ Be sure to call RobotSpecialKeyRelease() soon thereafter.
+ If you use the meta key, make sure the OS supports it with call to
+ RobotSupportsMetaKey().</comment>
+            <returntype>butt.droid.awtRobot.AWTRobot</returntype>
+            <parameter>
+                <name>inString</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>RobotCut</name>
+            <comment>Presses and releases ctrl_x for Windows or Linux systems.
+ On Macs, uses meta_x. This method should work on all platforms.
+ This method returns the Me AWTRobot Object so you can chain calls:
+ &lt;code&gt;Dim cutText As String = robot.RobotCut.ClipboardStringGet&lt;/code&gt;</comment>
+            <returntype>butt.droid.awtRobot.AWTRobot</returntype>
+        </method>
+        <method>
+            <name>RobotKeyPressByKeyCode</name>
+            <comment>Presses a key corresponding to the passed keyCode.
+ You can use RobotKeyCode to find the keyCodes for various characters.
+ Note that this will only work if there is a dedicated key corresponding to the
+ keyCode. If you have to press "Shift" to access that character, it will not work.
+ In that case, you should have the Robot press "Shift" and then the appropriate key.</comment>
+            <returntype>butt.droid.awtRobot.AWTRobot</returntype>
+            <parameter>
+                <name>keyCode</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>ScreenCaptureToFile2</name>
+            <comment>Creates a screen capture of the given rectangle (default is 1920x1200)
+ and saves the image to "fullFilePath". This is an absolute file path.
+ The file will be a .png file so make sure "fullFilePath" ends in ".png".
+ If the default rectangle is unsatisfactory, make sure to set the desired rectangle
+ using ScreenCurrentRectangleSetAs...() before calling this method.</comment>
+            <returntype>butt.droid.awtRobot.AWTRobot</returntype>
+            <parameter>
+                <name>fullFilePath</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>JVMMemoryFree</name>
+            <comment>Returns the free memory in the JVM in units of bytes.</comment>
+            <returntype>long</returntype>
+        </method>
+        <method>
+            <name>JVMJavaVersion</name>
+            <comment>Returns the Java version.</comment>
+            <returntype>java.lang.String</returntype>
+        </method>
+        <method>
+            <name>JVMMemoryHeapAllocated</name>
+            <comment>Returns the number of bytes allocated to this JVM's heap.</comment>
+            <returntype>long</returntype>
+        </method>
+        <method>
+            <name>RobotMouseButtonRelease</name>
+            <comment>Trigger a MouseReleaed event with butt=1 for left, butt=2 for right, butt=3 for center.</comment>
+            <returntype>butt.droid.awtRobot.AWTRobot</returntype>
+            <parameter>
+                <name>butt</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>ScreenCurrentRectangleSetAsArbitrary</name>
+            <comment>Sets the rectangle as any arbitrary rectangle with top left corner at x,y
+ and of designated width and height.
+ This rectangle will be the region of the screen captured during 
+ CreateScreenCapture...() calls.</comment>
+            <returntype>butt.droid.awtRobot.AWTRobot</returntype>
+            <parameter>
+                <name>x</name>
+                <type>int</type>
+            </parameter>
+            <parameter>
+                <name>y</name>
+                <type>int</type>
+            </parameter>
+            <parameter>
+                <name>width</name>
+                <type>int</type>
+            </parameter>
+            <parameter>
+                <name>height</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>ScreenCurrentRectangleSetAsLeftScreen</name>
+            <comment>Sets the rectangle used for CreateScreenCapture...() as the left-most screen
+ as reported by systemScreenDimensions().</comment>
+            <returntype>butt.droid.awtRobot.AWTRobot</returntype>
+        </method>
+        <method>
+            <name>SystemNanoTime</name>
+            <comment>Returns the number of nanoseconds since an arbitrary origin. 
+ All calls within the JVM instance will use the same origin but different origins 
+ may be used across multiple instances.</comment>
+            <returntype>long</returntype>
+        </method>
+        <method>
+            <name>SystemProcessKillByPID</name>
+            <comment>Uses the Windows-only taskkill command to kill the process at the pid.
+ PID should be purely numeric.
+ Returns true if it works, false if an exception was caught.</comment>
+            <returntype>boolean</returntype>
+            <parameter>
+                <name>pid</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>RobotMouseMoveTo</name>
+            <comment>Moves the mouse cursor to x,y in screen coordinates.</comment>
+            <returntype>butt.droid.awtRobot.AWTRobot</returntype>
+            <parameter>
+                <name>x</name>
+                <type>int</type>
+            </parameter>
+            <parameter>
+                <name>y</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>RobotPaste</name>
+            <comment>Puts inString into System clipboard and then pastes it
+ by pressing and releasing ctrl_v for Windows or Linux systems.
+ On Macs, uses meta_v. This method should work on all platforms.
+ This is the preferred method of inputting text.</comment>
+            <returntype>butt.droid.awtRobot.AWTRobot</returntype>
+            <parameter>
+                <name>inString</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>delay</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>SystemOpenExternalFile</name>
+            <comment>Opens an external file with the system defaults.
+ Same as fx.ShowExternalDocument() except you can use this in non-UI apps.</comment>
+            <returntype>butt.droid.awtRobot.AWTRobot</returntype>
+            <parameter>
+                <name>filename</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>ClipboardImageGetAsByteArray</name>
+            <comment></comment>
+            <returntype>byte[]</returntype>
+        </method>
+        <method>
+            <name>ScreenPixelColorGetAt</name>
+            <comment>Returns an Int representing the color at the point (x,y).
+ Uses the sRGB color model, compatible with fx.Colors.From32Bit().</comment>
+            <returntype>int</returntype>
+            <parameter>
+                <name>x</name>
+                <type>int</type>
+            </parameter>
+            <parameter>
+                <name>y</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>B4JCallingThreadNameGet</name>
+            <comment>Returns the name of the Java thread in which this method is executed.</comment>
+            <returntype>java.lang.String</returntype>
+        </method>
+        <method>
+            <name>JVMThrowException</name>
+            <comment>Throws an Exception with the given message.</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>message</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>StandardOutIsRedirected</name>
+            <comment>Returns whether or not Standard Out is being redirected to a file.
+ To redirect Standard Out to a file, call redirectStandardOut().</comment>
+            <returntype>boolean</returntype>
+        </method>
+        <method>
+            <name>StandardOutRedirect</name>
+            <comment>Redirects Standard Out to the designated file. 
+ Returns true if it works, false otherwise.
+ To return Standard Out to the console, call returnStandardOutToConsole().</comment>
+            <returntype>boolean</returntype>
+            <parameter>
+                <name>outFile</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>SystemCPULoad</name>
+            <comment>Returns the system CPU load as a double between 0 (0%) and 1 (100%).</comment>
+            <returntype>double</returntype>
+        </method>
+        <method>
+            <name>RobotFunctionKeyPress</name>
+            <comment>Presses the function key corresponding to the f parameter.
+ For example, to press F5, pass f=5.
+ Be sure to call RobotFunctionKeyRelease() soon thereafer.
+ This method only supports from F1 to F12.</comment>
+            <returntype>butt.droid.awtRobot.AWTRobot</returntype>
+            <parameter>
+                <name>f</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>RobotSingleStrike</name>
+            <comment>Presses and then releases key with 10 ms delay.
+ Only for inString.charAt(0).
+ Use only for alphanumerics and punctuation.
+ This is NOT the preferred method of inputting text.
+ Use RobotPaste if you can.</comment>
+            <returntype>butt.droid.awtRobot.AWTRobot</returntype>
+            <parameter>
+                <name>inString</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>RobotPaste2</name>
+            <comment>Sends a call to RobotPaste(inString, 50) to the JavaFX Application event queue</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>inString</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>ClipboardFileListHas</name>
+            <comment></comment>
+            <returntype>boolean</returntype>
+        </method>
+        <method>
+            <name>RobotKeyCode</name>
+            <comment>Returns the integer KeyCode for the char t.
+ This is mostly for diagnostic purposes.</comment>
+            <returntype>int</returntype>
+            <parameter>
+                <name>t</name>
+                <type>char</type>
+            </parameter>
+        </method>
+        <method>
+            <name>ClipboardImageHas</name>
+            <comment></comment>
+            <returntype>boolean</returntype>
+        </method>
+        <method>
+            <name>JVMProcessID</name>
+            <comment>Returns the PID of the calling process
+ CAUTION: Might not work on all JVMs.</comment>
+            <returntype>java.lang.String</returntype>
+        </method>
+        <method>
+            <name>B4JCallingThreadStartProtectedMessageLoop</name>
+            <comment>This method calls StartMessageLoop inside a Try-Catch block inside a Do-While loop.
+ This means that Exceptions thrown inside StartMessageLoop that would normally kill 
+ the message loop and end the thread will be caught. This gives you the chance to get the
+ Exception info and then choose whether or not to resume the message loop.
+ When an Exception is caught, the 
+ &lt;code&gt;
+ module.eventName_MessageLoopException(ThreadName As String, ExceptionMessage As String, StackTrace() As String) As Boolean
+ &lt;/code&gt; 
+ event will be raised. Return True from this event method to resume the message loop, False
+ to end it.
+ 
+ This method will return True if it was stopped by StopMessageLoop and False if stopped due to
+ an Exception. Obviously, this method will block until the message loop ends. Example usage:
+ &lt;code&gt;
+ If robot.B4JCallingThreadStartProtectedMessageLoop(Me, "robot") Then
+     Log("The message loop ended pleasantly")
+ Else
+     Log("The message loop ended due to an Exception")
+ End If
+ &lt;/code&gt;
+ If you are using this in a Server WebSocket class, it's best invoked in the WebSocket_Connected() event sub
+ so that it ends the normal message loop and starts a protected message loop.</comment>
+            <returntype>boolean</returntype>
+            <parameter>
+                <name>ba</name>
+                <type>anywheresoftware.b4a.BA</type>
+            </parameter>
+            <parameter>
+                <name>module</name>
+                <type>java.lang.Object</type>
+            </parameter>
+            <parameter>
+                <name>eventName</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>RobotDelay</name>
+            <comment>Sleep for millis.
+ CAUTION: this blocks the calling thread.</comment>
+            <returntype>butt.droid.awtRobot.AWTRobot</returntype>
+            <parameter>
+                <name>millis</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>RobotCopy</name>
+            <comment>Presses and releases ctrl_c for Windows or Linux systems.
+ On Macs, uses meta_c. This method should work on all platforms.
+ This method returns the Me AWTRobot Object so you can chain calls:
+ &lt;code&gt;Dim copiedText As String = robot.RobotCut.ClipboardStringGet&lt;/code&gt;</comment>
+            <returntype>butt.droid.awtRobot.AWTRobot</returntype>
+        </method>
+        <method>
+            <name>RobotKeyPress</name>
+            <comment>Presses a key corresponding to a single alphanumeric character, or punctuation.
+ If inString.length&gt;1, it will only press the key for the first character.
+ Be sure to call ReleaseKey() soon thereafter.</comment>
+            <returntype>butt.droid.awtRobot.AWTRobot</returntype>
+            <parameter>
+                <name>inString</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>StandardErrorReturnToConsole</name>
+            <comment>Returns Standard Error to the console, undoing redirectStandardError().</comment>
+            <returntype>boolean</returntype>
+        </method>
+        <method>
+            <name>RobotSupportsMetaKey</name>
+            <comment>Returns true if the operating system supports the meta key.
+ On Macs, the meta key maps to the command key.
+ This will attempt to press the meta key.</comment>
+            <returntype>boolean</returntype>
+        </method>
+        <method>
+            <name>RobotMouseMoveBy</name>
+            <comment>Moves the mouse cursor by xdiff, ydiff amounts in screen coordinates.</comment>
+            <returntype>butt.droid.awtRobot.AWTRobot</returntype>
+            <parameter>
+                <name>xdiff</name>
+                <type>int</type>
+            </parameter>
+            <parameter>
+                <name>ydiff</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>ScreenCaptureToFile</name>
+            <comment>Creates a screen capture of the given rectangle (default is 1920x1200)
+ and saves the image to "filename" relative to the current working directory, 
+ usually the .jar's location. 
+ The file will be a .png file so make sure "filename" ends in ".png".
+ If the default rectangle is unsatisfactory, make sure to set the desired rectangle
+ using ScreenCurrentRectangleSetAs...() before calling this method.</comment>
+            <returntype>butt.droid.awtRobot.AWTRobot</returntype>
+            <parameter>
+                <name>filename</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>ClipboardStringGet</name>
+            <comment>Returns the text contents of the system clipboard.
+ If unable to for whatever reason, returns an empty string.</comment>
+            <returntype>java.lang.String</returntype>
+        </method>
+        <method>
+            <name>SystemProcessorsNumberOf</name>
+            <comment>Returns the number of processors available to the JVM.
+ If the JVM hasn't been invoked with any special restrictions, this will 
+ be the number of processors in the system.
+ Intel Hyper-Threaded systems will report two logical cores per physical core
+ when Hyper-Threading is enabled.</comment>
+            <returntype>int</returntype>
+        </method>
+        <method>
+            <name>ScreenCurrentRectangleSetAsRightScreen</name>
+            <comment>Sets the rectangle used for CreateScreenCapture...() as the right-most screen
+ as reported by systemScreenDimensions(). If the system only has one screen, the
+ left-most and right-most screens will be the same.</comment>
+            <returntype>butt.droid.awtRobot.AWTRobot</returntype>
+        </method>
+        <method>
+            <name>JVMGarbageCollectionRequest</name>
+            <comment>Calls System.gc() which requests that the JVM run garbage collection.
+ Note that you can only request that the JVM run garbage collection and that the
+ JVM is free to ignore the request if it feels like it.
+ Also, note that this function blocks until the JVM finishes executing garbage 
+ collection or decides to ignore your request.</comment>
+            <returntype>butt.droid.awtRobot.AWTRobot</returntype>
+        </method>
+        <method>
+            <name>JVMMemoryNonHeapAllocated</name>
+            <comment>Returns the number of bytes allocated to this JVM for non-heap usage.</comment>
+            <returntype>long</returntype>
+        </method>
+        <method>
+            <name>JVMAddShutdownHook</name>
+            <comment>Adds a ShutdownHook for the JVM. The sub eventName_JVMShutdown() within the specified
+ module will run when the JVM shuts down. This method will not run in the main thread.</comment>
+            <returntype>butt.droid.awtRobot.AWTRobot</returntype>
+            <parameter>
+                <name>module</name>
+                <type>java.lang.Object</type>
+            </parameter>
+            <parameter>
+                <name>eventName</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>ClipboardStringSet</name>
+            <comment>Sets the system clipboard String contents</comment>
+            <returntype>butt.droid.awtRobot.AWTRobot</returntype>
+            <parameter>
+                <name>inString</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>B4JCallingThreadNameSet</name>
+            <comment>Sets the calling Thread's name. This name can be retrieved later with
+ &lt;code&gt;
+ Log(Robot.B4JCallingThreadNameGet)
+ &lt;/code&gt;</comment>
+            <returntype>butt.droid.awtRobot.AWTRobot</returntype>
+            <parameter>
+                <name>newName</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>SystemMemoryPhysicalFree</name>
+            <comment>Returns free system physical memory in bytes.</comment>
+            <returntype>long</returntype>
+        </method>
+        <method>
+            <name>ScreenGetDimensions</name>
+            <comment>Returns the system's screen dimensions as an array of ints.
+ Widths are the even elements, heights the odd elements.
+ The array size will be twice the number of monitors.</comment>
+            <returntype>int[]</returntype>
+        </method>
+        <method>
+            <name>ClipboardFileListSet</name>
+            <comment></comment>
+            <returntype>butt.droid.awtRobot.AWTRobot</returntype>
+            <parameter>
+                <name>fileList</name>
+                <type>anywheresoftware.b4a.objects.collections.List</type>
+            </parameter>
+        </method>
+        <method>
+            <name>SystemOpenAddressInBrowser</name>
+            <comment>Opens a web address in the system default browser.
+ Same as fx.ShowExternalDocument() except you can use this in non-UI apps.</comment>
+            <returntype>butt.droid.awtRobot.AWTRobot</returntype>
+            <parameter>
+                <name>address</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>JVMMemoryTotalAvailable</name>
+            <comment>Returns the total amount of memory available to the JVM in units of bytes.</comment>
+            <returntype>long</returntype>
+        </method>
+        <method>
+            <name>B4JCallingThreadStackTraceGet</name>
+            <comment>Returns the stack trace of the calling Thread as an
+ array of Strings.</comment>
+            <returntype>java.lang.String[]</returntype>
+        </method>
+        <method>
+            <name>RobotMouseCurrentLocation</name>
+            <comment>Returns the integer coordinates of the current mouse location as an integer array.
+ The first element is the x position, the second is the y position.</comment>
+            <returntype>int[]</returntype>
+        </method>
+        <method>
+            <name>relaunchSelfShellScript</name>
+            <comment>Like relaunchSelfBatch(), but for non-Windows. 
+ WARNING: This is still experimental!</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>BatchFileName</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>StandardErrorRedirect</name>
+            <comment>Redirects Standard Error to the designated file.
+ Returns true if it works, false otherwise.
+ To return Standard Error to the console, call returnStandardErrorToConsole().</comment>
+            <returntype>boolean</returntype>
+            <parameter>
+                <name>errorFile</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>RobotSingleStrikeKeyCode</name>
+            <comment>Presses and then releases key with 10 ms delay.
+ Uses the indicated keyCode
+ This is primarily for diagnostic purposes.</comment>
+            <returntype>butt.droid.awtRobot.AWTRobot</returntype>
+            <parameter>
+                <name>keyCode</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>ScreenCaptureAsBufferedImage</name>
+            <comment>Returns a screen capture as a BufferedImage.
+ This is a Java type, not the B4J Image type.</comment>
+            <returntype>java.awt.image.BufferedImage</returntype>
+        </method>
+        <method>
+            <name>B4JCallingThreadInvokeUncaughtExceptionHandler</name>
+            <comment>Calls the calling Thread's UncaughtExceptionHandler's uncaughtException() 
+ method with a custom Exception containing errorMessage.
+ Note that this doesn't actually cause an Exception to be thrown. The calling
+ Thread will continue after this method call.</comment>
+            <returntype>butt.droid.awtRobot.AWTRobot</returntype>
+            <parameter>
+                <name>errorMessage</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>ClipboardFileListGet</name>
+            <comment>Returns a List of Strings representing the full file paths of the
+ files in the system clipboard.</comment>
+            <returntype>anywheresoftware.b4a.objects.collections.List</returntype>
+        </method>
+        <method>
+            <name>ScreenCaptureAsByteArray</name>
+            <comment>Takes a screenshot of the given rectangle (default is 1920x1200),
+ returns the image in .png format as a byte array so the byte array 
+ can be used in Non-UI apps.
+ If the default rectangle is unsatisfactory, make sure to set the desired rectangle
+ using ScreenCurrentRectangleSetAs...() before calling this method.</comment>
+            <returntype>byte[]</returntype>
+        </method>
+        <method>
+            <name>SystemOperatingSystemEtc</name>
+            <comment>Returns the operating system description.
+ Returned String will look like: "Windows 7 Version: 6.1 Arch: amd64"</comment>
+            <returntype>java.lang.String</returntype>
+        </method>
+        <method>
+            <name>B4JGetStackTrace</name>
+            <comment>Get the stack trace as an Array of Strings from the passed
+ B4X Exception object.</comment>
+            <returntype>java.lang.String[]</returntype>
+            <parameter>
+                <name>b4jEx</name>
+                <type>anywheresoftware.b4a.objects.B4AException</type>
+            </parameter>
+        </method>
+        <method>
+            <name>relaunchSelf</name>
+            <comment>This function creates a temporary batch file or shell script, runs it and then shuts down 
+ the app. The running batch file pauses for 5 seconds, starts a new instance of this app
+ (selfJarName), and then deletes itself. In short, this function causes the app to restart itself.
+ WARNING: Non-Windows usage is experimental!
+ selfJarName should include the .jar suffix. The args String should be a space-separated list of
+ arguments to pass to the new instance of the app. If you have no arguments, just pass an 
+ empty String.</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>selfJarName</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>args</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>RobotKeyReleaseByKeyCode</name>
+            <comment>Releases a key corresponding to the passed keyCode.
+ You can use RobotKeyCode to find the keyCodes for various characters.</comment>
+            <returntype>butt.droid.awtRobot.AWTRobot</returntype>
+            <parameter>
+                <name>keyCode</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>SystemMemoryPhysicalTotal</name>
+            <comment>Returns total system physical memory in bytes.</comment>
+            <returntype>long</returntype>
+        </method>
+        <method>
+            <name>RobotKeyRelease</name>
+            <comment>Releases a key corresponding to a single alphanumeric character
+ if inString.length&gt;1, it will only release the key for the first character.</comment>
+            <returntype>butt.droid.awtRobot.AWTRobot</returntype>
+            <parameter>
+                <name>inString</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>RobotKeyText</name>
+            <comment>Returns a String representation for the given KeyCode
+ This is mostly for diagnostic purposes.</comment>
+            <returntype>java.lang.String</returntype>
+            <parameter>
+                <name>keyCode</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>SystemNewlineCharacter</name>
+            <comment>Returns the System newline character using Java's System.lineSeparator() call.</comment>
+            <returntype>java.lang.String</returntype>
+        </method>
+    </class>
+    <version>1.61</version>
+</root>

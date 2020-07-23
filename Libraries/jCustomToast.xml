@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <doclet-version-NOT-library-version>1.04</doclet-version-NOT-library-version>
+    <class>
+        <name>anywheresoftware.giuseppe.salvi.toast.ToastMessageShowWrapper</name>
+        <shortname>ToastMessageShow</shortname>
+        <owner>process</owner>
+        <method>
+            <name>ToastIconSize48x48</name>
+            <comment>Set the icon 48 x 48</comment>
+            <returntype>void</returntype>
+        </method>
+        <method>
+            <name>ToastIconSize40x40</name>
+            <comment>Set the icon 40 x 40</comment>
+            <returntype>void</returntype>
+        </method>
+        <method>
+            <name>ToastShow4</name>
+            <comment>Show title, message and icon</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>title</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>message</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>icon</name>
+                <type>javafx.scene.image.Image</type>
+            </parameter>
+        </method>
+        <method>
+            <name>ToastShow5</name>
+            <comment>Show title and icon</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>title</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>icon</name>
+                <type>javafx.scene.image.Image</type>
+            </parameter>
+        </method>
+        <method>
+            <name>ToastShow6</name>
+            <comment>Show icon</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>icon</name>
+                <type>javafx.scene.image.Image</type>
+            </parameter>
+        </method>
+        <method>
+            <name RaisesSynchronousEvents="true">Initialize</name>
+            <comment>Initialize the Objct</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>ba</name>
+                <type>anywheresoftware.b4a.BA</type>
+            </parameter>
+            <parameter>
+                <name>EventName</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>ToastIconSize24x24</name>
+            <comment>Set the icon 24 x 24</comment>
+            <returntype>void</returntype>
+        </method>
+        <method>
+            <name>ToastIconSize32x32</name>
+            <comment>Set the icon 32 x 32</comment>
+            <returntype>void</returntype>
+        </method>
+        <method>
+            <name>ToastStop</name>
+            <comment>Stop the toast</comment>
+            <returntype>void</returntype>
+        </method>
+        <method>
+            <name>ToastShow2</name>
+            <comment>Show title and message</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>title</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>message</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>ToastShow3</name>
+            <comment>Show message and icon</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>message</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>icon</name>
+                <type>javafx.scene.image.Image</type>
+            </parameter>
+        </method>
+        <method>
+            <name>ToastIconSize16x16</name>
+            <comment>Set the icon 16 x 16</comment>
+            <returntype>void</returntype>
+        </method>
+        <method>
+            <name>ToastShow</name>
+            <comment>Show message</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>message</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <property>
+            <name>ToastDuration</name>
+            <parameter>
+                <name>duration</name>
+                <type>double</type>
+            </parameter>
+            <comment>Set the delay</comment>
+        </property>
+        <property>
+            <name>ToastTextLocation</name>
+            <parameter>
+                <name>position</name>
+                <type>int</type>
+            </parameter>
+            <comment>Set the position of the text</comment>
+        </property>
+        <property>
+            <name>ToastMessageColor</name>
+            <parameter>
+                <name>color</name>
+                <type>javafx.scene.paint.Color</type>
+            </parameter>
+            <comment>Set color to the message</comment>
+        </property>
+        <property>
+            <name>Version</name>
+            <returntype>java.lang.String</returntype>
+            <comment>Return Author and Version of this library</comment>
+        </property>
+        <property>
+            <name>ToastLocation</name>
+            <parameter>
+                <name>position</name>
+                <type EnumType="true">javafx.geometry.Pos</type>
+            </parameter>
+            <comment>Set the position of the toast</comment>
+        </property>
+        <property>
+            <name>ToastTitleColor</name>
+            <parameter>
+                <name>color</name>
+                <type>javafx.scene.paint.Color</type>
+            </parameter>
+            <comment>Set color to the title</comment>
+        </property>
+        <property>
+            <name>ToastNotificationOwner</name>
+            <parameter>
+                <name>owner</name>
+                <type>anywheresoftware.b4j.objects.Form</type>
+            </parameter>
+            <comment>Set MainForm to Anchor the Toast Inside own Window</comment>
+        </property>
+        <field>
+            <name>TOAST_BOTTOM_CENTER</name>
+            <comment></comment>
+            <returntype EnumType="true">javafx.geometry.Pos</returntype>
+        </field>
+        <field>
+            <name>TOAST_TOP_RIGHT</name>
+            <comment></comment>
+            <returntype EnumType="true">javafx.geometry.Pos</returntype>
+        </field>
+        <field>
+            <name>TEXT_LEFT</name>
+            <comment></comment>
+            <returntype>int</returntype>
+        </field>
+        <field>
+            <name>TOAST_CENTER</name>
+            <comment></comment>
+            <returntype EnumType="true">javafx.geometry.Pos</returntype>
+        </field>
+        <field>
+            <name>TOAST_TOP_CENTER</name>
+            <comment></comment>
+            <returntype EnumType="true">javafx.geometry.Pos</returntype>
+        </field>
+        <field>
+            <name>TOAST_BOTTOM_RIGHT</name>
+            <comment></comment>
+            <returntype EnumType="true">javafx.geometry.Pos</returntype>
+        </field>
+        <field>
+            <name>TOAST_INFO_ICON</name>
+            <comment></comment>
+            <returntype>javafx.scene.image.Image</returntype>
+        </field>
+        <field>
+            <name>TEXT_RIGHT</name>
+            <comment></comment>
+            <returntype>int</returntype>
+        </field>
+        <field>
+            <name>TOAST_TOP_LEFT</name>
+            <comment></comment>
+            <returntype EnumType="true">javafx.geometry.Pos</returntype>
+        </field>
+        <field>
+            <name>TOAST_CENTER_RIGHT</name>
+            <comment></comment>
+            <returntype EnumType="true">javafx.geometry.Pos</returntype>
+        </field>
+        <field>
+            <name>TOAST_BOTTOM_LEFT</name>
+            <comment></comment>
+            <returntype EnumType="true">javafx.geometry.Pos</returntype>
+        </field>
+        <field>
+            <name>TEXT_CENTER</name>
+            <comment></comment>
+            <returntype>int</returntype>
+        </field>
+        <field>
+            <name>TOAST_SHORT_DELAY</name>
+            <comment></comment>
+            <returntype>double</returntype>
+        </field>
+        <field>
+            <name>TOAST_SUCCESS_ICON</name>
+            <comment></comment>
+            <returntype>javafx.scene.image.Image</returntype>
+        </field>
+        <field>
+            <name>TOAST_WARNING_ICON</name>
+            <comment></comment>
+            <returntype>javafx.scene.image.Image</returntype>
+        </field>
+        <field>
+            <name>TOAST_LONG_DELAY</name>
+            <comment></comment>
+            <returntype>double</returntype>
+        </field>
+        <field>
+            <name>TOAST_ERROR_ICON</name>
+            <comment></comment>
+            <returntype>javafx.scene.image.Image</returntype>
+        </field>
+        <field>
+            <name>TOAST_CENTER_LEFT</name>
+            <comment></comment>
+            <returntype EnumType="true">javafx.geometry.Pos</returntype>
+        </field>
+    </class>
+    <version>1.1</version>
+    <comment></comment>
+    <author>GiuseppeSalvi</author>
+</root>

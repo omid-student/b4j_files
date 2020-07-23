@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <doclet-version-NOT-library-version>1.02</doclet-version-NOT-library-version>
+    <class>
+        <name>db2000.B4J.INI.INI</name>
+        <shortname>INI</shortname>
+        <owner>process</owner>
+        <method>
+            <name>rdInteger</name>
+            <comment>returns the integer value assigned to the specific section and key
+SectionName: the section name
+KeyName: the key name
+Return type: @return:the integer value</comment>
+            <returntype>java.lang.Integer</returntype>
+            <parameter>
+                <name>SectionName</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>KeyName</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>SetFileName</name>
+            <comment>set the INI file to use
+FileName: the full path and name of the INI file</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>FileName</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>rmSection</name>
+            <comment>remove the specified section
+SectionName: the section name</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>SectionName</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>GetTimestampFormat</name>
+            <comment>get the timestamp format
+Return type: @return:the TimestampFormat value</comment>
+            <returntype>java.lang.String</returntype>
+        </method>
+        <method>
+            <name>UpDate</name>
+            <comment>update the INI file, if the INI file does not exist it is created</comment>
+            <returntype>boolean</returntype>
+        </method>
+        <method>
+            <name>GetFileName</name>
+            <comment>get the INI file name being used
+Return type: @return:the INI file name</comment>
+            <returntype>java.lang.String</returntype>
+        </method>
+        <method>
+            <name>GetDateFormat</name>
+            <comment>get the date format
+Return type: @return:the DateFormat value</comment>
+            <returntype>java.lang.String</returntype>
+        </method>
+        <method>
+            <name>rmKey</name>
+            <comment>remove the specified key from the specified section
+SectionName: the section name
+KeyName: the key name</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>SectionName</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>KeyName</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>GetInfo</name>
+            <comment>get info
+Return type: @return:the info string array</comment>
+            <returntype>java.lang.String[]</returntype>
+        </method>
+        <method>
+            <name>wrDate</name>
+            <comment>write the date value to the specific section and key
+SectionName: the section name
+KeyName: the key name
+DateValue: the date value
+Comments: the comments</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>SectionName</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>KeyName</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>DateValue</name>
+                <type>java.util.Date</type>
+            </parameter>
+            <parameter>
+                <name>Comments</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>rdDate</name>
+            <comment>returns the date value assigned to the specific section and key
+SectionName: the section name
+KeyName: the key name
+Return type: @return:the date value</comment>
+            <returntype>java.util.Date</returntype>
+            <parameter>
+                <name>SectionName</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>KeyName</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>rdDouble</name>
+            <comment>returns the double value assigned to the specific section and key
+SectionName: the section name
+KeyName: the key name
+Return type: @return:the double value</comment>
+            <returntype>java.lang.Double</returntype>
+            <parameter>
+                <name>SectionName</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>KeyName</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>wrNewSection</name>
+            <comment>write a new section
+SectionName: the section name
+Comments: the comments</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>SectionName</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>Comments</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>SetTimestampFormat</name>
+            <comment>set the timestamp format
+TimestampFormat: the format string, if timestamp format is not valid assumes by default "yyyy-MM-dd"</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>TimestampFormat</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>rdLong</name>
+            <comment>returns the long value assigned to the specific section and key
+SectionName: the section name
+KeyName: the key name
+Return type: @return:the long value</comment>
+            <returntype>java.lang.Long</returntype>
+            <parameter>
+                <name>SectionName</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>KeyName</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>wrDouble</name>
+            <comment>write the double value to the specific section and key
+SectionName: the section name
+KeyName: the key name
+DoubleValue: the double value
+Comments: the comments</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>SectionName</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>KeyName</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>DoubleValue</name>
+                <type>double</type>
+            </parameter>
+            <parameter>
+                <name>Comments</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>rdTimestamp</name>
+            <comment>returns the timestamp value assigned to the specific section and key
+SectionName: the section name
+KeyName: the key name
+Return type: @return:the timestamp value</comment>
+            <returntype>java.util.Date</returntype>
+            <parameter>
+                <name>SectionName</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>KeyName</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>wrBoolean</name>
+            <comment>write the boolean value to the specific section and key
+SectionName: the section name
+KeyName: the key name
+booleanValue: the boolean value
+Comments: the comments</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>SectionName</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>KeyName</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>BooleanValue</name>
+                <type>boolean</type>
+            </parameter>
+            <parameter>
+                <name>Comments</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>wrLong</name>
+            <comment>write the long value to the specific section and key
+SectionName: the section name
+KeyName: the key name
+LongValue: the long value
+Comments: the comments</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>SectionName</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>KeyName</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>LongValue</name>
+                <type>long</type>
+            </parameter>
+            <parameter>
+                <name>Comments</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>wrTimestamp</name>
+            <comment>write the timestamp value to the specific section and key
+SectionName: the section name
+KeyName: the key name
+TimestampValue: the timestamp value
+Comments: the comments</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>SectionName</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>KeyName</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>TimestampValue</name>
+                <type>java.sql.Timestamp</type>
+            </parameter>
+            <parameter>
+                <name>Comments</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>rdString</name>
+            <comment>returns the string value assigned to the specific section and key
+SectionName: the section name
+KeyName: the key name
+Return type: @return:the string value</comment>
+            <returntype>java.lang.String</returntype>
+            <parameter>
+                <name>SectionName</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>KeyName</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>rdBoolean</name>
+            <comment>returns the boolean value assigned to the specific section and key
+SectionName: the section name
+KeyName: the key name
+Return type: @return:the boolean value</comment>
+            <returntype>java.lang.Boolean</returntype>
+            <parameter>
+                <name>SectionName</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>KeyName</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>wrInteger</name>
+            <comment>write the integer value to the specific section and key
+SectionName: the section name
+KeyName: the key name
+IntegerValue: the integer value
+Comments: the comments</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>SectionName</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>KeyName</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>IntegerValue</name>
+                <type>int</type>
+            </parameter>
+            <parameter>
+                <name>Comments</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>wrString</name>
+            <comment>write the string value to the specific section and key
+SectionName: the section name
+KeyName: the key name
+StringValue: the string value
+Comments: the comments</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>SectionName</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>KeyName</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>StringValue</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>Comments</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>SetDateFormat</name>
+            <comment>set the date format
+DateFormat: the format string, if date format is not valid assumes by default "yyyy-MM-dd"</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>DateFormat</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+    </class>
+    <version>1.03</version>
+    <author>Massimo Mascalchi</author>
+</root>

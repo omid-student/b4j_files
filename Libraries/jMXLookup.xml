@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <doclet-version-NOT-library-version>1.02</doclet-version-NOT-library-version>
+    <class>
+        <name>com.j.mx.giga.jMXLookup</name>
+        <shortname>jMXLookup</shortname>
+        <owner>process</owner>
+        <permission>android.permission.INTERNET</permission>
+        <method>
+            <name>jMX</name>
+            <comment>Returns a list of mail servers for domain provided. 
+ Example Below
+ Dim m As jMXLookup
+ Dim asi As String = "yahoo.com"
+ Dim site() As String
+ site = Array As String(asi)
+ m.JMX(site)
+ Dim ter As TextReader
+ ter.Initialize(File.OpenInput("C:\Results\","MXResults.txt")) 'initializes the file for input
+ txtA1.Text = ter.ReadAll</comment>
+            <returntype>java.lang.String</returntype>
+            <parameter>
+                <name>args</name>
+                <type>java.lang.String[]</type>
+            </parameter>
+        </method>
+    </class>
+    <version>1.0</version>
+    <author>giga</author>
+</root>

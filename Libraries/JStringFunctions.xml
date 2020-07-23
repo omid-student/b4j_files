@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <doclet-version-NOT-library-version>1.00</doclet-version-NOT-library-version>
+  <dependsOn>jcore</dependsOn>
+  <class>
+    <name>b4j.example.jstringfunctions</name>
+    <shortname>JStringFunctions</shortname>
+    <method>
+      <name>IsInitialized</name>
+      <comment>Tests whether the object has been initialized.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="AddSpaces">_addspaces</name>
+      <comment>Returns a string of spaces.  The number returned is set by HowMany.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>HowMany</name>
+        <type>int</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="AsciiCodes">_asciicodes</name>
+      <comment>Returns a String with all the Characters and their ASCII codes.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="At">_at</name>
+      <comment>Returns the position of the SearchFor within YourString.</comment>
+      <returntype>int</returntype>
+      <parameter>
+        <name>YourString</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>SearchFor</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="CurrentWeek">_currentweek</name>
+      <comment>Returns the number of the current week, 1-52 from the date passed to MyDate. </comment>
+      <returntype>int</returntype>
+      <parameter>
+        <name>MyDate</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="DayOfMonth">_dayofmonth</name>
+      <comment>Returns the day of the month like 1-31, from the date passed to MyDate. </comment>
+      <returntype>int</returntype>
+      <parameter>
+        <name>MyDate</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Decrypt">_decrypt</name>
+      <comment>Converts an encrypted string of text to readable format. </comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>YourText</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Empty">_empty</name>
+      <comment>Test to see if the string is empty and returns True if it is, otherwise returns False.</comment>
+      <returntype>boolean</returntype>
+      <parameter>
+        <name>StringText</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Encrypt">_encrypt</name>
+      <comment>Converts a string of text to simple encryption.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>YourText</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="FileExist">_fileexist</name>
+      <comment>Returns True if the filename passed does exist, otherwise returns False.
+Be sure to include the path like:
+
+If FileExist("/mnt/sdcard/mydata.dat") Then MsgBox("Yes", "The Answer")</comment>
+      <returntype>boolean</returntype>
+      <parameter>
+        <name>PathAndFileName</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="iif">_iif</name>
+      <comment>This is a single line if conditional test.  If Value1 is true, Value2 is returned, otherwise
+Value3 will be returned. Works with strings and booleans.
+Example:
+
+MsgBox(iif("Bob"="Jim", "They are the same", "They are not the same"), "The Answer")
+or
+MyBoolean = iif(FirstTime = True, StartMyService = True, StartMyService = False)</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value1</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>Value2</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>Value3</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Initialize">_initialize</name>
+      <comment>Initializes the object for use.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>ba</name>
+        <type>anywheresoftware.b4a.BA</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="InString">_instring</name>
+      <comment>Returns the position of the SearchFor within YourString.</comment>
+      <returntype>long</returntype>
+      <parameter>
+        <name>YourString</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>SearchFor</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="IsEmpty">_isempty</name>
+      <comment>Test to see if the string is empty and returns True if it is, otherwise returns False.</comment>
+      <returntype>boolean</returntype>
+      <parameter>
+        <name>StringText</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Left">_left</name>
+      <comment>Returns the Left portion of a string with the number of characters passed
+in Length.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>StringText</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>Length</name>
+        <type>long</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Len">_len</name>
+      <comment>Returns the length of the string.</comment>
+      <returntype>long</returntype>
+      <parameter>
+        <name>StringText</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Lower">_lower</name>
+      <comment>Returns the string converted to Lowercase characters.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>StringText</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Ltrim">_ltrim</name>
+      <comment>Returns a new string with the leading spaces removed.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>StringText</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="MB">_mb</name>
+      <comment>Same as MsgBox but only needs one parameter.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Message</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Mid">_mid</name>
+      <comment>Returns the a new String for how ever many characters passed in Length from
+a starting position passed in Start.
+Example:
+
+Mid(This is a long line of text, 5, 2)
+In this example the function will Return: "is"</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>StringText</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>Start</name>
+        <type>int</type>
+      </parameter>
+      <parameter>
+        <name>Length</name>
+        <type>int</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Month">_month</name>
+      <comment>Returns the number of the current month 1-12 as Int type, from the date passed to MyDate. </comment>
+      <returntype>int</returntype>
+      <parameter>
+        <name>MyDate</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="MonthName">_monthname</name>
+      <comment>Returns the Name the current month as a String like January, etc., from the date passed to MyDate. </comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>MyDate</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="NewDate">_newdate</name>
+      <comment>Returns a new date adding or subtracting HowManyDays. HowManyDays can be positive or
+negitive numbers. </comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>DatePassed</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>HowManyDays</name>
+        <type>int</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="NumOfDaysBetween">_numofdaysbetween</name>
+      <comment>Returns the numbers of days passed between the two dates passed.</comment>
+      <returntype>int</returntype>
+      <parameter>
+        <name>CurrentDate</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>OtherDate</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Proper">_proper</name>
+      <comment>Returns the string in proper format.
+Example:
+
+MyText = "jim joe brown"
+MyText = SF.Proper(Mytext)
+This function will return: "Jim Joe Brown"</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>StringText</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Right">_right</name>
+      <comment>Returns the Right portion of a string with the number of characters passed
+in Length.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>StringText</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>Length</name>
+        <type>long</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="RndChrGen">_rndchrgen</name>
+      <comment>Returns a string of ramdom characters with a length specified by StringLength.  CharacterType tells
+the function what type of characters to return.
+CharacterType = 0 for Upper and Lower case 
+CharacterType = 1 for Upper case only
+CharacterType = 2 for Lower case only</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>StringLength</name>
+        <type>int</type>
+      </parameter>
+      <parameter>
+        <name>CharacterType</name>
+        <type>int</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Rtrim">_rtrim</name>
+      <comment>Returns a new string with the trailing spaces removed.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>StringText</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SearchDate">_searchdate</name>
+      <comment>Returns True if the Date1 and the Date2 are within x Days(DateRange) of each other.
+Pass the dates as Strings.
+Example:
+
+SearchDate("03/01/2013", "02/15/2013", 30)</comment>
+      <returntype>boolean</returntype>
+      <parameter>
+        <name>Date1</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>Date2</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>DateRange</name>
+        <type>int</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Split">_split</name>
+      <comment>Returns a LIST of items from the string split at the Delimiter.
+EXAMPLE:
+
+Dim ANS As List
+ANS = SF.Split("This is a test string.", " ")</comment>
+      <returntype>anywheresoftware.b4a.objects.collections.List</returntype>
+      <parameter>
+        <name>CurrentString</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>Split_At_Delimiter</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SplitGetWord">_splitgetword</name>
+      <comment>Returns just the one element selected with GetElement from the string. 
+EXAMPLE:
+
+ANS = SF.SplitGetWord("This is a test string.", " ", 2)
+In this example the function will Return: "test"</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>CurrentString</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>Split_At_Delimiter</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>GetElement</name>
+        <type>int</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Stuff">_stuff</name>
+      <comment>Used to replace text in a string with new text.
+Example:
+
+MyText = "I will tell you that joe is a good friend!"
+MyText = SF.Stuff(MyText, "Joe Brown", "joe")
+This function will return: "I will tell you that Joe Brown is a good friend!"</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>CurrentText</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>InsertInString</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>RemoveFromString</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Today">_today</name>
+      <comment>Returns the devices date.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="Trim">_trim</name>
+      <comment>Returns a new string will leading and trailing spaces removed.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Text</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Upper">_upper</name>
+      <comment>Returns the string converted to Uppercase characters.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>StringText</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Val">_val</name>
+      <comment>Returns the numerical value of a string. If the string contains now value it returns 0.</comment>
+      <returntype>double</returntype>
+      <parameter>
+        <name>StringText</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="ValidDate">_validdate</name>
+      <comment>Returns True if the date passed is a Valid date.</comment>
+      <returntype>boolean</returntype>
+      <parameter>
+        <name>ChkDate</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="WeekDay">_weekday</name>
+      <comment>Returns the number of the day of the week 1-7 as a String, from the date passed to MyDate. </comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>MyDate</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="WeekName">_weekname</name>
+      <comment>Returns the name of the day of the week like Sunday, Monday, etc., from the date passed to MyDate. </comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>MyDate</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Year">_year</name>
+      <comment>Returns the year of the date passed in MyDate.
+Example:
+
+SF.Year("01/01/2013") returns "2013"</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>MyDate</name>
+        <type>String</type>
+      </parameter>
+    </method>
+  </class>
+  <version>1</version>
+</root>

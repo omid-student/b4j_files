@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <doclet-version-NOT-library-version>1.04</doclet-version-NOT-library-version>
+    <class>
+        <name>com.stevel05.SimpleMidiPlayer</name>
+        <shortname>jSimpleMidiPlayer</shortname>
+        <owner>process</owner>
+        <method>
+            <name>Initialize</name>
+            <comment></comment>
+            <returntype>boolean</returntype>
+            <parameter>
+                <name>FilePath</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>FileName</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>Start</name>
+            <comment>Starts playback of the MIDI data in the currently loaded sequence.</comment>
+            <returntype>void</returntype>
+        </method>
+        <method>
+            <name>GetMicrosecondLength</name>
+            <comment>Obtains the length of the current sequence, expressed in microseconds.</comment>
+            <returntype>long</returntype>
+        </method>
+        <method>
+            <name>GetTempoInBPM</name>
+            <comment>Obtains the current tempo, expressed in beats per minute.</comment>
+            <returntype>float</returntype>
+        </method>
+        <method>
+            <name>GetResolution</name>
+            <comment>Obtains the timing resolution for this sequence.</comment>
+            <returntype>int</returntype>
+        </method>
+        <method>
+            <name>GetDivisionType</name>
+            <comment>Obtains the timing division type for this sequence.
+ Can be one of:
+ PPQ The tempo-based timing type, for which the resolution is expressed in pulses (ticks) per quarter note.
+ SMPTE_24 The SMPTE-based timing type with 24 frames per second (resolution is expressed in ticks per frame).
+ SMPTE_25 The SMPTE-based timing type with 25 frames per second (resolution is expressed in ticks per frame).
+ SMPTE_30 The SMPTE-based timing type with 30 frames per second (resolution is expressed in ticks per frame).
+ SMPTE_30DROP The SMPTE-based timing type with 29.97 frames per second (resolution is expressed in ticks per frame).</comment>
+            <returntype>float</returntype>
+        </method>
+        <method>
+            <name>Stop</name>
+            <comment>Stops recording, if active, and playback of the currently loaded sequence, if any.</comment>
+            <returntype>void</returntype>
+        </method>
+        <method>
+            <name>Close</name>
+            <comment>Closes the device, indicating that the device should now release any system resources it is using.</comment>
+            <returntype>void</returntype>
+        </method>
+        <method>
+            <name>GetMicrosecondPosition</name>
+            <comment>Obtains the current position in the sequence, expressed in microseconds.</comment>
+            <returntype>long</returntype>
+        </method>
+        <method>
+            <name>IsRunning</name>
+            <comment>Indicates whether the Sequencer is currently running.</comment>
+            <returntype>boolean</returntype>
+        </method>
+        <method>
+            <name>GetLoopStartPoint</name>
+            <comment>Obtains the start position of the loop, in MIDI ticks.</comment>
+            <returntype>long</returntype>
+        </method>
+        <method>
+            <name>SetLoopEndPoint</name>
+            <comment>Sets the last MIDI tick that will be played in the loop.</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>tick</name>
+                <type>long</type>
+            </parameter>
+        </method>
+        <method>
+            <name>SetLoopCount</name>
+            <comment>Sets the number of repetitions of the loop for playback.</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>count</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>GetLoopEndPoint</name>
+            <comment>Obtains the end position of the loop, in MIDI ticks.</comment>
+            <returntype>long</returntype>
+        </method>
+        <method>
+            <name>SetMicrosecondPosition</name>
+            <comment>Sets the current position in the sequence, expressed in microseconds</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>microseconds</name>
+                <type>long</type>
+            </parameter>
+        </method>
+        <method>
+            <name>SetLoopStartPoint</name>
+            <comment>Sets the first MIDI tick that will be played in the loop.</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>tick</name>
+                <type>long</type>
+            </parameter>
+        </method>
+        <property>
+            <name>Isinitialized</name>
+            <returntype>boolean</returntype>
+            <comment></comment>
+        </property>
+        <property>
+            <name>LastErrorMessage</name>
+            <returntype>java.lang.String</returntype>
+            <comment>Get the message for the last error the player encountered</comment>
+        </property>
+        <field>
+            <name>LOOP_CONTINUOUSLY</name>
+            <comment></comment>
+            <returntype>int</returntype>
+        </field>
+        <field>
+            <name>SMPTE_30DROP</name>
+            <comment></comment>
+            <returntype>float</returntype>
+        </field>
+        <field>
+            <name>SMPTE_24</name>
+            <comment></comment>
+            <returntype>float</returntype>
+        </field>
+        <field>
+            <name>SMPTE_25</name>
+            <comment></comment>
+            <returntype>float</returntype>
+        </field>
+        <field>
+            <name>SMPTE_30</name>
+            <comment></comment>
+            <returntype>float</returntype>
+        </field>
+        <field>
+            <name>PPQ</name>
+            <comment></comment>
+            <returntype>float</returntype>
+        </field>
+    </class>
+    <version>1.0</version>
+    <author>Steve Laming</author>
+</root>

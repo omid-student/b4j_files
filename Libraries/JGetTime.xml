@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <doclet-version-NOT-library-version>1.04</doclet-version-NOT-library-version>
+    <class>
+        <name>com.gigab.time.giga.Time</name>
+        <shortname>jGetTime</shortname>
+        <owner>process</owner>
+        <method>
+            <name>milliSecondsBetween</name>
+            <comment></comment>
+            <returntype>long</returntype>
+            <parameter>
+                <name>time</name>
+                <type>com.gigab.time.giga.Time</type>
+            </parameter>
+        </method>
+        <method>
+            <name>set</name>
+            <comment>Set date of this day. The day is lenient meaning that illegal day
+ parameters can be specified and results in a recomputed day with legal
+ month/day values.
+year: Year of this day.
+month: Month of this day (0-11).
+dayOfMonth: Day of month of this day (1-31).</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>year</name>
+                <type>int</type>
+            </parameter>
+            <parameter>
+                <name>month</name>
+                <type>int</type>
+            </parameter>
+            <parameter>
+                <name>dayOfMonth</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>getNthOfMonth</name>
+            <comment>Find the n'th xxxxday of s specified month (for instance find 1st sunday of
+ May 2006; findNthOfMonth (1, Calendar.SUNDAY, Calendar.MAY, 2006); Return
+ null if the specified day doesn't exists.
+n: Nth day to look for.
+dayOfWeek: Day to look for (Calendar.XXXDAY).
+month: Month to check (Calendar.XXX).
+year: Year to check.
+Return type: @return:Required Day (or null if non-existent)</comment>
+            <returntype>com.gigab.time.giga.Day</returntype>
+            <parameter>
+                <name>n</name>
+                <type>int</type>
+            </parameter>
+            <parameter>
+                <name>dayOfWeek</name>
+                <type>int</type>
+            </parameter>
+            <parameter>
+                <name>month</name>
+                <type>int</type>
+            </parameter>
+            <parameter>
+                <name>year</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>today</name>
+            <comment>A more explicit front-end to the Day() constructor which return a day
+ object representing the day of creation.
+Return type: @return:A day instance representing today.</comment>
+            <returntype>com.gigab.time.giga.Day</returntype>
+        </method>
+        <method>
+            <name>hashCode</name>
+            <comment>Overload required as default definition of equals() has changed.
+Return type: @return:A hash code value for this object. Example returned 13/02-2014 Thursday 11:18:33,991</comment>
+            <returntype>int</returntype>
+        </method>
+        <method>
+            <name>secondsBetween</name>
+            <comment></comment>
+            <returntype>double</returntype>
+            <parameter>
+                <name>time</name>
+                <type>com.gigab.time.giga.Time</type>
+            </parameter>
+        </method>
+        <method>
+            <name>isAfter</name>
+            <comment>Return true if this day is after the specified day.
+date: Day to compare to.
+Return type: @return:True if this is after day, false otherwise.</comment>
+            <returntype>boolean</returntype>
+            <parameter>
+                <name>day</name>
+                <type>com.gigab.time.giga.Day</type>
+            </parameter>
+        </method>
+        <method>
+            <name>hoursBetween</name>
+            <comment></comment>
+            <returntype>double</returntype>
+            <parameter>
+                <name>time</name>
+                <type>com.gigab.time.giga.Time</type>
+            </parameter>
+        </method>
+        <method>
+            <name>isBefore</name>
+            <comment>Return true if this day is before the specified day.
+date: Day to compare to.
+Return type: @return:True if this is before day, false otherwise.</comment>
+            <returntype>boolean</returntype>
+            <parameter>
+                <name>day</name>
+                <type>com.gigab.time.giga.Day</type>
+            </parameter>
+        </method>
+        <method>
+            <name>addDays</name>
+            <comment>Add a number of days to this day. Subtracting a number of days can be done
+ by a negative argument to addDays() or calling subtractDays() explicitly.
+nDays: Number of days to add. Examples if 5 days added from today would be 18/02-2014 Tuesday 11:08:57,281</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>nDays</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>minutesBetween</name>
+            <comment></comment>
+            <returntype>double</returntype>
+            <parameter>
+                <name>time</name>
+                <type>com.gigab.time.giga.Time</type>
+            </parameter>
+        </method>
+        <method>
+            <name>addMinutes</name>
+            <comment></comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>nMinutes</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>addSeconds</name>
+            <comment></comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>nSeconds</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>subtractMonths</name>
+            <comment>Subtract a number of months from this day
+nDays: Number of days to subtract.</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>nMonths</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>clone</name>
+            <comment>Create a clone of this day.
+Return type: @return:This day cloned.  example 13/02-2014 Thursday</comment>
+            <returntype>java.lang.Object</returntype>
+        </method>
+        <method>
+            <name>isLeapYear</name>
+            <comment>Return true if the year of this day is a leap year.
+Return type: @return:True if this year is a leap year, false otherwise.  EXAMPLE false</comment>
+            <returntype>boolean</returntype>
+        </method>
+        <method>
+            <name>daysBetween</name>
+            <comment>Return number of days between two days. The method always returns a
+ positive number of days.
+date: The day to compare to.
+Return type: @return:Number of days between this and day. NEEDS WORK</comment>
+            <returntype>int</returntype>
+            <parameter>
+                <name>day</name>
+                <type>com.gigab.time.giga.Day</type>
+            </parameter>
+        </method>
+        <method>
+            <name>addYears</name>
+            <comment>Add a number of years to this day. The actual number of days added depends
+ on the starting day. Subtracting a number of years can be done by a
+ negative argument to addYears() or calling subtractYears explicitly.
+nYears: Number of years to add.</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>nYears</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>equals</name>
+            <comment>Return true if this day equals (represent the same date) as the specified
+ day.
+date: Day to compare to.
+Return type: @return:True if this equals day, false otherwise.</comment>
+            <returntype>boolean</returntype>
+            <parameter>
+                <name>day</name>
+                <type>com.gigab.time.giga.Day</type>
+            </parameter>
+        </method>
+        <method>
+            <name>compareTo</name>
+            <comment>Compare this day to the specified day. If object is not of type Day a
+ ClassCastException is thrown.
+object: Day object to compare to.
+Return type: @return:</comment>
+            <returntype>int</returntype>
+            <parameter>
+                <name>object</name>
+                <type>java.lang.Object</type>
+            </parameter>
+        </method>
+        <method>
+            <name>subtractDays</name>
+            <comment>Subtract a number of days from this day
+nDays: Number of days to subtract.</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>nDays</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>subtractYears</name>
+            <comment>Subtract a number of years from this day
+nYears: Number of years to subtract.</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>nYears</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>addMilliSeconds</name>
+            <comment>Add x amount of hours to hours of the day if 5 hours added from current time output would be 13/02-2014 Thursday 16:10:52,815
+ 
+13/02-2014 Thursday 11:12:30,708</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>nMilliSeconds</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>addMonths</name>
+            <comment>Add a number of months to this day. The actual number of days added depends
+ on the staring day. Subtracting a number of months can be done by a
+ negative argument to addMonths() or calling subtactMonths() explicitly.
+ NOTE: addMonth(n) m times will in general give a different result than
+ addMonth(m*n). Add 1 month to January 31, 2005 will give February 28, 2005.
+nMonths: Number of months to add.</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>nMonths</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>getFirstOfMonth</name>
+            <comment>Find the first of a specific day in a given month, for instance first
+ Tuesday of May: getFirstOfMonth (Calendar.TUESDAY, Calendar.MAY, 2005);
+dayOfWeek: Weekday to get.
+month: Month of day to get.
+year: Year of day to get.
+Return type: @return:The requested day. NEEDS WORK</comment>
+            <returntype>com.gigab.time.giga.Day</returntype>
+            <parameter>
+                <name>dayOfWeek</name>
+                <type>int</type>
+            </parameter>
+            <parameter>
+                <name>month</name>
+                <type>int</type>
+            </parameter>
+            <parameter>
+                <name>year</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>toString</name>
+            <comment>Return a scratch string representation of this day. Used for debugging
+ only. The format of the day is dd/mm-yyyy
+Return type: @return:A string representation of this day. example 13/02-2014 Thursday 10:19:55,701</comment>
+            <returntype>java.lang.String</returntype>
+        </method>
+        <method>
+            <name>addHours</name>
+            <comment>Add x amount of hours to hours of the day if 5 hours added from current time output would be 13/02-2014 Thursday 16:10:52,815</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>nHours</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>getLastOfMonth</name>
+            <comment>Find the last of a specific day in a given month, for instance last Tuesday
+ of May: getLastOfMonth (Calendar.TUESDAY, Calendar.MAY, 2005);
+dayOfWeek: Weekday to get.
+month: Month of day to get.
+year: Year of day to get.
+Return type: @return:The requested day. NEEDS WORK</comment>
+            <returntype>com.gigab.time.giga.Day</returntype>
+            <parameter>
+                <name>dayOfWeek</name>
+                <type>int</type>
+            </parameter>
+            <parameter>
+                <name>month</name>
+                <type>int</type>
+            </parameter>
+            <parameter>
+                <name>year</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <property>
+            <name>Hours</name>
+            <returntype>int</returntype>
+            <parameter>
+                <name>hours</name>
+                <type>int</type>
+            </parameter>
+            <comment></comment>
+        </property>
+        <property>
+            <name>MilliSeconds</name>
+            <returntype>int</returntype>
+            <parameter>
+                <name>milliSeconds</name>
+                <type>int</type>
+            </parameter>
+            <comment></comment>
+        </property>
+        <property>
+            <name>DaysInMonth</name>
+            <returntype>int</returntype>
+            <comment>Return the number of days in the month of this day.</comment>
+        </property>
+        <property>
+            <name>Calendar</name>
+            <returntype>java.util.Calendar</returntype>
+            <comment>Return a Calendar instance representing the same day as this instance. For
+ use by secondary methods requiring java.util.Calendar as input.</comment>
+        </property>
+        <property>
+            <name>MonthNo</name>
+            <returntype>int</returntype>
+            <comment>Return the 1-based month number of the month of this day. 1 = January, 2 =
+ February and so on.</comment>
+        </property>
+        <property>
+            <name>Day</name>
+            <parameter>
+                <name>day</name>
+                <type>com.gigab.time.giga.Day</type>
+            </parameter>
+            <comment></comment>
+        </property>
+        <property>
+            <name>DayName</name>
+            <returntype>java.lang.String</returntype>
+            <comment>Get default locale name of this day ("Monday", "Tuesday", etc.</comment>
+        </property>
+        <property>
+            <name>Month</name>
+            <returntype>int</returntype>
+            <parameter>
+                <name>month</name>
+                <type>int</type>
+            </parameter>
+            <comment>Return month of this day. The result must be compared to Calendar.JANUARY,
+ Calendar.FEBRUARY, etc.</comment>
+        </property>
+        <property>
+            <name>DayOfWeek</name>
+            <returntype>int</returntype>
+            <comment>Return the day of week of this day. NOTE: Must be compared to
+ Calendar.MONDAY, TUSEDAY etc.</comment>
+        </property>
+        <property>
+            <name>DayOfMonth</name>
+            <returntype>int</returntype>
+            <parameter>
+                <name>dayOfMonth</name>
+                <type>int</type>
+            </parameter>
+            <comment>Return day of month of this day. NOTE: First day of month is 1 (not 0).</comment>
+        </property>
+        <property>
+            <name>Year</name>
+            <returntype>int</returntype>
+            <parameter>
+                <name>year</name>
+                <type>int</type>
+            </parameter>
+            <comment>Return year of this day.</comment>
+        </property>
+        <property>
+            <name>Date</name>
+            <returntype>java.util.Date</returntype>
+            <comment>Return a Date instance representing the same date as this instance. For use
+ by secondary methods requiring java.util.Date as input.</comment>
+        </property>
+        <property>
+            <name>Seconds</name>
+            <returntype>int</returntype>
+            <parameter>
+                <name>seconds</name>
+                <type>int</type>
+            </parameter>
+            <comment></comment>
+        </property>
+        <property>
+            <name>DayNumberOfWeek</name>
+            <returntype>int</returntype>
+            <comment>Return the day number of week of this day, where Monday=1, Tuesday=2, ...
+ Sunday=7.</comment>
+        </property>
+        <property>
+            <name>DayOfYear</name>
+            <returntype>int</returntype>
+            <comment>Return the day number of year this day represents. January 1 = 1 and so on.</comment>
+        </property>
+        <property>
+            <name>DaysInYear</name>
+            <returntype>int</returntype>
+            <comment>Return the number of days in the year of this day.</comment>
+        </property>
+        <property>
+            <name>WeekOfYear</name>
+            <returntype>int</returntype>
+            <comment>Return the week number of year, this day belongs to. 1st=1 and so on.</comment>
+        </property>
+        <property>
+            <name>Minutes</name>
+            <returntype>int</returntype>
+            <parameter>
+                <name>minutes</name>
+                <type>int</type>
+            </parameter>
+            <comment></comment>
+        </property>
+        <field>
+            <name>calendar_</name>
+            <comment></comment>
+            <returntype>java.util.Calendar</returntype>
+        </field>
+    </class>
+    <version>1.0</version>
+    <author>giga</author>
+</root>

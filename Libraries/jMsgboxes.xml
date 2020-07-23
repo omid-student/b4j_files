@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <doclet-version-NOT-library-version>1.04</doclet-version-NOT-library-version>
+    <class>
+        <name>anywheresoftware.b4a.agraham.jmsgboxes.Msgboxes</name>
+        <shortname>Msgboxes</shortname>
+        <comment>This object provides various flavours of modal Msgbox.
+A message box almost syntax compatible with the B4A Msgbox keyword may be shown by
+
+&lt;code&gt;Dim Msgbox As Msgboxes
+...
+Msgbox.Show("Message", "Title")&lt;/code&gt; *
+
+A message box almost syntax compatible with the B4A Msgbox2 keyword may be shown by
+
+&lt;code&gt;Dim Msgbox As Msgboxes
+...
+Msgbox.Show2("Message", "Title", "Positive", "Cancel", "Negative")&lt;/code&gt;*
+
+Note that the Basic4android Show2 Icon parameter is not present here
+
+A Msgbox with a customised set of buttons can be shown using Show3.</comment>
+        <owner>process</owner>
+        <method>
+            <name>SetXY</name>
+            <comment>By default the Msgbox is shown centred on the screen.
+If the values of both X and Y are &gt;= 0 then the Msgbox will be positioned at that X, Y position.
+The positioning does seem to be off by about -3 pixels in both X and Y but that may depend on system settings for the windows border.</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>X</name>
+                <type>int</type>
+            </parameter>
+            <parameter>
+                <name>Y</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name RaisesSynchronousEvents="true">Show</name>
+            <comment></comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>message</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>title</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name RaisesSynchronousEvents="true">Show2</name>
+            <comment>Shows a modal message box with the specified message and title.
+Message - The dialog message.
+Title - The dialog title.
+Positive - The text to show for the "positive" button. Pass "" if you don't want to show the button.
+Cancel - The text to show for the "cancel" button. Pass "" if you don't want to show the button.
+Negative - The text to show for the "negative" button. Pass "" if you don't want to show the button.
+
+Returns one of the DialogResponse values corresponding to the type of the button pressed.</comment>
+            <returntype>int</returntype>
+            <parameter>
+                <name>message</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>title</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>positive</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>cancel</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>negative</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name RaisesSynchronousEvents="true">Show3</name>
+            <comment>Shows a modal message box with the specified message and title and an arbitrary number and type of buttons.
+Message - The dialog message.
+Title - The dialog title.
+btnlabels - The text to show for each button in the array
+btntypes - The type for each button in the array as a dialog response value. This determines the DialogResponse returned for that button.
+
+Returns one of the DialogResponse values corresponding to the type of the button pressed.</comment>
+            <returntype>int</returntype>
+            <parameter>
+                <name>message</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>title</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>btnlabels</name>
+                <type>java.lang.String[]</type>
+            </parameter>
+            <parameter>
+                <name>btntypes</name>
+                <type>int[]</type>
+            </parameter>
+        </method>
+        <property>
+            <name>DefaultButton</name>
+            <returntype>int</returntype>
+            <parameter>
+                <name>dialogresponse</name>
+                <type>int</type>
+            </parameter>
+            <comment>Gets or set a DialogResponses value that determines the type of the default button in the Msgbox.
+The library default is DialogResponses.NEGATIVE.</comment>
+        </property>
+        <property>
+            <name>ButtonAlignment</name>
+            <returntype>java.lang.String</returntype>
+            <parameter>
+                <name>alignment</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <comment>Gets or sets the alignment of the buttons in the Msgbox
+Permissible values are "LEFT",  "RIGHT", or "CENTER"
+The library default is "CENTER"</comment>
+        </property>
+        <property>
+            <name>Version</name>
+            <returntype>double</returntype>
+            <comment>Returns the version number of the library.</comment>
+        </property>
+        <property>
+            <name>DialogType</name>
+            <returntype>java.lang.String</returntype>
+            <parameter>
+                <name>dialogtype</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <comment>Gets or sets the type of the Msgbox to be shown
+Permissible values are "ACCEPT",  "ERROR",  "INFO" or "QUESTION".
+The library default is "INFO"</comment>
+        </property>
+    </class>
+    <class>
+        <name>anywheresoftware.b4a.agraham.jmsgboxes.Msgboxes.DialogResponses</name>
+        <shortname>DialogResponses</shortname>
+        <comment>The same dialog response values as Basic4android are implmemented. POSITIVE, CANCEL and NEGATIVE
+You will need to Dim a single Global of this type then you use it just like it was a keyword
+
+&lt;code&gt;Dim DialogResponse As DialogResponses&lt;/code&gt;
+
+There are six additional button types/response values available for use with the Show3 method.
+ABORT, IGNORE, RETRY, CUSTOM1, CUSTOM2, and CUSTOM3</comment>
+        <owner>process</owner>
+        <method>
+            <name>AsString</name>
+            <comment>Return a string corresponding to the dialog response value provided or "UNKNOWN" if not one of the three allowed values.</comment>
+            <returntype>java.lang.String</returntype>
+            <parameter>
+                <name>dialogresponse</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <field>
+            <name>CUSTOM1</name>
+            <comment></comment>
+            <returntype>int</returntype>
+        </field>
+        <field>
+            <name>CUSTOM2</name>
+            <comment></comment>
+            <returntype>int</returntype>
+        </field>
+        <field>
+            <name>POSITIVE</name>
+            <comment></comment>
+            <returntype>int</returntype>
+        </field>
+        <field>
+            <name>CUSTOM3</name>
+            <comment></comment>
+            <returntype>int</returntype>
+        </field>
+        <field>
+            <name>IGNORE</name>
+            <comment></comment>
+            <returntype>int</returntype>
+        </field>
+        <field>
+            <name>ABORT</name>
+            <comment></comment>
+            <returntype>int</returntype>
+        </field>
+        <field>
+            <name>RETRY</name>
+            <comment></comment>
+            <returntype>int</returntype>
+        </field>
+        <field>
+            <name>NEGATIVE</name>
+            <comment></comment>
+            <returntype>int</returntype>
+        </field>
+        <field>
+            <name>CANCEL</name>
+            <comment></comment>
+            <returntype>int</returntype>
+        </field>
+    </class>
+    <version>1.2</version>
+    <comment>This library contains a Msgboxes object that provides various flavours of modal Msgbox.
+
+This library uses the jfxtras-labs-2.2-r5.jar library from &lt;link&gt;JFXtras Labs|http://jfxtras.org&lt;/link&gt;.
+This is the direct link to &lt;link&gt;jfxtras-labs-2.2-r5.jar|http://central.maven.org/maven2/org/jfxtras/jfxtras-labs/2.2-r5/jfxtras-labs-2.2-r5.jar&lt;/link&gt;
+
+JFXtras and JFXtras Labs are licensed under the &lt;link&gt;New BSD License|http://en.wikipedia.org/wiki/BSD_licenses&lt;/link&gt;.
+Copyright (c) 2013, JFXtras
+All rights reserved.
+
+This library is therefore also licensed under the New BSD License.</comment>
+    <author>Andrew Graham</author>
+    <dependsOn>jfxtras-labs-2.2-r5</dependsOn>
+</root>

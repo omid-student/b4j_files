@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <doclet-version-NOT-library-version>1.04</doclet-version-NOT-library-version>
+    <class>
+        <name>anywheresoftware.b4j.agraham.scenicview.ScenicViewWrapper</name>
+        <shortname>ScenicView</shortname>
+        <comment>This library lets you invoke ScenicViewer on any B4J Form to examine and play with the scenegraph.
+
+Scenic View is a JavaFX application designed to make it simple to understand the current state of your
+application scenegraph, and to also easily manipulate properties of the scenegraph without having to keep
+editing your code. This library requires v1.3.0.
+
+ScenicView.jar v1.3.0 can be downloaded from the &lt;ScenicView Home Page|http://fxexperience.com/scenic-view&lt;/link&gt;.
+A help page for ScenicView may also accessed from that link.
+
+Include a reference to jScenicView in your Libs tab, then only two lines of code are required.
+
+Dim SView as ScenicView
+SView.Initialize(Form1)</comment>
+        <owner>process</owner>
+        <method>
+            <name>Initialize</name>
+            <comment>Initialize and start ScenicView to investigate the specified Form.</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>form</name>
+                <type>anywheresoftware.b4j.objects.Form</type>
+            </parameter>
+        </method>
+        <property>
+            <name>Version</name>
+            <returntype>double</returntype>
+            <comment>Returns the version number of the library.</comment>
+        </property>
+    </class>
+    <version>1.0</version>
+    <comment>This library lets you invoke ScenicViewer on any B4J Form to examine and play with the scenegraph.
+
+Scenic View is a JavaFX application designed to make it simple to understand the current state of your
+application scenegraph, and to also easily manipulate properties of the scenegraph without having to keep
+editing your code. This library requires v1.3.0.
+
+ScenicView.jar v1.3.0 can be downloaded from the &lt;ScenicView Home Page|http://fxexperience.com/scenic-view&lt;/link&gt;.
+A help page for ScenicView may also accessed from that link.
+
+Include a reference to jScenicView in your Libs tab, then only two lines of code are required.
+
+Dim SView as ScenicView
+SView.Initialize(Form1)</comment>
+    <author>Andrew Graham</author>
+    <dependsOn>ScenicView</dependsOn>
+</root>

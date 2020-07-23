@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <doclet-version-NOT-library-version>1.04</doclet-version-NOT-library-version>
+    <class>
+        <name>anywhere.software.studentencryption.StudentEncryption</name>
+        <shortname>StudentEncryption</shortname>
+        <owner>process</owner>
+        <method>
+            <name>Decrypt</name>
+            <comment>
+data: 
+salt: 
+Return type: @return:decryption data with VigenereCipher</comment>
+            <returntype>java.lang.String</returntype>
+            <parameter>
+                <name>data</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>salt</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>Encrypt</name>
+            <comment>
+data: 
+salt: 
+Return type: @return:encryption data with VigenereCipher</comment>
+            <returntype>java.lang.String</returntype>
+            <parameter>
+                <name>data</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>salt</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+    </class>
+</root>

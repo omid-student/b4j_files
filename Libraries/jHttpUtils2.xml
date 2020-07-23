@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <doclet-version-NOT-library-version>1.00</doclet-version-NOT-library-version>
+  <dependsOn>jcore</dependsOn>
+  <dependsOn>jfx</dependsOn>
+  <dependsOn>jhttp</dependsOn>
+  <dependsOn>jstringutils</dependsOn>
+  <dependsOn>httpcore-4.0</dependsOn>
+  <dependsOn>commons-logging-1.1.3</dependsOn>
+  <class b4a_type="StaticCode">
+    <name>b4j.example.httputils2service</name>
+    <shortname>HttpUtils2Service</shortname>
+    <objectwrapper>java.lang.Class</objectwrapper>
+    <field>
+      <name DesignerName="TempFolder">_tempfolder</name>
+      <returntype>String</returntype>
+    </field>
+    <method>
+      <name DesignerName="CompleteJob">_completejob</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>TaskId</name>
+        <type>int</type>
+      </parameter>
+      <parameter>
+        <name>success</name>
+        <type>boolean</type>
+      </parameter>
+      <parameter>
+        <name>errorMessage</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="hc_ResponseError">_hc_responseerror</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Response</name>
+        <type>anywheresoftware.b4a.http.HttpClientWrapper.HttpResponeWrapper</type>
+      </parameter>
+      <parameter>
+        <name>Reason</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>StatusCode</name>
+        <type>int</type>
+      </parameter>
+      <parameter>
+        <name>TaskId</name>
+        <type>int</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="hc_ResponseSuccess">_hc_responsesuccess</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Response</name>
+        <type>anywheresoftware.b4a.http.HttpClientWrapper.HttpResponeWrapper</type>
+      </parameter>
+      <parameter>
+        <name>TaskId</name>
+        <type>int</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Initialize">_initialize</name>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="Process_Globals">_process_globals</name>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="Response_StreamFinish">_response_streamfinish</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Success</name>
+        <type>boolean</type>
+      </parameter>
+      <parameter>
+        <name>TaskId</name>
+        <type>int</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SubmitJob">_submitjob</name>
+      <returntype>int</returntype>
+      <parameter>
+        <name>job</name>
+        <type>b4j.example.httpjob</type>
+      </parameter>
+    </method>
+  </class>
+  <class>
+    <name>b4j.example.httpjob</name>
+    <shortname>HttpJob</shortname>
+    <method>
+      <name>IsInitialized</name>
+      <comment>Tests whether the object has been initialized.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="Class_Globals">_class_globals</name>
+      <comment>Class module</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="Complete">_complete</name>
+      <comment>Called by the service when job completes</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>id</name>
+        <type>int</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Delete">_delete</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Link</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Delete2">_delete2</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Link</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>Parameters</name>
+        <type>String[]</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Download">_download</name>
+      <comment>Submits a HTTP GET request.
+Consider using Download2 if the parameters should be escaped.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Link</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Download2">_download2</name>
+      <comment>Submits a HTTP GET request.
+Encodes illegal parameter characters.
+&lt;code&gt;Example:
+job.Download2("http://www.example.com", _
+	Array As String("key1", "value1", "key2", "value2"))&lt;/code&gt;</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Link</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>Parameters</name>
+        <type>String[]</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="GetBitmap">_getbitmap</name>
+      <comment>Returns the response as a bitmap</comment>
+      <returntype>anywheresoftware.b4j.objects.ImageViewWrapper.ImageWrapper</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetInputStream">_getinputstream</name>
+      <returntype>anywheresoftware.b4a.objects.streams.File.InputStreamWrapper</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetRequest">_getrequest</name>
+      <comment>Called by the service to get the request</comment>
+      <returntype>anywheresoftware.b4a.http.HttpClientWrapper.HttpUriRequestWrapper</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetString">_getstring</name>
+      <comment>Returns the response as a string encoded with UTF8.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetString2">_getstring2</name>
+      <comment>Returns the response as a string.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Encoding</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Initialize">_initialize</name>
+      <comment>Initializes the Job.
+Name - The job's name. Note that the name doesn't need to be unique.
+TargetModule - The activity or service that will handle the JobDone event.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>ba</name>
+        <type>anywheresoftware.b4a.BA</type>
+      </parameter>
+      <parameter>
+        <name>Name</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>TargetModule</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="PostBytes">_postbytes</name>
+      <comment>Sends a POST request with the given string as the post data</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Link</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>Data</name>
+        <type>byte[]</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="PostFile">_postfile</name>
+      <comment>Sends a POST request with the given file as the post data.
+This method doesn't work with assets files.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Link</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>Dir</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>FileName</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="PostString">_poststring</name>
+      <comment>Sends a POST request with the given data as the post data.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Link</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>Text</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="PutBytes">_putbytes</name>
+      <comment>Sends a PUT request with the given string as the post data</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Link</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>Data</name>
+        <type>byte[]</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="PutString">_putstring</name>
+      <comment>Sends a PUT request with the given data as the post data.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Link</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>Text</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Release">_release</name>
+      <comment>Should be called to free resources held by this job.</comment>
+      <returntype>String</returntype>
+    </method>
+    <field>
+      <name DesignerName="JobName">_jobname</name>
+      <returntype>String</returntype>
+    </field>
+    <field>
+      <name DesignerName="Success">_success</name>
+      <returntype>boolean</returntype>
+    </field>
+    <field>
+      <name DesignerName="Username">_username</name>
+      <returntype>String</returntype>
+    </field>
+    <field>
+      <name DesignerName="Password">_password</name>
+      <returntype>String</returntype>
+    </field>
+    <field>
+      <name DesignerName="ErrorMessage">_errormessage</name>
+      <returntype>String</returntype>
+    </field>
+    <field>
+      <name DesignerName="Tag">_tag</name>
+      <returntype>Object</returntype>
+    </field>
+  </class>
+  <version>1.03</version>
+</root>

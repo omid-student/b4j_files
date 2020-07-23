@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <doclet-version-NOT-library-version>1.00</doclet-version-NOT-library-version>
+  <dependsOn>javaobject</dependsOn>
+  <dependsOn>jcore</dependsOn>
+  <dependsOn>jfx</dependsOn>
+  <class b4a_type="StaticCode">
+    <name>b4j.example.colorutils</name>
+    <shortname>ColorUtils</shortname>
+    <objectwrapper>java.lang.Class</objectwrapper>
+    <method>
+      <name DesignerName="Brighter">_brighter</name>
+      <comment>Creates a new Color that is a brighter version of this Color.</comment>
+      <returntype>Object</returntype>
+      <parameter>
+        <name>ColorObj</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Color">_color</name>
+      <comment>Creates an sRGB color with the specified red, green and blue values in the range 0.0-1.0.</comment>
+      <returntype>Object</returntype>
+      <parameter>
+        <name>Red</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>Green</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>Blue</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="ColorA">_colora</name>
+      <comment>Creates an sRGB color with the specified red, green and blue values in the range 0.0-1.0, and a given opacity.</comment>
+      <returntype>Object</returntype>
+      <parameter>
+        <name>Red</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>Green</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>Blue</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>Opacity</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Darker">_darker</name>
+      <comment>Creates a new Color that is a darker version of this Color.</comment>
+      <returntype>Object</returntype>
+      <parameter>
+        <name>ColorObj</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="DeriveColor">_derivecolor</name>
+      <comment>Creates a new Color based on this Color with hue, saturation, brightness and opacity values altered.</comment>
+      <returntype>Object</returntype>
+      <parameter>
+        <name>ColorObj</name>
+        <type>Object</type>
+      </parameter>
+      <parameter>
+        <name>hueShift</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>saturationFactor</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>brightnessFactor</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>opacityFactor</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Desaturate">_desaturate</name>
+      <comment>Creates a new Color that is a less saturated version of this Color.</comment>
+      <returntype>Object</returntype>
+      <parameter>
+        <name>ColorObj</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Equals">_equals</name>
+      <comment>Indicates whether some other object is "equal to" this one.</comment>
+      <returntype>boolean</returntype>
+      <parameter>
+        <name>ColorObj1</name>
+        <type>Object</type>
+      </parameter>
+      <parameter>
+        <name>ColorObj2</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="GetBlue">_getblue</name>
+      <comment>The blue component of the Color, in the range 0.0-1.0.</comment>
+      <returntype>double</returntype>
+      <parameter>
+        <name>ColorObj1</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="GetBrightness">_getbrightness</name>
+      <comment>Gets the brightness component of this Color.</comment>
+      <returntype>double</returntype>
+      <parameter>
+        <name>ColorObj1</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="GetGreen">_getgreen</name>
+      <comment>The green component of the Color, in the range 0.0-1.0.</comment>
+      <returntype>double</returntype>
+      <parameter>
+        <name>ColorObj1</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="GetHue">_gethue</name>
+      <comment>Gets the hue component of this Color.</comment>
+      <returntype>double</returntype>
+      <parameter>
+        <name>ColorObj1</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="GetOpacity">_getopacity</name>
+      <comment>The opacity of the Color, in the range 0.0-1.0.</comment>
+      <returntype>double</returntype>
+      <parameter>
+        <name>ColorObj1</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="GetRed">_getred</name>
+      <comment>The red component of the Color, in the range 0.0-1.0.</comment>
+      <returntype>double</returntype>
+      <parameter>
+        <name>ColorObj1</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="GetSaturation">_getsaturation</name>
+      <comment>Gets the saturation component of this Color.</comment>
+      <returntype>double</returntype>
+      <parameter>
+        <name>ColorObj1</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Gray">_gray</name>
+      <comment>Creates an opaque grey color.</comment>
+      <returntype>Object</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="GrayA">_graya</name>
+      <comment>Creates a grey color.</comment>
+      <returntype>Object</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>Opacity</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="GrayRBG">_grayrbg</name>
+      <comment>This is a shortcut for rgb(gray, gray, gray).</comment>
+      <returntype>Object</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>int</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="GrayRBGA">_grayrbga</name>
+      <comment>This is a shortcut for rgb(gray, gray, gray, opacity).</comment>
+      <returntype>Object</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>int</type>
+      </parameter>
+      <parameter>
+        <name>Opacity</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Grayscale">_grayscale</name>
+      <comment>Creates a new Color that is grayscale equivalent of this Color.</comment>
+      <returntype>Object</returntype>
+      <parameter>
+        <name>ColorObj</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Hashcode">_hashcode</name>
+      <comment>Returns a hash code for this Color object.</comment>
+      <returntype>int</returntype>
+      <parameter>
+        <name>ColorObj</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="HSB">_hsb</name>
+      <comment>Creates a Color based on the specified values in the HSB color model.</comment>
+      <returntype>Object</returntype>
+      <parameter>
+        <name>Hue</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>Saturation</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>Brightness</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="HSBA">_hsba</name>
+      <comment>Creates a Color based on the specified values in the HSB color model, and a given opacity.</comment>
+      <returntype>Object</returntype>
+      <parameter>
+        <name>Hue</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>Saturation</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>Brightness</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>Opacity</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Interpolate">_interpolate</name>
+      <comment>The function calculates an interpolated value along the fraction t between 0.0 and 1.0.</comment>
+      <returntype>Object</returntype>
+      <parameter>
+        <name>ColorStartValue</name>
+        <type>Object</type>
+      </parameter>
+      <parameter>
+        <name>ColorEndValue</name>
+        <type>Object</type>
+      </parameter>
+      <parameter>
+        <name>t</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Invert">_invert</name>
+      <comment>Creates a new Color that is inversion of this Color.</comment>
+      <returntype>Object</returntype>
+      <parameter>
+        <name>ColorObj</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="RGB">_rgb</name>
+      <comment>Creates an sRGB color with the specified RGB values in the range 0-255.</comment>
+      <returntype>Object</returntype>
+      <parameter>
+        <name>Red</name>
+        <type>int</type>
+      </parameter>
+      <parameter>
+        <name>Green</name>
+        <type>int</type>
+      </parameter>
+      <parameter>
+        <name>Blue</name>
+        <type>int</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="RGBA">_rgba</name>
+      <comment>Creates an sRGB color with the specified RGB values in the range 0-255, and a given opacity.</comment>
+      <returntype>Object</returntype>
+      <parameter>
+        <name>Red</name>
+        <type>int</type>
+      </parameter>
+      <parameter>
+        <name>Green</name>
+        <type>int</type>
+      </parameter>
+      <parameter>
+        <name>Blue</name>
+        <type>int</type>
+      </parameter>
+      <parameter>
+        <name>Opacity</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Saturate">_saturate</name>
+      <comment>Creates a new Color that is a more saturated version of this Color.</comment>
+      <returntype>Object</returntype>
+      <parameter>
+        <name>ColorObj</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="ToString">_tostring</name>
+      <comment>Returns a string representation of this Color.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>ColorObj</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="ValueOf">_valueof</name>
+      <comment>Creates a color value from a string representation.</comment>
+      <returntype>Object</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Web">_web</name>
+      <comment>Creates an RGB color specified with an HTML or CSS attribute string.</comment>
+      <returntype>Object</returntype>
+      <parameter>
+        <name>ColorString</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="WebA">_weba</name>
+      <comment>Creates an RGB color specified with an HTML or CSS attribute string.</comment>
+      <returntype>Object</returntype>
+      <parameter>
+        <name>ColorString</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>Opacity</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name>process_globals</name>
+      <returntype>void</returntype>
+    </method>
+  </class>
+  <version>1</version>
+</root>

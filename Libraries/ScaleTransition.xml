@@ -1,0 +1,1078 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <doclet-version-NOT-library-version>1.00</doclet-version-NOT-library-version>
+  <dependsOn>jcore</dependsOn>
+  <dependsOn>jfx</dependsOn>
+  <dependsOn>javaobject</dependsOn>
+  <class>
+    <name>b4j.example.item</name>
+    <shortname>Item</shortname>
+    <method>
+      <name>IsInitialized</name>
+      <comment>Tests whether the object has been initialized.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="Class_Globals">_class_globals</name>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="Initialize">_initialize</name>
+      <comment>Initializes the object. You can add parameters to this method if needed.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>ba</name>
+        <type>anywheresoftware.b4a.BA</type>
+      </parameter>
+      <parameter>
+        <name>lv</name>
+        <type>anywheresoftware.b4j.objects.ListViewWrapper</type>
+      </parameter>
+      <parameter>
+        <name>text</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="stClose_Finished">_stclose_finished</name>
+      <returntype>String</returntype>
+    </method>
+  </class>
+  <class>
+    <name>b4j.example.scaletransition</name>
+    <shortname>ScaleTransition</shortname>
+    <event>Finished</event>
+    <method>
+      <name>IsInitialized</name>
+      <comment>Tests whether the object has been initialized.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="Class_Globals">_class_globals</name>
+      <comment>Class module</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="getAutoReverse" HideFromIDE="true">_getautoreverse</name>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="getByX" HideFromIDE="true">_getbyx</name>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="getByY" HideFromIDE="true">_getbyy</name>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="getByZ" HideFromIDE="true">_getbyz</name>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="getCycleCount" HideFromIDE="true">_getcyclecount</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="getDelay" HideFromIDE="true">_getdelay</name>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="getFromX" HideFromIDE="true">_getfromx</name>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="getFromY" HideFromIDE="true">_getfromy</name>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="getFromZ" HideFromIDE="true">_getfromz</name>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="getToX" HideFromIDE="true">_gettox</name>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="getToY" HideFromIDE="true">_gettoy</name>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="getToZ" HideFromIDE="true">_gettoz</name>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="Initialize">_initialize</name>
+      <comment>Initializes the Transition.
+Module: The module that will receive the events.
+msDuration: The duration of this ScaleTransition (in milliseconds).
+TargetNode: The target node of this ScaleTransition.
+EventName: Name of the event.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>ba</name>
+        <type>anywheresoftware.b4a.BA</type>
+      </parameter>
+      <parameter>
+        <name>Module</name>
+        <type>Object</type>
+      </parameter>
+      <parameter>
+        <name>msDuration</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>TargetNode</name>
+        <type>anywheresoftware.b4j.objects.NodeWrapper.ConcreteNodeWrapper</type>
+      </parameter>
+      <parameter>
+        <name>EventName</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Play">_play</name>
+      <comment>Starts playing the animation.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="setAutoReverse" HideFromIDE="true">_setautoreverse</name>
+      <comment>Defines whether this Animation reverses direction on alternating cycles.
+If True, the Animation will proceed forward on the first cycle, Then reverses
+on the second cycle, AND so on. Otherwise, animation will Loop such that Each
+cycle proceeds forward from the start. It Is Not possible To change the autoReverse
+flag of a running Animation. If the value of autoReverse Is changed For a running
+Animation, the animation has To be stopped AND started again To pick up the new value.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>boolean</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setByX" HideFromIDE="true">_setbyx</name>
+      <comment>Specifies the incremented stop X scale value, from the start, of this ScaleTransition.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setByY" HideFromIDE="true">_setbyy</name>
+      <comment>Specifies the incremented stop Y scale value, from the start, of this ScaleTransition.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setByZ" HideFromIDE="true">_setbyz</name>
+      <comment>Specifies the incremented stop Z scale value, from the start, of this ScaleTransition.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setCycleCount" HideFromIDE="true">_setcyclecount</name>
+      <comment>Defines the number of cycles in this animation. Must be &gt; 0.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>int</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setDelay" HideFromIDE="true">_setdelay</name>
+      <comment>Delays the start of an animation. Cannot be negative. Setting to a negative number will result in IllegalArgumentException.
+(milliseconds).</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Millis</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setFromX" HideFromIDE="true">_setfromx</name>
+      <comment>Specifies the start X scale value of this ScaleTransition.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setFromY" HideFromIDE="true">_setfromy</name>
+      <comment>Specifies the start Y scale value of this ScaleTransition.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setFromZ" HideFromIDE="true">_setfromz</name>
+      <comment>Specifies the start Z scale value of this ScaleTransition.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setToX" HideFromIDE="true">_settox</name>
+      <comment>Specifies the stop X scale value of this ScaleTransition.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setToY" HideFromIDE="true">_settoy</name>
+      <comment>The stop Y scale value of this ScaleTransition.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setToZ" HideFromIDE="true">_settoz</name>
+      <comment>The stop Z scale value of this ScaleTransition.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <property>
+      <name DesignerName="AutoReverse">_autoreverse</name>
+      <comment>Defines whether this Animation reverses direction on alternating cycles.
+If True, the Animation will proceed forward on the first cycle, Then reverses
+on the second cycle, AND so on. Otherwise, animation will Loop such that Each
+cycle proceeds forward from the start. It Is Not possible To change the autoReverse
+flag of a running Animation. If the value of autoReverse Is changed For a running
+Animation, the animation has To be stopped AND started again To pick up the new value.</comment>
+      <returntype>boolean</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>boolean</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="ByX">_byx</name>
+      <comment>Specifies the incremented stop X scale value, from the start, of this ScaleTransition.</comment>
+      <returntype>double</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="ByY">_byy</name>
+      <comment>Specifies the incremented stop Y scale value, from the start, of this ScaleTransition.</comment>
+      <returntype>double</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="ByZ">_byz</name>
+      <comment>Specifies the incremented stop Z scale value, from the start, of this ScaleTransition.</comment>
+      <returntype>double</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="CycleCount">_cyclecount</name>
+      <comment>Defines the number of cycles in this animation. Must be &gt; 0.</comment>
+      <returntype>int</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>int</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="Delay">_delay</name>
+      <comment>Delays the start of an animation. Cannot be negative. Setting to a negative number will result in IllegalArgumentException.
+(milliseconds).</comment>
+      <returntype>double</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="FromX">_fromx</name>
+      <comment>Specifies the start X scale value of this ScaleTransition.</comment>
+      <returntype>double</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="FromY">_fromy</name>
+      <comment>Specifies the start Y scale value of this ScaleTransition.</comment>
+      <returntype>double</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="FromZ">_fromz</name>
+      <comment>Specifies the start Z scale value of this ScaleTransition.</comment>
+      <returntype>double</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="ToX">_tox</name>
+      <comment>Specifies the stop X scale value of this ScaleTransition.</comment>
+      <returntype>double</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="ToY">_toy</name>
+      <comment>The stop Y scale value of this ScaleTransition.</comment>
+      <returntype>double</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="ToZ">_toz</name>
+      <comment>The stop Z scale value of this ScaleTransition.</comment>
+      <returntype>double</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </property>
+  </class>
+  <class>
+    <name>b4j.example.fadetransition</name>
+    <shortname>FadeTransition</shortname>
+    <event>Finished</event>
+    <method>
+      <name>IsInitialized</name>
+      <comment>Tests whether the object has been initialized.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="Class_Globals">_class_globals</name>
+      <comment>Class module</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="getAutoReverse" HideFromIDE="true">_getautoreverse</name>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="getByValue" HideFromIDE="true">_getbyvalue</name>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="getCycleCount" HideFromIDE="true">_getcyclecount</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="getDelay" HideFromIDE="true">_getdelay</name>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="getFromValue" HideFromIDE="true">_getfromvalue</name>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="getToValue" HideFromIDE="true">_gettovalue</name>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="Initialize">_initialize</name>
+      <comment>Initializes the Transition.
+Module: The module that will receive the events.
+msDuration: The duration of this ScaleTransition (in milliseconds).
+TargetNode: The target node of this ScaleTransition.
+EventName: Name of the event.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>ba</name>
+        <type>anywheresoftware.b4a.BA</type>
+      </parameter>
+      <parameter>
+        <name>Module</name>
+        <type>Object</type>
+      </parameter>
+      <parameter>
+        <name>msDuration</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>TargetNode</name>
+        <type>anywheresoftware.b4j.objects.NodeWrapper.ConcreteNodeWrapper</type>
+      </parameter>
+      <parameter>
+        <name>EventName</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Play">_play</name>
+      <comment>Starts playing the animation.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="setAutoReverse" HideFromIDE="true">_setautoreverse</name>
+      <comment>Defines whether this Animation reverses direction on alternating cycles.
+If True, the Animation will proceed forward on the first cycle, Then reverses
+on the second cycle, AND so on. Otherwise, animation will Loop such that Each
+cycle proceeds forward from the start. It Is Not possible To change the autoReverse
+flag of a running Animation. If the value of autoReverse Is changed For a running
+Animation, the animation has To be stopped AND started again To pick up the new value.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>boolean</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setByValue" HideFromIDE="true">_setbyvalue</name>
+      <comment>Specifies the incremented stop opacity value, from the start, of this FadeTransition.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setCycleCount" HideFromIDE="true">_setcyclecount</name>
+      <comment>Defines the number of cycles in this animation. Must be &gt; 0.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>int</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setDelay" HideFromIDE="true">_setdelay</name>
+      <comment>Delays the start of an animation. Cannot be negative. Setting to a negative number will result in IllegalArgumentException.
+(milliseconds).</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Millis</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setFromValue" HideFromIDE="true">_setfromvalue</name>
+      <comment>Specifies the start opacity value for this FadeTransition.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setToValue" HideFromIDE="true">_settovalue</name>
+      <comment>Specifies the stop opacity value for this FadeTransition.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <property>
+      <name DesignerName="AutoReverse">_autoreverse</name>
+      <comment>Defines whether this Animation reverses direction on alternating cycles.
+If True, the Animation will proceed forward on the first cycle, Then reverses
+on the second cycle, AND so on. Otherwise, animation will Loop such that Each
+cycle proceeds forward from the start. It Is Not possible To change the autoReverse
+flag of a running Animation. If the value of autoReverse Is changed For a running
+Animation, the animation has To be stopped AND started again To pick up the new value.</comment>
+      <returntype>boolean</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>boolean</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="ByValue">_byvalue</name>
+      <comment>Specifies the incremented stop opacity value, from the start, of this FadeTransition.</comment>
+      <returntype>double</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="CycleCount">_cyclecount</name>
+      <comment>Defines the number of cycles in this animation. Must be &gt; 0.</comment>
+      <returntype>int</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>int</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="Delay">_delay</name>
+      <comment>Delays the start of an animation. Cannot be negative. Setting to a negative number will result in IllegalArgumentException.
+(milliseconds).</comment>
+      <returntype>double</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="FromValue">_fromvalue</name>
+      <comment>Specifies the start opacity value for this FadeTransition.</comment>
+      <returntype>double</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="ToValue">_tovalue</name>
+      <comment>Specifies the stop opacity value for this FadeTransition.</comment>
+      <returntype>double</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </property>
+  </class>
+  <class>
+    <name>b4j.example.translatetransition</name>
+    <shortname>TranslateTransition</shortname>
+    <event>Finished</event>
+    <method>
+      <name>IsInitialized</name>
+      <comment>Tests whether the object has been initialized.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="Class_Globals">_class_globals</name>
+      <comment>Class module</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="getAutoReverse" HideFromIDE="true">_getautoreverse</name>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="getByX" HideFromIDE="true">_getbyx</name>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="getByY" HideFromIDE="true">_getbyy</name>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="getByZ" HideFromIDE="true">_getbyz</name>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="getCycleCount" HideFromIDE="true">_getcyclecount</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="getDelay" HideFromIDE="true">_getdelay</name>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="getFromX" HideFromIDE="true">_getfromx</name>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="getFromY" HideFromIDE="true">_getfromy</name>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="getFromZ" HideFromIDE="true">_getfromz</name>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="getToX" HideFromIDE="true">_gettox</name>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="getToY" HideFromIDE="true">_gettoy</name>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="getToZ" HideFromIDE="true">_gettoz</name>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="Initialize">_initialize</name>
+      <comment>Initializes the Transition.
+Module: The module that will receive the events.
+msDuration: The duration of this ScaleTransition (in milliseconds).
+TargetNode: The target node of this ScaleTransition.
+EventName: Name of the event.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>ba</name>
+        <type>anywheresoftware.b4a.BA</type>
+      </parameter>
+      <parameter>
+        <name>Module</name>
+        <type>Object</type>
+      </parameter>
+      <parameter>
+        <name>msDuration</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>TargetNode</name>
+        <type>anywheresoftware.b4j.objects.NodeWrapper.ConcreteNodeWrapper</type>
+      </parameter>
+      <parameter>
+        <name>EventName</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Play">_play</name>
+      <comment>Starts playing the animation.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="setAutoReverse" HideFromIDE="true">_setautoreverse</name>
+      <comment>Defines whether this Animation reverses direction on alternating cycles.
+If True, the Animation will proceed forward on the first cycle, Then reverses
+on the second cycle, AND so on. Otherwise, animation will Loop such that Each
+cycle proceeds forward from the start. It Is Not possible To change the autoReverse
+flag of a running Animation. If the value of autoReverse Is changed For a running
+Animation, the animation has To be stopped AND started again To pick up the new value.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>boolean</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setByX" HideFromIDE="true">_setbyx</name>
+      <comment>Specifies the incremented stop X coordinate value, from the start, of this TranslateTransition.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setByY" HideFromIDE="true">_setbyy</name>
+      <comment>Specifies the incremented stop Y coordinate value, from the start, of this TranslateTransition.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setByZ" HideFromIDE="true">_setbyz</name>
+      <comment>Specifies the incremented stop Z coordinate value, from the start, of this TranslateTransition.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setCycleCount" HideFromIDE="true">_setcyclecount</name>
+      <comment>Defines the number of cycles in this animation. Must be &gt; 0.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>int</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setDelay" HideFromIDE="true">_setdelay</name>
+      <comment>Delays the start of an animation. Cannot be negative. Setting to a negative number will result in IllegalArgumentException.
+(milliseconds).</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Millis</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setFromX" HideFromIDE="true">_setfromx</name>
+      <comment>Specifies the start X coordinate value of this TranslateTransition.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setFromY" HideFromIDE="true">_setfromy</name>
+      <comment>Specifies the start Y coordinate value of this TranslateTransition.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setFromZ" HideFromIDE="true">_setfromz</name>
+      <comment>Specifies the start Z coordinate value of this TranslateTransition.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setToX" HideFromIDE="true">_settox</name>
+      <comment>Specifies the stop X coordinate value of this TranslateTransition.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setToY" HideFromIDE="true">_settoy</name>
+      <comment>Specifies the stop Y coordinate value of this TranslateTransition.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setToZ" HideFromIDE="true">_settoz</name>
+      <comment>Specifies the stop Z coordinate value of this TranslateTransition.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <property>
+      <name DesignerName="AutoReverse">_autoreverse</name>
+      <comment>Defines whether this Animation reverses direction on alternating cycles.
+If True, the Animation will proceed forward on the first cycle, Then reverses
+on the second cycle, AND so on. Otherwise, animation will Loop such that Each
+cycle proceeds forward from the start. It Is Not possible To change the autoReverse
+flag of a running Animation. If the value of autoReverse Is changed For a running
+Animation, the animation has To be stopped AND started again To pick up the new value.</comment>
+      <returntype>boolean</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>boolean</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="ByX">_byx</name>
+      <comment>Specifies the incremented stop X coordinate value, from the start, of this TranslateTransition.</comment>
+      <returntype>double</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="ByY">_byy</name>
+      <comment>Specifies the incremented stop Y coordinate value, from the start, of this TranslateTransition.</comment>
+      <returntype>double</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="ByZ">_byz</name>
+      <comment>Specifies the incremented stop Z coordinate value, from the start, of this TranslateTransition.</comment>
+      <returntype>double</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="CycleCount">_cyclecount</name>
+      <comment>Defines the number of cycles in this animation. Must be &gt; 0.</comment>
+      <returntype>int</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>int</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="Delay">_delay</name>
+      <comment>Delays the start of an animation. Cannot be negative. Setting to a negative number will result in IllegalArgumentException.
+(milliseconds).</comment>
+      <returntype>double</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="FromX">_fromx</name>
+      <comment>Specifies the start X coordinate value of this TranslateTransition.</comment>
+      <returntype>double</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="FromY">_fromy</name>
+      <comment>Specifies the start Y coordinate value of this TranslateTransition.</comment>
+      <returntype>double</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="FromZ">_fromz</name>
+      <comment>Specifies the start Z coordinate value of this TranslateTransition.</comment>
+      <returntype>double</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="ToX">_tox</name>
+      <comment>Specifies the stop X coordinate value of this TranslateTransition.</comment>
+      <returntype>double</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="ToY">_toy</name>
+      <comment>Specifies the stop Y coordinate value of this TranslateTransition.</comment>
+      <returntype>double</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="ToZ">_toz</name>
+      <comment>Specifies the stop Z coordinate value of this TranslateTransition.</comment>
+      <returntype>double</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </property>
+  </class>
+  <class>
+    <name>b4j.example.rotatetransition</name>
+    <shortname>RotateTransition</shortname>
+    <event>Finished</event>
+    <method>
+      <name>IsInitialized</name>
+      <comment>Tests whether the object has been initialized.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="Class_Globals">_class_globals</name>
+      <comment>Class module</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="getAutoReverse" HideFromIDE="true">_getautoreverse</name>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="getByAngle" HideFromIDE="true">_getbyangle</name>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="getCycleCount" HideFromIDE="true">_getcyclecount</name>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="getDelay" HideFromIDE="true">_getdelay</name>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="getFromAngle" HideFromIDE="true">_getfromangle</name>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="getToAngle" HideFromIDE="true">_gettoangle</name>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="Initialize">_initialize</name>
+      <comment>Initializes the Transition.
+Module: The module that will receive the events.
+msDuration: The duration of this ScaleTransition (in milliseconds).
+TargetNode: The target node of this ScaleTransition.
+EventName: Name of the event.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>ba</name>
+        <type>anywheresoftware.b4a.BA</type>
+      </parameter>
+      <parameter>
+        <name>Module</name>
+        <type>Object</type>
+      </parameter>
+      <parameter>
+        <name>msDuration</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>TargetNode</name>
+        <type>anywheresoftware.b4j.objects.NodeWrapper.ConcreteNodeWrapper</type>
+      </parameter>
+      <parameter>
+        <name>EventName</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Play">_play</name>
+      <comment>Starts playing the animation.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="setAutoReverse" HideFromIDE="true">_setautoreverse</name>
+      <comment>Defines whether this Animation reverses direction on alternating cycles.
+If True, the Animation will proceed forward on the first cycle, Then reverses
+on the second cycle, AND so on. Otherwise, animation will Loop such that Each
+cycle proceeds forward from the start. It Is Not possible To change the autoReverse
+flag of a running Animation. If the value of autoReverse Is changed For a running
+Animation, the animation has To be stopped AND started again To pick up the new value.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>boolean</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setByAngle" HideFromIDE="true">_setbyangle</name>
+      <comment>Specifies the incremented stop angle value, from the start, of this RotateTransition.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Angle</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setCycleCount" HideFromIDE="true">_setcyclecount</name>
+      <comment>Defines the number of cycles in this animation. Must be &gt; 0.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>int</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setDelay" HideFromIDE="true">_setdelay</name>
+      <comment>Delays the start of an animation. Cannot be negative. Setting to a negative number will result in IllegalArgumentException.
+(milliseconds).</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Millis</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setFromAngle" HideFromIDE="true">_setfromangle</name>
+      <comment>Specifies the start angle value for this RotateTransition.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Angle</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="setToAngle" HideFromIDE="true">_settoangle</name>
+      <comment>Specifies the stop angle value for this RotateTransition.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Angle</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <property>
+      <name DesignerName="AutoReverse">_autoreverse</name>
+      <comment>Defines whether this Animation reverses direction on alternating cycles.
+If True, the Animation will proceed forward on the first cycle, Then reverses
+on the second cycle, AND so on. Otherwise, animation will Loop such that Each
+cycle proceeds forward from the start. It Is Not possible To change the autoReverse
+flag of a running Animation. If the value of autoReverse Is changed For a running
+Animation, the animation has To be stopped AND started again To pick up the new value.</comment>
+      <returntype>boolean</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>boolean</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="ByAngle">_byangle</name>
+      <comment>Specifies the incremented stop angle value, from the start, of this RotateTransition.</comment>
+      <returntype>double</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="CycleCount">_cyclecount</name>
+      <comment>Defines the number of cycles in this animation. Must be &gt; 0.</comment>
+      <returntype>int</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>int</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="Delay">_delay</name>
+      <comment>Delays the start of an animation. Cannot be negative. Setting to a negative number will result in IllegalArgumentException.
+(milliseconds).</comment>
+      <returntype>double</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="FromAngle">_fromangle</name>
+      <comment>Specifies the start angle value for this RotateTransition.</comment>
+      <returntype>double</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </property>
+    <property>
+      <name DesignerName="ToAngle">_toangle</name>
+      <comment>Specifies the stop angle value for this RotateTransition.</comment>
+      <returntype>double</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>double</type>
+      </parameter>
+    </property>
+  </class>
+  <version>1</version>
+</root>

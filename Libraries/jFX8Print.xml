@@ -1,0 +1,964 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <doclet-version-NOT-library-version>1.00</doclet-version-NOT-library-version>
+  <dependsOn>jcore</dependsOn>
+  <dependsOn>jfx</dependsOn>
+  <dependsOn>javaobject</dependsOn>
+  <class b4a_type="StaticCode">
+    <name>b4j.example.paper_static</name>
+    <shortname>Paper_static</shortname>
+    <objectwrapper>java.lang.Class</objectwrapper>
+    <field>
+      <name DesignerName="A0">_a0</name>
+      <returntype>b4j.example.paper</returntype>
+    </field>
+    <field>
+      <name DesignerName="A1">_a1</name>
+      <returntype>b4j.example.paper</returntype>
+    </field>
+    <field>
+      <name DesignerName="A2">_a2</name>
+      <returntype>b4j.example.paper</returntype>
+    </field>
+    <field>
+      <name DesignerName="A3">_a3</name>
+      <returntype>b4j.example.paper</returntype>
+    </field>
+    <field>
+      <name DesignerName="A4">_a4</name>
+      <returntype>b4j.example.paper</returntype>
+    </field>
+    <field>
+      <name DesignerName="A5">_a5</name>
+      <returntype>b4j.example.paper</returntype>
+    </field>
+    <field>
+      <name DesignerName="A6">_a6</name>
+      <returntype>b4j.example.paper</returntype>
+    </field>
+    <field>
+      <name DesignerName="C">_c</name>
+      <returntype>b4j.example.paper</returntype>
+    </field>
+    <field>
+      <name DesignerName="DESIGNATED_LONG">_designated_long</name>
+      <returntype>b4j.example.paper</returntype>
+    </field>
+    <field>
+      <name DesignerName="EXECUTIVE">_executive</name>
+      <returntype>b4j.example.paper</returntype>
+    </field>
+    <field>
+      <name DesignerName="JAPANESE_POSTCARD">_japanese_postcard</name>
+      <returntype>b4j.example.paper</returntype>
+    </field>
+    <field>
+      <name DesignerName="JIS_B4">_jis_b4</name>
+      <returntype>b4j.example.paper</returntype>
+    </field>
+    <field>
+      <name DesignerName="JIS_B5">_jis_b5</name>
+      <returntype>b4j.example.paper</returntype>
+    </field>
+    <field>
+      <name DesignerName="JIS_B6">_jis_b6</name>
+      <returntype>b4j.example.paper</returntype>
+    </field>
+    <field>
+      <name DesignerName="LEGAL">_legal</name>
+      <returntype>b4j.example.paper</returntype>
+    </field>
+    <field>
+      <name DesignerName="MONARCH_ENVELOPE">_monarch_envelope</name>
+      <returntype>b4j.example.paper</returntype>
+    </field>
+    <field>
+      <name DesignerName="NA_8X10">_na_8x10</name>
+      <returntype>b4j.example.paper</returntype>
+    </field>
+    <field>
+      <name DesignerName="NA_LETTER">_na_letter</name>
+      <returntype>b4j.example.paper</returntype>
+    </field>
+    <field>
+      <name DesignerName="NA_NUMBER_10_ENVELOPE">_na_number_10_envelope</name>
+      <returntype>b4j.example.paper</returntype>
+    </field>
+    <field>
+      <name DesignerName="TABLOID">_tabloid</name>
+      <returntype>b4j.example.paper</returntype>
+    </field>
+    <method>
+      <name DesignerName="getObject">_getobject</name>
+      <returntype>anywheresoftware.b4j.object.JavaObject</returntype>
+    </method>
+    <method>
+      <name DesignerName="Initialize">_initialize</name>
+      <comment>Initializes the object. You can add parameters to this method if needed.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="IsInitialized">_isinitialized</name>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="Process_Globals">_process_globals</name>
+      <returntype>String</returntype>
+    </method>
+  </class>
+  <class b4a_type="StaticCode">
+    <name>b4j.example.pageorientation_static</name>
+    <shortname>PageOrientation_Static</shortname>
+    <objectwrapper>java.lang.Class</objectwrapper>
+    <field>
+      <name DesignerName="LANDSCAPE">_landscape</name>
+      <returntype>String</returntype>
+    </field>
+    <field>
+      <name DesignerName="PORTRAIT">_portrait</name>
+      <returntype>String</returntype>
+    </field>
+    <field>
+      <name DesignerName="REVERSE_LANDSCAPE">_reverse_landscape</name>
+      <returntype>String</returntype>
+    </field>
+    <field>
+      <name DesignerName="REVERSE_PORTRAIT">_reverse_portrait</name>
+      <returntype>String</returntype>
+    </field>
+    <method>
+      <name DesignerName="GetObject">_getobject</name>
+      <returntype>Object</returntype>
+    </method>
+    <method>
+      <name DesignerName="Initialize">_initialize</name>
+      <comment>Initializes the object. You can add parameters to this method if needed.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="IsInitialized">_isinitialized</name>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="Process_Globals">_process_globals</name>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="ValueOf">_valueof</name>
+      <comment>Returns the enum constant of this type with the specified name.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Name</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Values">_values</name>
+      <comment>Returns an array containing the constants of this enum type, in the order they are declared.</comment>
+      <returntype>String[]</returntype>
+    </method>
+  </class>
+  <class b4a_type="StaticCode">
+    <name>b4j.example.printer_static</name>
+    <shortname>Printer_Static</shortname>
+    <objectwrapper>java.lang.Class</objectwrapper>
+    <field>
+      <name DesignerName="mPrinterMap">_mprintermap</name>
+      <returntype>anywheresoftware.b4a.objects.collections.Map</returntype>
+    </field>
+    <method>
+      <name DesignerName="GetAllPrinters">_getallprinters</name>
+      <comment>Retrieve the installed printers as a list.</comment>
+      <returntype>anywheresoftware.b4a.objects.collections.List</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetDefaultPrinter">_getdefaultprinter</name>
+      <comment>Retrieve the default Printer.</comment>
+      <returntype>b4j.example.printer</returntype>
+    </method>
+    <method>
+      <name DesignerName="MappedPrinter">_mappedprinter</name>
+      <returntype>b4j.example.printer</returntype>
+      <parameter>
+        <name>Source</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Process_Globals">_process_globals</name>
+      <returntype>String</returntype>
+    </method>
+  </class>
+  <class b4a_type="StaticCode">
+    <name>b4j.example.printerjob_static</name>
+    <shortname>PrinterJob_Static</shortname>
+    <objectwrapper>java.lang.Class</objectwrapper>
+    <method>
+      <name DesignerName="CreatePrinterJob">_createprinterjob</name>
+      <comment>Factory method to create a job.</comment>
+      <returntype>b4j.example.printerjob</returntype>
+    </method>
+    <method>
+      <name DesignerName="CreatePrinterJob2">_createprinterjob2</name>
+      <comment>Factory method to create a job for a specified printer.</comment>
+      <returntype>b4j.example.printerjob</returntype>
+      <parameter>
+        <name>Printer</name>
+        <type>b4j.example.printer</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="Process_Globals">_process_globals</name>
+      <returntype>String</returntype>
+    </method>
+  </class>
+  <class>
+    <name>b4j.example.printerjob</name>
+    <shortname>PrinterJob</shortname>
+    <method>
+      <name>IsInitialized</name>
+      <comment>Tests whether the object has been initialized.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="CancelJob">_canceljob</name>
+      <comment>Cancel the underlying print job at the earliest opportunity.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="Class_Globals">_class_globals</name>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="EndJob">_endjob</name>
+      <comment>If the job can be successfully spooled to the printer queue this will return true.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetJobSettings">_getjobsettings</name>
+      <comment>The JobSettings encapsulates all the API supported job configuration options such as number of copies, collation option, duplex option, etc.</comment>
+      <returntype>b4j.example.jobsettings</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetJobStatus">_getjobstatus</name>
+      <comment>Obtain the current status of the job.
+One of: NOT_STARTED, PRINTING, CANCELLED, DONE, ERROR</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetObject">_getobject</name>
+      <returntype>Object</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetPrinter">_getprinter</name>
+      <comment>Gets the printer currently associated with this job.</comment>
+      <returntype>b4j.example.printer</returntype>
+    </method>
+    <method>
+      <name DesignerName="Initialize">_initialize</name>
+      <comment>Initializes the object. You can add parameters to this method if needed.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>ba</name>
+        <type>anywheresoftware.b4a.BA</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="PrintPage">_printpage</name>
+      <comment>Print the specified node.</comment>
+      <returntype>boolean</returntype>
+      <parameter>
+        <name>Node</name>
+        <type>anywheresoftware.b4j.objects.NodeWrapper.ConcreteNodeWrapper</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="PrintPage2">_printpage2</name>
+      <comment>Print the specified node using the specified page layout.</comment>
+      <returntype>boolean</returntype>
+      <parameter>
+        <name>PageLayout</name>
+        <type>b4j.example.pagelayout</type>
+      </parameter>
+      <parameter>
+        <name>Node</name>
+        <type>anywheresoftware.b4j.objects.NodeWrapper.ConcreteNodeWrapper</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetObject">_setobject</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Obj</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetPrinter">_setprinter</name>
+      <comment>Change the printer for this job.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Printer</name>
+        <type>b4j.example.printer</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="ShowPageSetupDialog">_showpagesetupdialog</name>
+      <comment>Displays a Page Setup dialog.</comment>
+      <returntype>boolean</returntype>
+      <parameter>
+        <name>Form</name>
+        <type>anywheresoftware.b4j.objects.Form</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="ShowPrintDialog">_showprintdialog</name>
+      <comment>Displays a Print Dialog.</comment>
+      <returntype>boolean</returntype>
+      <parameter>
+        <name>Form</name>
+        <type>anywheresoftware.b4j.objects.Form</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="ToString">_tostring</name>
+      <comment>Display As String</comment>
+      <returntype>String</returntype>
+    </method>
+  </class>
+  <class>
+    <name>b4j.example.printer</name>
+    <shortname>Printer</shortname>
+    <method>
+      <name>IsInitialized</name>
+      <comment>Tests whether the object has been initialized.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="Class_Globals">_class_globals</name>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="CreatePageLayout">_createpagelayout</name>
+      <comment>Obtain a new PageLayout for this printer using the specified parameters.
+Paper - The Paper To use
+Orient - The orientation To use
+Margins in Pts
+Margins of less than 0 will cause a runtime error, Margins less than the HARDWARE_MINIMUM, will be set to that See CreatePageLayout2.</comment>
+      <returntype>b4j.example.pagelayout</returntype>
+      <parameter>
+        <name>Paper</name>
+        <type>b4j.example.paper</type>
+      </parameter>
+      <parameter>
+        <name>Orient</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>LMargin</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>RMargin</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>TMargin</name>
+        <type>double</type>
+      </parameter>
+      <parameter>
+        <name>BMargin</name>
+        <type>double</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="CreatePageLayout2">_createpagelayout2</name>
+      <comment>Obtain a new PageLayout instance for this printer using the specified parameters.
+Paper - The Paper To use
+Orient - The orientation To use
+Margin_Type the Margin_Type to use One of: DEFAULT, EQUAL, EQUAL_OPPOSITES, HARDWARE_MINIMUM</comment>
+      <returntype>b4j.example.pagelayout</returntype>
+      <parameter>
+        <name>Paper</name>
+        <type>b4j.example.paper</type>
+      </parameter>
+      <parameter>
+        <name>Orient</name>
+        <type>String</type>
+      </parameter>
+      <parameter>
+        <name>Margin_Type</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="GetDefaultPageLayout">_getdefaultpagelayout</name>
+      <comment>Return the default page layout for this Printr.</comment>
+      <returntype>b4j.example.pagelayout</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetName">_getname</name>
+      <comment>Return the name used by the underlying system to identify the printer to users and/or applications.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetObject">_getobject</name>
+      <returntype>Object</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetPrinterAttributes">_getprinterattributes</name>
+      <comment>Retrieves the delegate object encapsulating the printer attributes and capabilities.</comment>
+      <returntype>b4j.example.printerattributes</returntype>
+    </method>
+    <method>
+      <name DesignerName="Initialize">_initialize</name>
+      <comment>Initializes the object. You can add parameters to this method if needed.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>ba</name>
+        <type>anywheresoftware.b4a.BA</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetObject">_setobject</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>P</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="ToString">_tostring</name>
+      <comment>Display String Representation</comment>
+      <returntype>String</returntype>
+    </method>
+  </class>
+  <class>
+    <name>b4j.example.pagelayout</name>
+    <shortname>PageLayout</shortname>
+    <method>
+      <name>IsInitialized</name>
+      <comment>Tests whether the object has been initialized.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="Class_Globals">_class_globals</name>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="Equals">_equals</name>
+      <comment>Test of equality</comment>
+      <returntype>boolean</returntype>
+      <parameter>
+        <name>O</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="GetBottomMargin">_getbottommargin</name>
+      <comment>Returns the bottom margin of the page layout in points.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetLeftMargin">_getleftmargin</name>
+      <comment>Returns the left margin of the page layout in points.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetObject">_getobject</name>
+      <returntype>Object</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetPageOrientation">_getpageorientation</name>
+      <comment>Get the Page orientation</comment>
+      <returntype>anywheresoftware.b4j.object.JavaObject</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetPaper">_getpaper</name>
+      <comment>The paper used.</comment>
+      <returntype>b4j.example.paper</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetPrintableHeight">_getprintableheight</name>
+      <comment>Returns the height dimension of the printable area of the page, in 1/72 of an inch, taking into account the orientation.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetPrintableWidth">_getprintablewidth</name>
+      <comment>Returns the width dimension of the printable area of the page, in 1/72 of an inch points, taking into account the orientation.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetRightMargin">_getrightmargin</name>
+      <comment>Returns the right margin of the page layout in points.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetTopMargin">_gettopmargin</name>
+      <comment>Returns the top margin of the page layout in points.</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="Initialize">_initialize</name>
+      <comment>Initializes the object. You can add parameters to this method if needed.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>ba</name>
+        <type>anywheresoftware.b4a.BA</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetObject">_setobject</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>PL</name>
+        <type>anywheresoftware.b4j.object.JavaObject</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="ToString">_tostring</name>
+      <comment>Returns a String Representation ot the object</comment>
+      <returntype>String</returntype>
+    </method>
+  </class>
+  <class>
+    <name>b4j.example.paper</name>
+    <shortname>Paper</shortname>
+    <method>
+      <name>IsInitialized</name>
+      <comment>Tests whether the object has been initialized.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="Class_Globals">_class_globals</name>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="Equals">_equals</name>
+      <comment>Test for equality</comment>
+      <returntype>boolean</returntype>
+      <parameter>
+        <name>O</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="GetHeight">_getheight</name>
+      <comment>Get the height of the paper in points (1/72 inch)</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetName">_getname</name>
+      <comment>Get the paper name.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetObject">_getobject</name>
+      <returntype>anywheresoftware.b4j.object.JavaObject</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetWidth">_getwidth</name>
+      <comment>Get the width of the paper in points (1/72 inch)</comment>
+      <returntype>double</returntype>
+    </method>
+    <method>
+      <name DesignerName="Initialize">_initialize</name>
+      <comment>Initializes the object. You can add parameters to this method if needed.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>ba</name>
+        <type>anywheresoftware.b4a.BA</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetObject">_setobject</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Obj</name>
+        <type>anywheresoftware.b4j.object.JavaObject</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="ToString">_tostring</name>
+      <comment>Returns String Representation of the object</comment>
+      <returntype>String</returntype>
+    </method>
+  </class>
+  <class>
+    <name>b4j.example.printerjob_static._pagerange</name>
+    <shortname>PageRange</shortname>
+    <method>
+      <name>Initialize</name>
+      <comment>Initializes the fields to their default value.</comment>
+      <returntype>void</returntype>
+    </method>
+    <field>
+      <name>IsInitialized</name>
+      <comment>Tests whether the object has been initialized.</comment>
+      <returntype>boolean</returntype>
+    </field>
+    <field>
+      <name>StartPage</name>
+      <returntype>int</returntype>
+    </field>
+    <field>
+      <name>EndPage</name>
+      <returntype>int</returntype>
+    </field>
+  </class>
+  <class>
+    <name>b4j.example.printerjob_static._printresolution</name>
+    <shortname>PrintResolution</shortname>
+    <method>
+      <name>Initialize</name>
+      <comment>Initializes the fields to their default value.</comment>
+      <returntype>void</returntype>
+    </method>
+    <field>
+      <name>IsInitialized</name>
+      <comment>Tests whether the object has been initialized.</comment>
+      <returntype>boolean</returntype>
+    </field>
+    <field>
+      <name>CrossFeedResolution</name>
+      <returntype>int</returntype>
+    </field>
+    <field>
+      <name>FeedResolution</name>
+      <returntype>int</returntype>
+    </field>
+  </class>
+  <class>
+    <name>b4j.example.jobsettings</name>
+    <shortname>JobSettings</shortname>
+    <method>
+      <name>IsInitialized</name>
+      <comment>Tests whether the object has been initialized.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="Class_Globals">_class_globals</name>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetCollation">_getcollation</name>
+      <comment>Collation determines how sheets are sorted when multiple copies of a document are printed.
+One of: COLLATED,UNCOLLATED</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetCopies">_getcopies</name>
+      <comment>Get the current number of copies</comment>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetJobName">_getjobname</name>
+      <comment>Get the current job name</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetObject">_getobject</name>
+      <returntype>Object</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetPageLayout">_getpagelayout</name>
+      <comment>Get the current page layout for this job.</comment>
+      <returntype>b4j.example.pagelayout</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetPageRanges">_getpageranges</name>
+      <comment>The range of pages to print.</comment>
+      <returntype>b4j.example.printerjob_static._pagerange</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetPaperSource">_getpapersource</name>
+      <comment>Gets the value of the property paperSource.
+One of: Automatic,Bottom,Envelope,Large_Capacity,Main,Manual,Middle,Side or Top</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetPrintColor">_getprintcolor</name>
+      <comment>Gets the value of the property printColor.
+One of: COLOR, MONOCHROME</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetPrintQuality">_getprintquality</name>
+      <comment>Gets the value of the property printQuality.
+One of: DRAFT, HIGH, LOW, NORMAL</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetPrintResolution">_getprintresolution</name>
+      <comment>Get the print resolution</comment>
+      <returntype>b4j.example.printerjob_static._printresolution</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetPrintSides">_getprintsides</name>
+      <comment>If a printer supports it, then a job may be printed on both sides of the media (paper), ie duplex printing.
+One of: DUPLEX, ONE_SIDED, TUMBLE</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="Initialize">_initialize</name>
+      <comment>Initializes the object. You can add parameters to this method if needed.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>ba</name>
+        <type>anywheresoftware.b4a.BA</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetCollation">_setcollation</name>
+      <comment>Set the Collation property.
+One of: COLLATED,UNCOLLATED</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Collation</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetCopies">_setcopies</name>
+      <comment>Set the number of copies</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>NCopies</name>
+        <type>int</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetJobName">_setjobname</name>
+      <comment>Set the job name</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>JobName</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetObject">_setobject</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Obj</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetPageLayout">_setpagelayout</name>
+      <comment>Set the PageLayout to use.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>PageLayout</name>
+        <type>b4j.example.pagelayout</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetPageRanges">_setpageranges</name>
+      <comment>The range of pages to print as an array of PageRange.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Pages</name>
+        <type>b4j.example.printerjob_static._pagerange</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetPaperSource">_setpapersource</name>
+      <comment>Sets the value of the property paperSource.
+It is not possible to create a Papersource, you need to get a list of supported paper sources and select one.
+&lt;code&gt;	Dim P As Printer = Printer_Static.GetDefaultPrinter 'or select one from the list returned by Printer_Static.GetAllPrinters
+	Dim PA As PrinterAttributes = P.GetPrinterAttributes
+	Dim L As List = PA.GetSupportedPaperSources&lt;/code&gt;</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Value</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetPrintColor">_setprintcolor</name>
+      <comment>Set the PrintColor property.
+One of: COLOR, MONOCHROME</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Color</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetPrintQuality">_setprintquality</name>
+      <comment>Set the PrintQuality property.
+One of: DRAFT, HIGH, LOW, NORMAL</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Quality</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetPrintResolution">_setprintresolution</name>
+      <comment>Set the PrintResolution property.
+It is not possible to create a Papersource, you need to get a list of supported paper sources and select one.
+&lt;code&gt;	Dim P As Printer = Printer_Static.GetDefaultPrinter 'or select one from the list returned by Printer_Static.GetAllPrinters
+	Dim PA As PrinterAttributes = P.GetPrinterAttributes
+	Dim L As List = PA.GetSupportedPrintResolutions/code&gt;</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Resolution</name>
+        <type>Object</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetPrintSides">_setprintsides</name>
+      <comment>Set the PrintSides property which controls duplex printing.
+One of: DUPLEX, ONE_SIDED, TUMBLE</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Sides</name>
+        <type>String</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="ToString">_tostring</name>
+      <comment>Returns a string representation</comment>
+      <returntype>String</returntype>
+    </method>
+  </class>
+  <class>
+    <name>b4j.example.printerattributes</name>
+    <shortname>PrinterAttributes</shortname>
+    <method>
+      <name>IsInitialized</name>
+      <comment>Tests whether the object has been initialized.</comment>
+      <returntype>boolean</returntype>
+    </method>
+    <method>
+      <name DesignerName="Class_Globals">_class_globals</name>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetDefaultCollation">_getdefaultcollation</name>
+      <comment>The default collation setting.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetDefaultCopies">_getdefaultcopies</name>
+      <comment>The default number of copies to print.</comment>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetDefaultPageOrientation">_getdefaultpageorientation</name>
+      <comment>Return the default orientation for paper on this printer.
+One of:LANDSCAPE ,	PORTRAIT ,REVERSE_LANDSCAPE ,REVERSE_PORTRAIT</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetDefaultPaper">_getdefaultpaper</name>
+      <comment>Return the default paper size used on this printer.</comment>
+      <returntype>b4j.example.paper</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetDefaultPaperSource">_getdefaultpapersource</name>
+      <comment>Return the default paper input source/tray/
+One of: Automatic,Bottom,Envelope,Large_Capacity,Main,Manual,Middle,Side or Top</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetDefaultPrintColor">_getdefaultprintcolor</name>
+      <comment>Get the default color setting : greyscale or color
+One of: COLOR, MONOCHROME (Docs say greyscale but ENum says MONOCHROME) probably the latter, but may be either.</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetDefaultPrintQuality">_getdefaultprintquality</name>
+      <comment>Return the default quality setting
+One of: DRAFT, HIGH, LOW, NORMAL</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetDefaultPrintResolution">_getdefaultprintresolution</name>
+      <comment>Return the default print resolution for paper on this printer.</comment>
+      <returntype>b4j.example.printerjob_static._printresolution</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetDefaultPrintSides">_getdefaultprintsides</name>
+      <comment>Returns the default value for duplex settings.
+One of: DUPLEX, ONE_SIDED, TUMBLE</comment>
+      <returntype>String</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetMaxCopies">_getmaxcopies</name>
+      <comment>The maximum supported number of copies.</comment>
+      <returntype>int</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetObject">_getobject</name>
+      <returntype>Object</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetSupportedCollations">_getsupportedcollations</name>
+      <comment>Returns an unmodifiable set of the supported collation settings for this printer.
+Possibly: COLLATED,UNCOLLATED</comment>
+      <returntype>anywheresoftware.b4a.objects.collections.List</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetSupportedPageOrientations">_getsupportedpageorientations</name>
+      <comment>Returns an unmodifiable set of the supported orientations for this printer.</comment>
+      <returntype>anywheresoftware.b4a.objects.collections.List</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetSupportedPapers">_getsupportedpapers</name>
+      <comment>Returns an unmodifiable set of the supported paper sizes for this printer.</comment>
+      <returntype>anywheresoftware.b4a.objects.collections.List</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetSupportedPaperSources">_getsupportedpapersources</name>
+      <comment>Returns an unmodifiable set of the supported paper sources (ie input bins or trays) for this printer.</comment>
+      <returntype>anywheresoftware.b4a.objects.collections.List</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetSupportedPrintColors">_getsupportedprintcolors</name>
+      <comment>Returns an unmodifiable set of the supported color settings for this printer.</comment>
+      <returntype>anywheresoftware.b4a.objects.collections.List</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetSupportedPrintQuality">_getsupportedprintquality</name>
+      <comment>Returns an unmodifiable set of the supported quality settings for this printer.</comment>
+      <returntype>anywheresoftware.b4a.objects.collections.List</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetSupportedPrintResolutions">_getsupportedprintresolutions</name>
+      <comment>Returns an unmodifiable set of the supported print resolutions for this printer.</comment>
+      <returntype>anywheresoftware.b4a.objects.collections.List</returntype>
+    </method>
+    <method>
+      <name DesignerName="GetSupportedPrintSides">_getsupportedprintsides</name>
+      <comment>Returns an unmodifiable set of the supported duplex settings for this printer.</comment>
+      <returntype>anywheresoftware.b4a.objects.collections.List</returntype>
+    </method>
+    <method>
+      <name DesignerName="Initialize">_initialize</name>
+      <comment>Initializes the object. You can add parameters to this method if needed.</comment>
+      <returntype>String</returntype>
+      <parameter>
+        <name>ba</name>
+        <type>anywheresoftware.b4a.BA</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SetObject">_setobject</name>
+      <returntype>String</returntype>
+      <parameter>
+        <name>Obj</name>
+        <type>anywheresoftware.b4j.object.JavaObject</type>
+      </parameter>
+    </method>
+    <method>
+      <name DesignerName="SupportsPageRanges">_supportspageranges</name>
+      <comment>Reports if page ranges are supported.</comment>
+      <returntype>boolean</returntype>
+    </method>
+  </class>
+  <version>0.6</version>
+  <author>Steve Laming</author>
+</root>

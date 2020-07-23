@@ -1,0 +1,48 @@
+﻿Version=5.82
+AppType=StandardJava
+NumberOfModules=0
+Build1=Default,b4j.example
+NumberOfFiles=0
+NumberOfLibraries=4
+Library1=jcore
+Library2=jokhttputils2_nonui
+Library3=json
+Library4=okhttp
+@EndOfDesignText@
+'Non-UI application (console / server application)
+#Region  Project Attributes 
+	#CommandLineArgs:
+	#MergeLibraries: True 
+#End Region
+
+Sub Process_Globals
+	Private const API_KEY As String = "AIzaSyBBKGBa5n7wMXUW7GYdQhfzWweo0Dnemp4"
+End Sub
+
+Sub AppStart (Args() As String)
+	SendMessage("user", "This is the title", "Hello!!!!")
+	StartMessageLoop
+End Sub
+
+Private Sub SendMessage(Topic As String, Title As String, Body As String)
+	Dim Job As HttpJob
+	Job.Initialize("fcm", Me)
+	Dim m As Map = CreateMap("to": $"/topics/${Topic}"$)
+	Dim data As Map = CreateMap("title": "https://google.com", "body": Body , "type":"link")
+	m.Put("data": data)
+	Dim jg As JSONGenerator
+	jg.Initialize(m)
+	Job.PostString("https://fcm.googleapis.com/fcm/send", jg.ToString)
+	Job.GetRequest.SetContentType("application/json")
+	Job.GetRequest.SetHeader("Authorization", "key=" & API_KEY)
+End Sub
+
+
+Sub JobDone(job As HttpJob)
+	Log(job)
+	If job.Success Then
+		Log(job.GetString)
+	End If
+	job.Release
+	StopMessageLoop '<-- non ui app only
+End Sub

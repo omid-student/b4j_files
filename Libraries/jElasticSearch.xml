@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <doclet-version-NOT-library-version>1.06</doclet-version-NOT-library-version>
+    <class>
+        <name>anywheresoftware.b4j.objects.RestClientWrapper</name>
+        <shortname>ESClient</shortname>
+        <comment>REST client for Elasticsearch.
+Note that all methods are synchronous. The client is expected to be used in server solutions.
+Each document is identified by the &lt;Index, Type, Id&gt; tuple.</comment>
+        <owner>process</owner>
+        <method>
+            <name>Delete</name>
+            <comment>Deletes the document. An exception will be thrown if there is no such document.</comment>
+            <returntype>anywheresoftware.b4j.objects.RestClientWrapper.ResponseWrapper</returntype>
+            <parameter>
+                <name>Index</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>Type</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>Id</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>PerformRawRequest</name>
+            <comment>Performs a raw request.
+Method - Request method (GET, POST, ...)
+EndPoint - Request end point.
+QueryParameters - Map of query parameters. Pass Null if not required.
+Payload - Body payload. Pass an empty string if not required.</comment>
+            <returntype>anywheresoftware.b4j.objects.RestClientWrapper.ResponseWrapper</returntype>
+            <parameter>
+                <name>Method</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>Endpoint</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>QueryParameters</name>
+                <type>anywheresoftware.b4a.objects.collections.Map</type>
+            </parameter>
+            <parameter>
+                <name>Payload</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>Exists</name>
+            <comment>Checks whether a document with the given Index, Type and Id exists.</comment>
+            <returntype>boolean</returntype>
+            <parameter>
+                <name>Index</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>Type</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>Id</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>Search</name>
+            <comment>Makes a search request.</comment>
+            <returntype>anywheresoftware.b4j.objects.RestClientWrapper.ResponseWrapper</returntype>
+            <parameter>
+                <name>Index</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>Type</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>Query</name>
+                <type>anywheresoftware.b4a.objects.collections.Map</type>
+            </parameter>
+        </method>
+        <method>
+            <name>Get</name>
+            <comment>Returns the document. An exception will be thrown if there is no such document.</comment>
+            <returntype>anywheresoftware.b4a.objects.collections.Map</returntype>
+            <parameter>
+                <name>Index</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>Type</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>Id</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>Close</name>
+            <comment>Closes the client.</comment>
+            <returntype>void</returntype>
+        </method>
+        <method>
+            <name>Insert</name>
+            <comment>Inserts or replaces a document. Set the Id to an empty string to create the id automatically.
+Returns the server response.</comment>
+            <returntype>anywheresoftware.b4j.objects.RestClientWrapper.ResponseWrapper</returntype>
+            <parameter>
+                <name>Index</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>Type</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>Id</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>Document</name>
+                <type>anywheresoftware.b4a.objects.collections.Map</type>
+            </parameter>
+        </method>
+        <method>
+            <name>Initialize</name>
+            <comment>Initializes the client and sets the list of hosts.
+EventName - Currently there are no events.
+Hosts - A list or array with one or more hosts.
+Example:&lt;code&gt;
+esclient.Initialize("", Array("127.0.0.1:9200"))&lt;/code&gt;</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>ba</name>
+                <type>anywheresoftware.b4a.BA</type>
+            </parameter>
+            <parameter>
+                <name>EventName</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>Hosts</name>
+                <type>anywheresoftware.b4a.objects.collections.List</type>
+            </parameter>
+        </method>
+        <method>
+            <name>BulkInsert</name>
+            <comment>Bulk inserts multiple documents.
+IdsAndDocuments is a list (or array) with pairs of ids and documents.
+Pass empty strings as the ids to let Elasticsearch create the ids.
+Example: &lt;code&gt;
+client.BulkInsert("index1", "type1", Array("id1", CreateMap("text": "doc1"), "id2", CreateMap("text": "doc2"))&lt;/code&gt;</comment>
+            <returntype>anywheresoftware.b4j.objects.RestClientWrapper.ResponseWrapper</returntype>
+            <parameter>
+                <name>Index</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>Type</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>IdsAndDocuments</name>
+                <type>anywheresoftware.b4a.objects.collections.List</type>
+            </parameter>
+        </method>
+    </class>
+    <class>
+        <name>anywheresoftware.b4j.objects.RestClientWrapper.ResponseWrapper</name>
+        <shortname>ESResponse</shortname>
+        <comment>Holds the server response.</comment>
+        <owner>process</owner>
+        <method>
+            <name>ResponseAsMap</name>
+            <comment>Parses the JSON response and returns a map with the result.
+Note that the map is cached after it is parsed.</comment>
+            <returntype>anywheresoftware.b4a.objects.collections.Map</returntype>
+        </method>
+        <method>
+            <name>ResponseAsString</name>
+            <comment>Returns the response as string.</comment>
+            <returntype>java.lang.String</returntype>
+        </method>
+        <property>
+            <name>Hits</name>
+            <returntype>anywheresoftware.b4a.objects.collections.List</returntype>
+            <comment>Returns the hits. Relevant for search requests.</comment>
+        </property>
+        <property>
+            <name>StatusCode</name>
+            <returntype>int</returntype>
+            <comment>Returns the request status code (200 in most cases).</comment>
+        </property>
+    </class>
+    <version>1.1</version>
+    <dependsOn>commons-codec</dependsOn>
+    <dependsOn>httpasyncclient-4.1.2</dependsOn>
+    <dependsOn>httpclient-4.5.2</dependsOn>
+    <dependsOn>httpcore-4.4.5</dependsOn>
+    <dependsOn>httpcore-nio-4.4.5</dependsOn>
+    <dependsOn>rest-6.0.0</dependsOn>
+    <dependsOn>commons-logging-1.1.3</dependsOn>
+    <dependsOn>json</dependsOn>
+</root>
